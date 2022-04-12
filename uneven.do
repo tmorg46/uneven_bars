@@ -4,7 +4,7 @@
 
 /* 
 
-Uneven Bars? Evidence of Intergroup Anxiety in Women's Gymnastics
+Uneven Bars? Evidence against Intergroup Anxiety in Women's Gymnastics
 Code by Tommy Morgan
 Data and Paper(s) by:
 Tommy Morgan, Abbe McBride, Lizzie Mukai, Seth Cannon, Eli Morse
