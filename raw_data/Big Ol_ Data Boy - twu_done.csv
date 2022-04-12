@@ -1,0 +1,435 @@
+team,year,meet,host,venue,atbyu,vsbyu,POC,black,athlete,vault,bars,beam,floor,ND,ifND,VTjudge1,VTjudge2,UBjudge1,UBjudge2,BBjudge1,BBjudge2,FXjudge1,FXjudge2,VTjudge3,VTjudge4,UBjudge3,UBjudge4,BBjudge3,BBjudge4,FXjudge3,FXjudge4,VTjudge5,VTjudge6,UBjudge5,UBjudge6,BBjudge5,BBjudge6,FXjudge5,FXjudge6
+TWU,2018,16,TWU,Kitty Magee Arena,0,0,0,0,Schyler Jones,9.9125,9.85,9.825,9.9,0,0,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Lois Colburn,Marilyn Blilie,Mark Welch,Marline Blaze,Dawn Kiss,Rose Brady,Judy Durr,Denise Coats-Lauriat,.,.,.,.,.,.,.,.
+TWU,2018,16,TWU,Kitty Magee Arena,0,0,0,0,Alyssa Kelly,.,.,9.825,.,0,0,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Lois Colburn,Marilyn Blilie,Mark Welch,Marline Blaze,Dawn Kiss,Rose Brady,Judy Durr,Denise Coats-Lauriat,.,.,.,.,.,.,.,.
+TWU,2018,16,TWU,Kitty Magee Arena,0,0,0,0,Mallory Moredock,9.8875,.,.,9.05,0,0,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Lois Colburn,Marilyn Blilie,Mark Welch,Marline Blaze,Dawn Kiss,Rose Brady,Judy Durr,Denise Coats-Lauriat,.,.,.,.,.,.,.,.
+TWU,2018,16,TWU,Kitty Magee Arena,0,0,0,0,Bria Northrop,.,9.775,.,.,0,0,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Lois Colburn,Marilyn Blilie,Mark Welch,Marline Blaze,Dawn Kiss,Rose Brady,Judy Durr,Denise Coats-Lauriat,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Erin Alderman,.,.,9.725,9.85,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Morgan Colee,9.75,9.525,.,.,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Madison Dickson,.,.,9.475,.,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Megan Gentry,9.85,.,.,9.725,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Schyler Jones,9.9,9.775,9.825,9.925,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Alyssa Kelly,.,9.825,9.875,.,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Brandi Lazarus,9.8,.,.,.,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Mallory Moredock,9.875,.,9.825,9.9,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Bria Northrop,.,9.9,.,9.85,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Hope Parkin ,9.775,.,.,.,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Abigail Versemann,.,9.7,.,9.7,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,15,TWU,Kitty Magee Arena,0,0,0,0,Hunter Vincent,.,9.825,9.8,.,0,0,Rose Brady,Marilyn Blilie,Mark Welch,Denise Coats-Lauriat,Lois Colburn,Dawn Kiss,Judy Durr,Marline Blaze,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Erin Alderman,9.1,.,9.875,9.625,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Morgan Colee,.,9.75,.,.,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Madison Dickson,.,.,9.8,.,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Megan Gentry,9.725,.,.,9.85,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Schyler Jones,9.85,9.9,9.925,9.925,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Alyssa Kelly,.,9,9.85,.,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Brandi Lazarus,9.725,.,.,.,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Mallory Moredock,9.775,.,9.775,9.95,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Bria Northrop,.,9.85,.,9.8,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Hope Parkin ,9.7,.,.,.,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Abigail Versemann,.,9.7,9.65,.,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,14,TWU,Kitty Magee Arena,0,0,0,0,Hunter Vincent,.,9.325,9.7,.,0,0,Mark Welch,Marline Blaze,Lois Colburn,Marilyn Blilie,Judy Durr,Denise Coats-Lauriat,Dawn Kiss,Rose Brady,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,13,Alabama,Coleman Coliseum,0,0,0,0,Schyler Jones,9.825,.,.,.,0,0,Jami Pillasch,Sibby Lane,Evelyn Chandler,Christine Shaw,Linda Morton,Rebecca Oppenheimer,Pamela Evans,Nichole Otterson,Mark Welch,Brooke Bennett,Jeana Ely,Anne-Michele Vogel,Jan Harrison,Jasmine Swyningan,Jo Ann Borda,Mary Hoagland,.,.,.,.,.,.,.,.
+TWU,2018,13,Alabama,Coleman Coliseum,0,0,0,0,Mallory Moredock,.,.,9.15,.,0,0,Jami Pillasch,Sibby Lane,Evelyn Chandler,Christine Shaw,Linda Morton,Rebecca Oppenheimer,Pamela Evans,Nichole Otterson,Mark Welch,Brooke Bennett,Jeana Ely,Anne-Michele Vogel,Jan Harrison,Jasmine Swyningan,Jo Ann Borda,Mary Hoagland,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Morgan Colee,9.55,9.625,.,.,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Madison Dickson,.,.,9.625,.,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Megan Gentry,9.75,.,.,9.7,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Schyler Jones,9.8,9.6,9.9,9.85,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Alyssa Kelly,.,9.825,9.8,.,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Brandi Lazarus,9.775,8.325,8.45,.,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Mallory Moredock,9.675,.,9.9,9.875,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Bria Northrop,.,9.75,.,9.35,0.1,1,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Hope Parkin ,9.575,.,.,.,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Bridgette Peterson,.,.,.,9.675,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Abigail Versemann,.,.,.,9.625,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,12,Lindenwood,Hyland Arena,0,0,0,0,Hunter Vincent,.,9.725,9.6,.,0,0,Judy Durr,JoAnne Connell,Nichole Otterson,Jennifer Sampson,Robin Ruegg,Paige Callaway,Jane Flynn,Rebecca Dangrove,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Erin Alderman,9.675,.,8.6,8.65,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Megan Gentry,9.725,.,.,.,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Schyler Jones,9.85,9.8,9.85,9.9,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Alyssa Kelly,.,9.775,9.775,.,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Brandi Lazarus,9.8,9.575,9.175,.,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Mallory Moredock,9.825,.,9.85,9.85,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Bria Northrop,.,9.825,.,.,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Hope Parkin ,.,.,.,9.2,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Bridgette Peterson,.,.,.,9.025,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Abigail Versemann,.,9.15,.,9.6,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,11,TWU,Kitty Magee Arena,0,0,0,0,Hunter Vincent,9.425,9.775,9.625,.,0,0,Kathrynn Murray,Tracy Brewer,Paige Callaway,Amanda Heidel,Tracy Brewer,Paige Callaway,Kathrynn Murray,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Erin Alderman,9.675,.,9.65,9.775,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Morgan Colee,9.775,9.75,.,9.625,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Madison Dickson,.,.,8.85,.,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Megan Gentry,9.75,.,.,.,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Schyler Jones,9.725,9.675,9.85,9.825,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Alyssa Kelly,.,9.8,9.825,.,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Brandi Lazarus,9.8,.,.,.,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Mallory Moredock,9.725,.,9.85,9.775,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Bria Northrop,.,9.75,.,.,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Bridgette Peterson,.,.,.,9.475,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Abigail Versemann,.,9.45,9.375,.,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,10,BYU,Smith Fieldhouse,1,1,0,0,Hunter Vincent,.,9.775,9.75,.,0,0,Fran Earles,Diane Lohner,Patricia Bryant,Meg Doxtator,Ann Marie Heppner,Charity Greene,Cathy Bennion,Denise Jensen,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Erin Alderman,9.725,.,9.75,9.775,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Morgan Colee,9.75,9.775,.,9.575,0.1,1,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Madison Dickson,.,.,9.675,.,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Megan Gentry,9.8,.,.,.,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Schyler Jones,9.775,9.725,9.8,9.875,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Alyssa Kelly,.,9.825,9.875,.,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Brandi Lazarus,9.875,7.85,9.55,.,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Mallory Moredock,9.85,.,9.7,9.85,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Bria Northrop,.,9.85,.,.,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Bridgette Peterson,.,.,.,9.6,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Abigail Versemann,.,.,.,9.675,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,9,TWU,Kitty Magee Arena,0,0,0,0,Hunter Vincent,.,9.775,.,.,0,0,Tracy Brewer,Richard Sabel,Marline Blaze,Laurie Skelton,Laurie Skelton,Richard Sabel,Marline Blaze,Tracy Brewer,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Erin Alderman,9.65,.,9.275,9.8,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Morgan Colee,9.7,9.55,.,9.725,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Madison Dickson,.,.,9.775,.,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Megan Gentry,9.75,.,.,.,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Schyler Jones,9.8,.,9.85,9.875,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Alyssa Kelly,.,9.825,9.375,.,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Brandi Lazarus,9.75,9.65,.,.,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Mallory Moredock,9.775,.,9.875,9.775,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Bria Northrop,.,9.875,9.375,.,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Bridgette Peterson,.,.,.,9.125,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Abigail Versemann,.,9.625,.,9.7,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,8,TWU,Kitty Magee Arena,0,0,0,0,Hunter Vincent,.,9.8,.,.,0,0,Marline Blaze,Paige Callaway,Denise Coats-Lauriat,Richard Sabel,Sandy Holsaple,Kathrynn Murray,Marilyn Blilie,Kevin Freeman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Erin Alderman,9.625,.,9.75,9.6,0.1,1,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Morgan Colee,9.7,9.75,.,9.55,0,0,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Megan Gentry,9.7,.,.,.,0,0,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Schyler Jones,9.825,9.25,9.85,9.825,0,0,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Alyssa Kelly,.,9.7,9.825,.,0,0,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Brandi Lazarus,9.775,9.6,8.95,.,0,0,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Mallory Moredock,9.775,.,9.825,9.75,0,0,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Bria Northrop,.,9.75,.,.,0,0,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Bridgette Peterson,.,.,.,9.6,0,0,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Abigail Versemann,.,.,.,9.625,0,0,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,7,LSU,Baton Rouge,0,0,0,0,Hunter Vincent,.,9.725,9.25,.,0,0,Janine Dent,Jay Miller,Patricia Etheredge,Sandra Carminati,Jay Miller,Sandra Carminati,Patricia Etheredge,Janine Dent,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Erin Alderman,9.75,.,9.375,9.85,0,0,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Morgan Colee,9.725,9.7,.,9.5,0.1,1,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Megan Gentry,9.675,.,.,.,0,0,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Schyler Jones,9.8,9.375,9.825,9.9,0,0,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Alyssa Kelly,.,9.75,9.8,.,0,0,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Brandi Lazarus,9.825,9.75,9.225,.,0,0,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Mallory Moredock,9.8,.,9.625,9.9,0,0,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Bria Northrop,.,9.875,.,.,0,0,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Bridgette Peterson,.,.,.,9.775,0,0,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Abigail Versemann,.,.,.,9.75,0,0,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,6,TWU,Kitty Magee Arena,0,0,0,0,Hunter Vincent,.,9.75,9.675,.,0,0,Adriana Ruiz-Beck,Melissa Phillips,Joan Gnat,Lydia Messenger,Sandy Holsaple,Betty Roberts,Andrea Alameda,Jeana Ely,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Erin Alderman,9.675,.,9.525,9.725,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Morgan Colee,9.625,9.6,.,8.65,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Megan Gentry,9.725,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Schyler Jones,9.8,9.7,9.225,9.75,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Alyssa Kelly,.,9.675,9.825,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Brandi Lazarus,9.675,.,9.725,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Mallory Moredock,9.75,.,9.8,9.775,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Bria Northrop,.,9.8,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Bridgette Peterson,.,.,.,8.7,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Abigail Versemann,.,9.35,.,9.525,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,5,Centenary College,Gold Dome,0,0,0,0,Hunter Vincent,.,9.025,9.55,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Erin Alderman,9.425,.,9.775,9.775,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Morgan Colee,9.6,9.625,.,9.05,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Megan Gentry,9.675,9.525,9.05,.,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Schyler Jones,9.75,.,9.225,9.825,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Alyssa Kelly,.,9.775,9.75,.,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Brandi Lazarus,9.75,.,9.675,.,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Mallory Moredock,9.75,.,9.775,9.75,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Bria Northrop,.,9.85,.,.,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Bridgette Peterson,.,.,.,9.4,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Abigail Versemann,.,9.35,.,9.7,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,4,Centenary College,Gold Dome,0,0,0,0,Hunter Vincent,.,9.75,.,.,0,0,Laurie Skelton,Amanda Heidel,Jan Eyman,Paige Callaway,Laurie Skelton,Jan Eyman,Paige Callaway,Amanda Heidel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Erin Alderman,9.775,.,9.475,9.7,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Morgan Colee,9.675,9.575,.,9.525,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Megan Gentry,9.6,9.525,.,.,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Schyler Jones,9.85,9.1,9.7,9,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Alyssa Kelly,.,7.275,9.275,.,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Brandi Lazarus,9.725,.,9.775,.,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Mallory Moredock,9.7,.,9.85,9.75,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Bria Northrop,.,9.6,.,.,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Bridgette Peterson,.,.,.,8.9,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Abigail Versemann,.,8.875,.,9.45,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,3,Iowa State,Hilton Coliseum,0,0,0,0,Taylor Vincent,.,.,9.425,.,0,0,Donna Moretti,Kelley Green,Jeanelle Buseman,Brooke Bennett,Jeanelle Buseman,Kelley Green,Donna Moretti,Brooke Bennett,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Erin Alderman,9.675,.,7.925,9.75,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Morgan Colee,9.75,9.65,.,9.5,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Megan Gentry,9.725,.,.,.,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Schyler Jones,9.75,8.95,9.75,9.7,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Alyssa Kelly,.,9.8,9.625,.,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Brandi Lazarus,9.825,.,9.45,.,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Mallory Moredock,9.85,.,9.775,9.8,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Bria Northrop,.,9.65,.,.,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Bridgette Peterson,.,.,.,9.6,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Abigail Versemann,.,9.4,.,9.7,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,2,Oklahoma,University of Oklahoma Gymnastics,0,0,0,0,Taylor Vincent,.,8,.,.,0,0,Sandy Holsaple,Betty Roberts,Barbara Giulivo,Jeana Ely,Rebecca Oppenheimer,Christina Crowder,Marilyn Wallace,Debra Yohman,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Erin Alderman,9.65,.,9.7,9.75,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Morgan Colee,9.675,9.675,.,9.675,0.1,1,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Megan Gentry,9.725,.,.,.,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Schyler Jones,9.875,9.525,9.775,9.875,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Alyssa Kelly,.,9.575,9.7,.,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Brandi Lazarus,9.75,.,8.9,.,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Mallory Moredock,9.725,.,9.125,9.85,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Bria Northrop,.,9.675,.,.,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Bridgette Peterson,.,.,.,9.65,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Abigail Versemann,.,9.625,.,9.675,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Hunter Vincent,.,9.05,.,.,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+TWU,2018,1,TWU,Kitty Magee Arena,0,0,0,0,Taylor Vincent,.,.,9.575,.,0,0,Marilyn Blilie,Amanda Heidel,Jan Eyman,Tracy Brewer,Jan Eyman,Amanda Heidel,Tracy Brewer,Marilyn Blilie,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,,,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
