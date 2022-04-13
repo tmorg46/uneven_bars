@@ -1,6 +1,6 @@
 *****************************
 
-*version 3.0
+*version 4.0
 
 /* 
 
@@ -243,67 +243,12 @@ erase regtable_allevents.txt
 
 // Tables 1-6 are handmade using the summary and regression tables from the Run Analysis Section
 
+
 ****************
 *Make the Graphs
 ****************
 
-{ // make Figure 1: the vault kernel densities
-
-*open the vault file
-cd "$route\workspace"
-use vault_clean, clear
-
-*make the graph
-twoway kdensity score if(black==0 & atbyu==0), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("Density") title(Distribution of vault scores, color(black) span) plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xlabel(8.875(.125)10) || kdensity score if (black==0 & atbyu==1), lcolor("0 73 89 30") lwidth(thick) || kdensity score if (black==1 & atbyu==0), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || kdensity score if (black==1 & atbyu==1), lcolor("85 80 0 50") lwidth(thick) legend(order(4 "Black gymnasts at BYU" 3 "Black gymnasts, not at BYU" 2 "non-Black gymnasts at BYU" 1 "non-Black gymnasts, not at BYU") col(1) pos(11) ring(0))
-
-*export the graph
-graph export "$route\output\figure1_vault_densities.png", as(png) replace
-	
-}
-
-{ // make Figure 2: the floor kernel densities
-
-*open the vault file
-cd "$route\workspace"
-use floor_clean, clear
-
-*make the graph
-twoway kdensity score if(black==0 & atbyu==0), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("Density") title(Distribution of floor scores, color(black) span) plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xlabel(8.875(.125)10) || kdensity score if (black==0 & atbyu==1), lcolor("0 73 89 30") lwidth(thick) || kdensity score if (black==1 & atbyu==0), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || kdensity score if (black==1 & atbyu==1), lcolor("85 80 0 50") lwidth(thick) legend(order(4 "Black gymnasts at BYU" 3 "Black gymnasts, not at BYU" 2 "non-Black gymnasts at BYU" 1 "non-Black gymnasts, not at BYU") col(1) pos(11) ring(0))
-
-*export the graph
-graph export "$route\output\figure2_floor_densities.png", as(png) replace
-	
-}
-
-{ // make Figure 3: the beam kernel densities
-
-*open the vault file
-cd "$route\workspace"
-use beam_clean, clear
-
-*make the graph
-twoway kdensity score if(black==0 & atbyu==0), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("Density") title(Distribution of beam scores, color(black) span) plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xlabel(8.875(.125)10) || kdensity score if (black==0 & atbyu==1), lcolor("0 73 89 30") lwidth(thick) || kdensity score if (black==1 & atbyu==0), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || kdensity score if (black==1 & atbyu==1), lcolor("85 80 0 50") lwidth(thick) legend(order(4 "Black gymnasts at BYU" 3 "Black gymnasts, not at BYU" 2 "non-Black gymnasts at BYU" 1 "non-Black gymnasts, not at BYU") col(1) pos(11) ring(0))
-
-*export the graph
-graph export "$route\output\figure3_beam_densities.png", as(png) replace
-	
-}
-
-{ // make Figure 4: the bars kernel densities
-
-*open the vault file
-cd "$route\workspace"
-use bars_clean, clear
-
-*make the graph
-twoway kdensity score if(black==0 & atbyu==0), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("Density") title(Distribution of bars scores, color(black) span) plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xlabel(8.875(.125)10) || kdensity score if (black==0 & atbyu==1), lcolor("0 73 89 30") lwidth(thick) || kdensity score if (black==1 & atbyu==0), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || kdensity score if (black==1 & atbyu==1), lcolor("85 80 0 50") lwidth(thick) legend(order(4 "Black gymnasts at BYU" 3 "Black gymnasts, not at BYU" 2 "non-Black gymnasts at BYU" 1 "non-Black gymnasts, not at BYU") col(1) pos(11) ring(0))
-
-*export the graph
-graph export "$route\output\figure4_bars_densities.png", as(png) replace
-	
-}
-
-{ // make Figure 5: the all-events kernel densities
+{ // make a graph that gives you the legend
 
 *open the vault file
 cd "$route\workspace"
@@ -313,8 +258,78 @@ use allevents_clean, clear
 twoway kdensity score if(black==0 & atbyu==0), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("Density") title(Distribution of scores in all events, color(black) span) plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xlabel(8.875(.125)10) || kdensity score if (black==0 & atbyu==1), lcolor("0 73 89 30") lwidth(thick) || kdensity score if (black==1 & atbyu==0), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || kdensity score if (black==1 & atbyu==1), lcolor("85 80 0 50") lwidth(thick) legend(order(4 "Black gymnasts at BYU" 3 "Black gymnasts, not at BYU" 2 "non-Black gymnasts at BYU" 1 "non-Black gymnasts, not at BYU") col(1) pos(11) ring(0))
 
 *export the graph
-graph export "$route\output\figure5_allevents_densities.png", as(png) replace
+graph export "$route\output\legend_and_densities.svg", as(svg) replace
 	
 }
 
+{ // make Figure 1.1: the vault kernel densities with no legend
 
+*open the vault file
+cd "$route\workspace"
+use vault_clean, clear
+
+*make the graph
+twoway kdensity score if(black==0 & atbyu==0), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("Density") title(Distribution of vault scores, color(black) span) plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xlabel(8.875(.125)10) || kdensity score if (black==0 & atbyu==1), lcolor("0 73 89 30") lwidth(thick) || kdensity score if (black==1 & atbyu==0), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || kdensity score if (black==1 & atbyu==1), lcolor("85 80 0 50") lwidth(thick) legend(off)
+
+*export the graph
+graph export "$route\output\vault_densities.png", as(png) replace
+	
+}
+
+{ // make Figure 1.2: the floor kernel densities with no legend
+
+*open the vault file
+cd "$route\workspace"
+use floor_clean, clear
+
+*make the graph
+twoway kdensity score if(black==0 & atbyu==0), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("Density") title(Distribution of floor scores, color(black) span) plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xlabel(8.875(.125)10) || kdensity score if (black==0 & atbyu==1), lcolor("0 73 89 30") lwidth(thick) || kdensity score if (black==1 & atbyu==0), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || kdensity score if (black==1 & atbyu==1), lcolor("85 80 0 50") lwidth(thick) legend(off)
+
+*export the graph
+graph export "$route\output\floor_densities.png", as(png) replace
+	
+}
+
+{ // make Figure 1.3: the beam kernel densities with no legend
+
+*open the vault file
+cd "$route\workspace"
+use beam_clean, clear
+
+*make the graph
+twoway kdensity score if(black==0 & atbyu==0), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("Density") title(Distribution of beam scores, color(black) span) plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xlabel(8.875(.125)10) || kdensity score if (black==0 & atbyu==1), lcolor("0 73 89 30") lwidth(thick) || kdensity score if (black==1 & atbyu==0), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || kdensity score if (black==1 & atbyu==1), lcolor("85 80 0 50") lwidth(thick) legend(off)
+
+*export the graph
+graph export "$route\output\beam_densities.png", as(png) replace
+	
+}
+
+{ // make Figure 1.4: the bars kernel densities with no legend
+
+*open the vault file
+cd "$route\workspace"
+use bars_clean, clear
+
+*make the graph
+twoway kdensity score if(black==0 & atbyu==0), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("Density") title(Distribution of bars scores, color(black) span) plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xlabel(8.875(.125)10) || kdensity score if (black==0 & atbyu==1), lcolor("0 73 89 30") lwidth(thick) || kdensity score if (black==1 & atbyu==0), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || kdensity score if (black==1 & atbyu==1), lcolor("85 80 0 50") lwidth(thick) legend(off)
+
+*export the graph
+graph export "$route\output\bars_densities.png", as(png) replace
+	
+}
+
+{ // make Figure 1.5: the all-events kernel densities with no legen
+
+*open the vault file
+cd "$route\workspace"
+use allevents_clean, clear
+
+*make the graph
+twoway kdensity score if(black==0 & atbyu==0), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("Density") title(Distribution of scores in all events, color(black) span) plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xlabel(8.875(.125)10) || kdensity score if (black==0 & atbyu==1), lcolor("0 73 89 30") lwidth(thick) || kdensity score if (black==1 & atbyu==0), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || kdensity score if (black==1 & atbyu==1), lcolor("85 80 0 50") lwidth(thick) legend(off)
+
+*export the graph
+graph export "$route\output\allevents_densities.png", as(png) replace
+	
+}
+
+// Photoshop provides the rest of the work here
