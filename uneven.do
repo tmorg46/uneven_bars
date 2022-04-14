@@ -11,7 +11,7 @@ Tommy Morgan, Abbe McBride, Lizzie Mukai, Seth Cannon, Eli Morse
 
 */
 
-*replace this first global with your path to the "big_data_folder"
+*replace this first global with your path to the folder that contains uneven.do and the other three folders
 global route V:\FHSS-JoePriceResearch\RA_work_folders\Tommy_Morgan\uneven\big_data_folder
 
 clear
@@ -108,7 +108,7 @@ foreach v in $events { // create split datasets for each event
 	cd "$route\workspace"
 	use clean_data, clear
 	
-	*keep only the relevant variables
+	*keep only the relevant variables and observations
 	local vjudges `v'_judges
 	keep `v' $descriptors $interactions $`vjudges'
 	drop if `v'==.
@@ -144,7 +144,7 @@ drop if beam<9
 rename beam score
 save beam_clean, replace
 
-*lower third percentile 
+*lower third percentile cutoff in floor is 9
 use floor_clean, clear
 gen event="floor"
 drop if floor<9
@@ -241,7 +241,7 @@ erase regtable_allevents.txt
 
 }
 
-// Tables 1-6 are handmade using the summary and regression tables from the Run Analysis Section
+// Tables 1-6 are handmade using the summary and regression tables from this Run Analysis Section
 
 
 ****************
@@ -318,7 +318,7 @@ graph export "$route\output\bars_densities.png", as(png) replace
 	
 }
 
-{ // make Figure 1.5: the all-events kernel densities with no legen
+{ // make Figure 1.5: the all-events kernel densities with no legend
 
 *open the vault file
 cd "$route\workspace"
@@ -332,4 +332,4 @@ graph export "$route\output\allevents_densities.png", as(png) replace
 	
 }
 
-// Photoshop provides the rest of the work here
+// Photoshop provides the rest of the work for Figure 1
