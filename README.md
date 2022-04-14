@@ -1,4 +1,4 @@
-# uneven_bars
+# Uneven Bars?
 the project I did for Applied Econometrics (488) and Behavioral Economics (442) in Winter 2022 at BYU.
 
 - if you want to replicate this project, download everything in the main branch intno one folder and use the path to that folder as the route global in the .do file!
