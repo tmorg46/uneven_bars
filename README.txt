@@ -1,7 +1,7 @@
 # Uneven Bars?
 the project and papers my groups did for Applied Econometrics (ECON 488) and Behavioral Economics (ECON 442) in Winter 2022 at BYU.
 
-- if you want to replicate this project, download everything in the main branch intno one folder and use the path to that folder as the route global in the .do file!
+- if you want to replicate this project, download everything in the main branch into one folder and use the path to that folder as the route global in the .do file!
 - the output and workspace folders are there because that's how I organize my code in uneven.do; they only contain placeholder files at the moment.
 - the raw_data folder contains the clean versions of the hand-entered data we used for this analysis. this is publicly available data that you can use for anything you'd like, but definitely mention RoadtoNationals.com if you do!
 
