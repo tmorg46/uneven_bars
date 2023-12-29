@@ -2,10 +2,10 @@
       name:  <unnamed>
        log:  /Users/tmac/Library/CloudStorage/Box-Box/uneven_bars/output/table4_prepost_waldtest_logs.txt
   log type:  text
- opened on:  28 Dec 2023, 17:01:42
+ opened on:  28 Dec 2023, 18:15:47
 
 . foreach event in vault bars beam floor {
-  2.         quietly xi: areg score black_atbyu post_bab i.gymnast*postfloyd i.meet_id if event=="`event'", absorb(gymnas
+  2.         quietly xi: areg score black_atbyu post_bab postfloyd#i.gymnast i.meet_id if event=="`event'", absorb(gymnas
 > t) vce(cl meet_id) noomit
   3.         outreg2 using "$route/output/table4_prepost_regs", excel append keep(black_atbyu post_bab meet) label(proper
 > ) dec(3) addtext(Gymnast Effects, X, Meet Effects, X) cttop(`event' both)
@@ -15,60 +15,194 @@
   7.         di "-----"
   8.         di ""
   9. }
-/Users/tmac/Library/CloudStorage/Box-Box/uneven_bars/output/table4_prepost_regs.xml
-dir : seeout
-vault tests areg
------
+variable post_bab not found
+r(111);
 
- ( 1)  black_atbyu - post_bab = 0
-       Constraint 1 dropped
+end of do-file
 
-       F(  0,   322) =       .
-            Prob > F =         .
------
+r(111);
 
-/Users/tmac/Library/CloudStorage/Box-Box/uneven_bars/output/table4_prepost_regs.xml
-dir : seeout
-bars tests areg
------
+. do "/Users/tmac/Library/CloudStorage/Box-Box/uneven_bars/uneven_bars.do"
 
- ( 1)  black_atbyu - post_bab = 0
-       Constraint 1 dropped
+. *****************************
+. 
+. *version 5.0 -- 23 Dec 2023
+. 
+. /* 
+> 
+> Uneven Bars
+> Code by Tommy Morgan
+> Data by Tommy Morgan, Seth Cannon, Abbe McBride, Lizzie Mukai
+> 
+> */
+. 
+. *replace this first global with your path to the folder that contains uneven_bars.do and the raw data
+. global route "/Users/tmac/Library/CloudStorage/Box-Box/uneven_bars"
 
-       F(  0,   322) =       .
-            Prob > F =         .
------
+. 
+. clear all
 
-/Users/tmac/Library/CloudStorage/Box-Box/uneven_bars/output/table4_prepost_regs.xml
-dir : seeout
-beam tests areg
------
+. discard
 
- ( 1)  black_atbyu - post_bab = 0
-       Constraint 1 dropped
+. pause on
 
-       F(  0,   322) =       .
-            Prob > F =         .
------
+. 
+. ssc install outreg2
+checking outreg2 consistency and verifying not already installed...
+all files already exist and are up to date.
 
-/Users/tmac/Library/CloudStorage/Box-Box/uneven_bars/output/table4_prepost_regs.xml
-dir : seeout
-floor tests areg
------
+. ssc install parmest
+checking parmest consistency and verifying not already installed...
+all files already exist and are up to date.
 
- ( 1)  black_atbyu - post_bab = 0
-       Constraint 1 dropped
+. ssc install schemepack
+checking schemepack consistency and verifying not already installed...
+all files already exist and are up to date.
 
-       F(  0,   322) =       .
-            Prob > F =         .
------
+. 
+. set scheme white_tableau
 
+. 
+. cap mkdir "$route/output"
 
-. erase "$route/output/table4_prepost_regs.txt"
+. 
+. 
+. **********************************
+. *Cleaning and Creating the Dataset
+. **********************************
+. // done!
+. *bring in the dataset
+. import delimited using "$route/uneven_bars_raw_data - data.csv", varn(1) clear
+(encoding automatically selected: ISO-8859-2)
+(11 vars, 4,424 obs)
 
-. log close
-      name:  <unnamed>
-       log:  /Users/tmac/Library/CloudStorage/Box-Box/uneven_bars/output/table4_prepost_waldtest_logs.txt
-  log type:  text
- closed on:  28 Dec 2023, 17:02:09
--------------------------------------------------------------------------------------------------------------------------
+. 
+. 
+. *generate some indicators we'll need later
+. gen black_atbyu = black*atbyu
+
+. gen postfloyd = year>2020
+
+. gen black_pf = postfloyd*black
+
+. gen atbyu_pf = postfloyd*atbyu
+
+. gen black_atbyu_pf = postfloyd*black_atbyu
+
+. 
+. 
+. *reshape the dataset so score is in one column and mark the events
+. rename (vault bars beam floor) (score1 score2 score3 score4)
+
+. reshape long score, i(gymnast meet_id) j(event)
+(j = 1 2 3 4)
+
+Data                               Wide   ->   Long
+-----------------------------------------------------------------------------
+Number of observations            4,424   ->   17,696      
+Number of variables                  16   ->   14          
+j variable (4 values)                     ->   event
+xij variables:
+               score1 score2 ... score4   ->   score
+-----------------------------------------------------------------------------
+
+. drop if score==.
+(8,689 observations deleted)
+
+. 
+. tostring event, replace
+event was byte now str1
+
+. replace event = "vault" if event=="1"
+variable event was str1 now str5
+(2,240 real changes made)
+
+. replace event = "bars" if event=="2"
+(2,256 real changes made)
+
+. replace event = "beam" if event=="3"
+(2,267 real changes made)
+
+. replace event = "floor" if event=="4"
+(2,244 real changes made)
+
+. 
+. 
+. ***************************************
+. *Table 1: Team-Years Included in Sample
+. ***************************************
+. // done
+. tab team year
+
+               |                                     year
+          team |      2017       2018       2019       2020       2021       2022       2023 |     Total
+---------------+-----------------------------------------------------------------------------+----------
+     Air Force |         0        263          0          0        262          0          0 |       525 
+        Alaska |         0          0          0          0          0          0        237 |       237 
+       Arizona |       230          0          0          0          0        240          0 |       470 
+   Boise State |         0        240        215        210        214        192        216 |     1,287 
+        Denver |         0        251          0          0        213          0          0 |       464 
+Illinois State |         0          0          0          0          0        288          0 |       288 
+          Iowa |       288          0          0          0          0          0          0 |       288 
+      Nebraska |         0          0          0        216          0          0          0 |       216 
+    Penn State |         0        262          0          0          0          0          0 |       262 
+           SUU |       240        258        264          0        238        239        288 |     1,527 
+     Sac State |         0          0          0        239          0          0          0 |       239 
+           TWU |         0        263          0          0          0          0          0 |       263 
+   UC Berkeley |         0        264          0          0          0          0          0 |       264 
+          UCLA |         0          0          0        240          0          0          0 |       240 
+          Utah |       240          0        262          0          0          0          0 |       502 
+    Utah State |       288        260        238        216        217        262        215 |     1,696 
+    Washington |         0          0          0          0          0        239          0 |       239 
+---------------+-----------------------------------------------------------------------------+----------
+         Total |     1,286      2,061        979      1,121      1,144      1,460        956 |     9,007 
+
+. pause // type q to resume after copying the table
+pause:  
+-> . q
+execution resumes...
+
+. 
+. 
+. ***********************************************
+. *Figure 2: Kernel Density Estimations of Scores
+. ***********************************************
+. 
+. *label the black indicator for these graphs
+. cap label define black_lbl 1 "Black" 0 "not Black"
+
+. label values black black_lbl
+
+. 
+. *cook 'em up! limit them to the ones 8.85 and above just to make them look nice
+. twoway kdensity score if (black==0 & atbyu==0 & score>=8.85), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) || /
+> //
+> ///
+> kdensity score if (black==0 & atbyu==1 & score>=8.85), lcolor("0 73 89 30") lwidth(thick) || ///
+> ///
+> kdensity score if (black==1 & atbyu==0 & score>=8.85), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || ///
+> ///
+> kdensity score if (black==1 & atbyu==1 & score>=8.85), lcolor("85 80 0 50") lwidth(thick) ///
+> ///
+> by(event black, cols(2) note("") legend(position(11))) ///
+> ///
+> legend(order(2 "non-Black gymnasts at BYU" 1 "non-Black gymnasts not at BYU" 4 "Black gymnasts at BYU" 3 "Black gymnast
+> s not at BYU")) plotregion(lwidth(thin) lcolor(black)) scheme(white_tableau) legend(position(6)) ///
+> ///
+> xtitle("Score") ytitle("") yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xtick(8.875(.125)10) xlabel(9(.25)
+> 10) ysize(8) xsize(6.5)
+
+. 
+. graph rename figure2
+
+. graph export "$route/output/figure2_densities.png", width(1080) replace
+file /Users/tmac/Library/CloudStorage/Box-Box/uneven_bars/output/figure2_densities.png saved as PNG format
+
+. 
+. 
+. **********************************
+. *Table 2: Score Summary Statistics
+. **********************************
+. // done
+. *create summary tables for each event for variables of interest
+. cap log close

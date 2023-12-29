@@ -2,16 +2,22 @@
       name:  <unnamed>
        log:  /Users/tmac/Library/CloudStorage/Box-Box/uneven_bars/output/table2_sumstats_log.txt
   log type:  text
- opened on:  28 Dec 2023, 17:01:37
+ opened on:  28 Dec 2023, 18:16:38
 
 . foreach event in vault bars beam floor {
-  2.         sum score if event=="`event'"
-  3.         sum black if event=="`event'"
-  4.         sum atbyu if event=="`event'"
-  5.         sum black_atbyu if event=="`event'"
-  6.         di " "
-  7.         di "-----------------"
-  8. }
+  2.         di "-----------------"
+  3.         di "scores for `event'"
+  4.         di " "
+  5.         sum score if event=="`event'"
+  6.         sum black if event=="`event'"
+  7.         sum atbyu if event=="`event'"
+  8.         sum black_atbyu if event=="`event'"
+  9.         di " "
+ 10.         di "-----------------"
+ 11. }
+-----------------
+scores for vault
+ 
 
     Variable |        Obs        Mean    Std. dev.       Min        Max
 -------------+---------------------------------------------------------
@@ -30,6 +36,9 @@
  black_atbyu |      2,240    .0116071    .1071333          0          1
  
 -----------------
+-----------------
+scores for bars
+ 
 
     Variable |        Obs        Mean    Std. dev.       Min        Max
 -------------+---------------------------------------------------------
@@ -48,6 +57,9 @@
  black_atbyu |      2,256    .0119681    .1087662          0          1
  
 -----------------
+-----------------
+scores for beam
+ 
 
     Variable |        Obs        Mean    Std. dev.       Min        Max
 -------------+---------------------------------------------------------
@@ -66,6 +78,9 @@
  black_atbyu |      2,267    .0097045    .0980537          0          1
  
 -----------------
+-----------------
+scores for floor
+ 
 
     Variable |        Obs        Mean    Std. dev.       Min        Max
 -------------+---------------------------------------------------------
@@ -89,5 +104,5 @@
       name:  <unnamed>
        log:  /Users/tmac/Library/CloudStorage/Box-Box/uneven_bars/output/table2_sumstats_log.txt
   log type:  text
- closed on:  28 Dec 2023, 17:01:37
+ closed on:  28 Dec 2023, 18:16:38
 -------------------------------------------------------------------------------------------------------------------------

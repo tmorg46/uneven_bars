@@ -15,6 +15,7 @@ global route "/Users/tmac/Library/CloudStorage/Box-Box/uneven_bars"
 
 clear all
 discard
+pause on
 
 ssc install outreg2
 ssc install parmest
@@ -36,10 +37,9 @@ import delimited using "$route/uneven_bars_raw_data - data.csv", varn(1) clear
 *generate some indicators we'll need later
 gen black_atbyu = black*atbyu
 gen postfloyd = year>2020
-gen pf_black = postfloyd*black
-gen pf_atbyu = postfloyd*atbyu
-gen pre_bab = postfloyd*black_atbyu
-gen post_bab = black_atbyu - pre_bab
+gen black_pf = postfloyd*black
+gen atbyu_pf = postfloyd*atbyu
+gen black_atbyu_pf = postfloyd*black_atbyu
 
 
 *reshape the dataset so score is in one column and mark the events
@@ -54,8 +54,16 @@ replace event = "beam" if event=="3"
 replace event = "floor" if event=="4"
 
 
+***************************************
+*Table 1: Team-Years Included in Sample
+***************************************
+// done
+tab team year
+pause // type q to resume after copying the table
+
+
 ***********************************************
-*Analysis Part 0: Overall Kernel Density Graphs
+*Figure 2: Kernel Density Estimations of Scores
 ***********************************************
 
 *label the black indicator for these graphs
@@ -63,24 +71,35 @@ cap label define black_lbl 1 "Black" 0 "not Black"
 label values black black_lbl
 
 *cook 'em up! limit them to the ones 8.85 and above just to make them look nice
-twoway kdensity score if (black==0 & atbyu==0 & score>=8.85), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) xtitle("Score") ytitle("") plotregion(lwidth(thin) lcolor(black)) yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xtick(8.875(.125)10) xlabel(9(.25)10) scheme(white_tableau) legend(position(6)) || ///
+twoway kdensity score if (black==0 & atbyu==0 & score>=8.85), lcolor("0 35 43 10") lpattern(dash) lwidth(medthick) || ///
+///
 kdensity score if (black==0 & atbyu==1 & score>=8.85), lcolor("0 73 89 30") lwidth(thick) || ///
+///
 kdensity score if (black==1 & atbyu==0 & score>=8.85), lcolor("42 34 0 20") lpattern(dash) lwidth(medthick) || ///
+///
 kdensity score if (black==1 & atbyu==1 & score>=8.85), lcolor("85 80 0 50") lwidth(thick) ///
- by(event black, cols(2) note("") legend(position(11))) legend(order(2 "non-Black gymnasts at BYU" 1 "non-Black gymnasts not at BYU" 4 "Black gymnasts at BYU" 3 "Black gymnasts not at BYU")) ysize(8) xsize(6.5)
+///
+by(event black, cols(2) note("") legend(position(11))) ///
+///
+legend(order(2 "non-Black gymnasts at BYU" 1 "non-Black gymnasts not at BYU" 4 "Black gymnasts at BYU" 3 "Black gymnasts not at BYU")) plotregion(lwidth(thin) lcolor(black)) scheme(white_tableau) legend(position(6)) ///
+///
+xtitle("Score") ytitle("") yscale(range(0 6.5)) ylabel(0(2)6) xscale(range(8.85 10)) xtick(8.875(.125)10) xlabel(9(.25)10) ysize(8) xsize(6.5)
 
 graph rename figure2
 graph export "$route/output/figure2_densities.png", width(1080) replace
 
 
-******************************************
-*Analysis Part 1: Fixed Effects Regression
-******************************************
-
-*create summary tables for each year
+**********************************
+*Table 2: Score Summary Statistics
+**********************************
+// done
+*create summary tables for each event for variables of interest
 cap log close
 log using "$route/output/table2_sumstats_log.txt", text replace
 foreach event in vault bars beam floor {
+	di "-----------------"
+	di "scores for `event'"
+	di " "
 	sum score if event=="`event'"
 	sum black if event=="`event'"
 	sum atbyu if event=="`event'"
@@ -91,23 +110,31 @@ foreach event in vault bars beam floor {
 log close
 
 
+********************************************
+*Table 3: Fixed Effects Regression Estimates
+********************************************
+// done
 *run the fixed effects regressions and put them into tables
 cap erase "$route/output/table3_fe_regs.xml"
+
 foreach event in vault bars beam floor {
 	reg score black_atbyu black atbyu if event=="`event'", vce(cl meet_id) noomit
-	outreg2 using "$route/output/table3_fe_regs", excel append keep(black_atbyu black atbyu) label(proper) dec(3) cttop(`event' no effects)
+	outreg2 using "$route/output/table3_fe_regs", excel append keep(black_atbyu black atbyu) label(proper) dec(3) cttop(`event' row 1)
 	
 	areg score black_atbyu atbyu if event=="`event'", absorb(gymnast) vce(cl meet_id) noomit
-	outreg2 using "$route/output/table3_fe_regs", excel append keep(black_atbyu atbyu) label(proper) dec(3) addtext(Gymnast Effects, X) cttop(`event' gym effects)
+	outreg2 using "$route/output/table3_fe_regs", excel append keep(black_atbyu atbyu) label(proper) dec(3) addtext(Gymnast Effects, X) cttop(`event' row 2)
 	
 	areg score black_atbyu black if event=="`event'", absorb(meet_id) vce(cl meet_id) noomit
-	outreg2 using "$route/output/table3_fe_regs", excel append keep(black_atbyu black) label(proper) dec(3) addtext(Meet Effects, X) cttop(`event' meet effects)
+	outreg2 using "$route/output/table3_fe_regs", excel append keep(black_atbyu black) label(proper) dec(3) addtext(Meet Effects, X) cttop(`event' row 3)
 	
 	xi: areg score black_atbyu i.meet_id if event=="`event'", absorb(gymnast) vce(cl meet_id) noomit
-	outreg2 using "$route/output/table3_fe_regs", excel append keep(black_atbyu) label(proper) dec(3) addtext(Gymnast Effects, X, Meet Effects, X) cttop(`event' both effects)
+	outreg2 using "$route/output/table3_fe_regs", excel append keep(black_atbyu) label(proper) dec(3) addtext(Gymnast Effects, X, Meet Effects, X) cttop(`event' row 4)
 }
+
 erase "$route/output/table3_fe_regs.txt"
 
+
+/* pending
 
 *****************************************
 *Analysis Part 2: Pre / Post George Floyd
@@ -169,3 +196,4 @@ graph rename figure3
 graph export "$route/output/figure3_yearreg_event_studies.png", replace
 
 clear
+*/
