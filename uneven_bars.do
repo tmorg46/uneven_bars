@@ -26,9 +26,9 @@ set scheme white_tableau
 cap mkdir "$route/output"
 
 
-**********************************
-*Cleaning and Creating the Dataset
-**********************************
+*********************
+*Cleaning the Dataset
+*********************
 // done!
 *bring in the dataset
 import delimited using "$route/uneven_bars_raw_data - data.csv", varn(1) clear
@@ -134,23 +134,25 @@ foreach event in vault bars beam floor {
 erase "$route/output/table3_fe_regs.txt"
 
 
-/* pending
-
-*****************************************
-*Analysis Part 2: Pre / Post George Floyd
-*****************************************
+***********************************
+*Table 4: Triple Difference Results
+***********************************
 
 *run the fixed effects regressions split by year and put them into tables, then try the joint tests
 cap erase "$route/output/table4_prepost_regs.xml"
 
 cap log close
 log using "$route/output/table4_prepost_waldtest_logs.txt", text replace
+
 foreach event in vault bars beam floor {
-	quietly xi: areg score black_atbyu post_bab postfloyd#i.gymnast i.meet_id if event=="`event'", absorb(gymnast) vce(cl meet_id) noomit
-	outreg2 using "$route/output/table4_prepost_regs", excel append keep(black_atbyu post_bab meet) label(proper) dec(3) addtext(Gymnast Effects, X, Meet Effects, X) cttop(`event' both)
+	*run the regression from equation 6, can't cluster because too many variables
+	quietly xi: areg score black_atbyu black_atbyu_pf i.gymnast*postfloyd i.meet_id if event=="`event'", absorb(gymnast) r noomit
+	quietly outreg2 using "$route/output/table4_prepost_regs", excel append keep(black_atbyu black_atbyu_pf) label(proper) dec(3) addtext(Gymnast Effects, X, Meet Effects, X, Gymnast-by-PostFloyd, X) cttop(`event' both)
+	
 	di "`event' tests areg"
 	di "-----"
-	test black_atbyu = post_bab
+	test black_atbyu + black_atbyu_pf = 0
+	test black_atbyu = black_atbyu_pf
 	di "-----"
 	di ""
 }
@@ -158,42 +160,5 @@ erase "$route/output/table4_prepost_regs.txt"
 log close
 
 
-*make an event study?
-foreach event in vault bars beam floor {
-	quietly {
-		foreach year of numlist 2017/2023 {
-			xi: areg score black_atbyu i.meet_id if year==`year' & event=="`event'", a(gymnast) vce(cl meet_id) noomit
-			
-			*copy the frame
-			cap frame copy default parmest
-			cap frame change parmest
-			
-			parmest, format(estimate min95 max95 %8.4f p %8.1e) list(,) saving("$route/output/yearreg_`event'_`year'.dta", replace)
-			
-			use "$route/output/yearreg_`event'_`year'.dta", clear
-			gen year = `year'
-			gen event = "`event'"
-			keep if _n==1
-			save "$route/output/yearreg_`event'_`year'.dta", replace
-			frame change default
-			cap frame drop parmest
-		} // foreach group
-		frame change default
-	}
-}
 
-clear
-foreach event in vault bars beam floor {
-	foreach year of numlist 2017/2023 {
-				append using "$route/output/yearreg_`event'_`year'.dta"
-				erase "$route/output/yearreg_`event'_`year'.dta"
-	}
-}
 
-graph twoway (rcap min95 max95 year) (scatter estimate year, mcolor(eltblue) graphregion(color(white))) (lfit estimate year, lcolor(green)) (lfit estimate year if year>2020, lcolor(red) range(2020.33 .)) (lfit estimate year if year<2021, lcolor(red) range(. 2020.33)), xline(2020.33, lcolor(gs5) lpattern(dash)) xtitle("") ytitle("") xlabel(2017 "2017" 2018 "2018" 2019 "2019" 2020 "2020" 2021 "2021" 2022 "2022" 2023 "2023") title("") by(event, cols(1) note("") legend(off) yrescale) legend(off) ysize(8) xsize(6.5)
-
-graph rename figure3
-graph export "$route/output/figure3_yearreg_event_studies.png", replace
-
-clear
-*/
