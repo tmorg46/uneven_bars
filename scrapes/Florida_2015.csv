@@ -1,0 +1,141 @@
+team,year,meetnum,meettitle,date,host,gymnast,vault,bars,beam,floor
+Florida,2015,1,no meet title,Jan-11-2015,Ball State,Kennedy Baker,9.8250,9.8250,9.8750,
+Florida,2015,1,no meet title,Jan-11-2015,Ball State,Claire Boyce,,9.8500,9.9250,9.8000
+Florida,2015,1,no meet title,Jan-11-2015,Ball State,Bridgette Caquatto,9.8750,9.9500,,9.9250
+Florida,2015,1,no meet title,Jan-11-2015,Ball State,Bianca Dancose-Giambattisto,,9.8750,9.9000,
+Florida,2015,1,no meet title,Jan-11-2015,Ball State,Ericha Fassbender,,,9.3000,9.7250
+Florida,2015,1,no meet title,Jan-11-2015,Ball State,Kytra Hunter,9.9500,9.8250,9.8250,9.8750
+Florida,2015,1,no meet title,Jan-11-2015,Ball State,Alex McMurtry,9.8500,,,
+Florida,2015,1,no meet title,Jan-11-2015,Ball State,Bridget Sloan,10.0000,9.9500,,9.6000
+Florida,2015,1,no meet title,Jan-11-2015,Ball State,Rachel Spicer,,,9.2000,
+Florida,2015,1,no meet title,Jan-11-2015,Ball State,Kiersten Wang,9.8000,,,9.8250
+Florida,2015,2,no meet title,Jan-16-2015,Florida,Kennedy Baker,9.8750,9.8000,9.8250,9.8500
+Florida,2015,2,no meet title,Jan-16-2015,Florida,Claire Boyce,,9.8750,9.8750,9.8500
+Florida,2015,2,no meet title,Jan-16-2015,Florida,Bridgette Caquatto,9.7500,9.8750,,9.2250
+Florida,2015,2,no meet title,Jan-16-2015,Florida,Bianca Dancose-Giambattisto,,9.9500,9.2000,
+Florida,2015,2,no meet title,Jan-16-2015,Florida,Ericha Fassbender,,,,9.7000
+Florida,2015,2,no meet title,Jan-16-2015,Florida,Kytra Hunter,9.8250,9.9000,9.9000,9.8750
+Florida,2015,2,no meet title,Jan-16-2015,Florida,Alex McMurtry,10.0000,9.9250,9.8500,
+Florida,2015,2,no meet title,Jan-16-2015,Florida,Rachel Spicer,9.8250,,9.8250,
+Florida,2015,2,no meet title,Jan-16-2015,Florida,Kiersten Wang,9.7750,,,9.8250
+Florida,2015,3,no meet title,Jan-23-2015,Alabama,Kennedy Baker,9.8250,9.8000,9.3000,9.8500
+Florida,2015,3,no meet title,Jan-23-2015,Alabama,Claire Boyce,,9.7250,9.9000,9.8000
+Florida,2015,3,no meet title,Jan-23-2015,Alabama,Bridgette Caquatto,9.7250,9.7750,,9.9000
+Florida,2015,3,no meet title,Jan-23-2015,Alabama,Bianca Dancose-Giambattisto,,9.7500,,
+Florida,2015,3,no meet title,Jan-23-2015,Alabama,Ericha Fassbender,,,9.7000,9.8250
+Florida,2015,3,no meet title,Jan-23-2015,Alabama,Kytra Hunter,9.9750,9.8000,9.8000,9.9750
+Florida,2015,3,no meet title,Jan-23-2015,Alabama,Alex McMurtry,9.9500,9.8250,9.8250,
+Florida,2015,3,no meet title,Jan-23-2015,Alabama,Rachel Spicer,9.8500,,9.7750,
+Florida,2015,3,no meet title,Jan-23-2015,Alabama,Kiersten Wang,9.9000,,,9.7250
+Florida,2015,4,no meet title,Jan-30-2015,Florida,Kennedy Baker,9.8000,9.8500,9.9250,9.9750
+Florida,2015,4,no meet title,Jan-30-2015,Florida,Claire Boyce,,9.8500,9.1000,9.8000
+Florida,2015,4,no meet title,Jan-30-2015,Florida,Bridgette Caquatto,,9.9000,,9.9250
+Florida,2015,4,no meet title,Jan-30-2015,Florida,Bianca Dancose-Giambattisto,,9.8500,,
+Florida,2015,4,no meet title,Jan-30-2015,Florida,Ericha Fassbender,9.7500,,9.8250,
+Florida,2015,4,no meet title,Jan-30-2015,Florida,Kytra Hunter,9.9750,9.8500,9.8750,9.9750
+Florida,2015,4,no meet title,Jan-30-2015,Florida,Alex McMurtry,9.8750,9.9250,9.9000,
+Florida,2015,4,no meet title,Jan-30-2015,Florida,Rachel Spicer,9.8000,,9.8500,9.7750
+Florida,2015,4,no meet title,Jan-30-2015,Florida,Kiersten Wang,9.8500,,,9.8750
+Florida,2015,5,no meet title,Feb-06-2015,Arkansas,Claire Boyce,,9.8500,9.8750,9.8500
+Florida,2015,5,no meet title,Feb-06-2015,Arkansas,Bridgette Caquatto,9.9250,9.8500,,9.8750
+Florida,2015,5,no meet title,Feb-06-2015,Arkansas,Bianca Dancose-Giambattisto,,9.8250,,
+Florida,2015,5,no meet title,Feb-06-2015,Arkansas,Ericha Fassbender,9.8750,9.8500,9.8500,9.8000
+Florida,2015,5,no meet title,Feb-06-2015,Arkansas,Kytra Hunter,9.3000,9.6750,9.8500,9.9250
+Florida,2015,5,no meet title,Feb-06-2015,Arkansas,Grace McLaughlin,,,9.7750,
+Florida,2015,5,no meet title,Feb-06-2015,Arkansas,Alex McMurtry,9.9500,9.8250,9.7750,
+Florida,2015,5,no meet title,Feb-06-2015,Arkansas,Rachel Spicer,9.8750,,9.8750,9.8250
+Florida,2015,5,no meet title,Feb-06-2015,Arkansas,Kiersten Wang,9.8250,,,9.8500
+Florida,2015,6,no meet title,Feb-13-2015,Florida,Kennedy Baker,9.9000,9.8000,9.5500,9.9750
+Florida,2015,6,no meet title,Feb-13-2015,Florida,Claire Boyce,,9.8500,9.9500,9.8500
+Florida,2015,6,no meet title,Feb-13-2015,Florida,Bridgette Caquatto,9.8500,9.9000,,9.9000
+Florida,2015,6,no meet title,Feb-13-2015,Florida,Bianca Dancose-Giambattisto,,9.9500,,
+Florida,2015,6,no meet title,Feb-13-2015,Florida,Ericha Fassbender,,,9.9000,
+Florida,2015,6,no meet title,Feb-13-2015,Florida,Kytra Hunter,9.9500,9.9000,9.9500,9.9500
+Florida,2015,6,no meet title,Feb-13-2015,Florida,Alex McMurtry,9.9500,9.9250,9.9000,
+Florida,2015,6,no meet title,Feb-13-2015,Florida,Rachel Spicer,9.8250,,9.8750,9.8500
+Florida,2015,6,no meet title,Feb-13-2015,Florida,Kiersten Wang,9.9000,,,9.9000
+Florida,2015,7,no meet title,Feb-20-2015,LSU,Kennedy Baker,9.8500,9.8000,9.2000,9.9500
+Florida,2015,7,no meet title,Feb-20-2015,LSU,Claire Boyce,,,9.8750,9.8750
+Florida,2015,7,no meet title,Feb-20-2015,LSU,Bridgette Caquatto,9.8750,9.8750,,9.3000
+Florida,2015,7,no meet title,Feb-20-2015,LSU,Bianca Dancose-Giambattisto,,9.8750,,
+Florida,2015,7,no meet title,Feb-20-2015,LSU,Ericha Fassbender,,,9.8750,
+Florida,2015,7,no meet title,Feb-20-2015,LSU,Kytra Hunter,9.9000,9.9250,9.8250,9.8000
+Florida,2015,7,no meet title,Feb-20-2015,LSU,Alex McMurtry,9.9750,9.8750,9.8500,
+Florida,2015,7,no meet title,Feb-20-2015,LSU,Bridget Sloan,,9.9000,,
+Florida,2015,7,no meet title,Feb-20-2015,LSU,Rachel Spicer,9.8250,,9.8000,9.8250
+Florida,2015,7,no meet title,Feb-20-2015,LSU,Kiersten Wang,9.7250,,,9.8750
+Florida,2015,8,no meet title,Feb-27-2015,Florida,Kennedy Baker,9.9500,,9.9000,9.9500
+Florida,2015,8,no meet title,Feb-27-2015,Florida,Claire Boyce,,,9.2000,9.9000
+Florida,2015,8,no meet title,Feb-27-2015,Florida,Bridgette Caquatto,9.8750,9.9500,,9.9750
+Florida,2015,8,no meet title,Feb-27-2015,Florida,Bianca Dancose-Giambattisto,,9.8000,,
+Florida,2015,8,no meet title,Feb-27-2015,Florida,Ericha Fassbender,,9.8500,9.8500,
+Florida,2015,8,no meet title,Feb-27-2015,Florida,Kytra Hunter,9.9000,9.8500,9.9000,9.9500
+Florida,2015,8,no meet title,Feb-27-2015,Florida,Alex McMurtry,9.9500,9.8250,9.8500,
+Florida,2015,8,no meet title,Feb-27-2015,Florida,Bridget Sloan,,9.9750,,
+Florida,2015,8,no meet title,Feb-27-2015,Florida,Rachel Spicer,9.8750,,9.8750,9.9250
+Florida,2015,8,no meet title,Feb-27-2015,Florida,Kiersten Wang,9.9000,,,9.9250
+Florida,2015,9,no meet title,Mar-06-2015,Oklahoma,Kennedy Baker,9.8750,,9.8500,9.8500
+Florida,2015,9,no meet title,Mar-06-2015,Oklahoma,Claire Boyce,,,,9.8750
+Florida,2015,9,no meet title,Mar-06-2015,Oklahoma,Bridgette Caquatto,9.8500,9.9000,,9.9250
+Florida,2015,9,no meet title,Mar-06-2015,Oklahoma,Bianca Dancose-Giambattisto,,9.8500,,
+Florida,2015,9,no meet title,Mar-06-2015,Oklahoma,Ericha Fassbender,,9.7750,9.8750,
+Florida,2015,9,no meet title,Mar-06-2015,Oklahoma,Kytra Hunter,9.9500,9.9000,9.9750,9.9250
+Florida,2015,9,no meet title,Mar-06-2015,Oklahoma,Alex McMurtry,9.9750,9.9250,9.8750,
+Florida,2015,9,no meet title,Mar-06-2015,Oklahoma,Bridget Sloan,,9.9750,9.9250,
+Florida,2015,9,no meet title,Mar-06-2015,Oklahoma,Rachel Spicer,9.8500,,9.8750,9.8500
+Florida,2015,9,no meet title,Mar-06-2015,Oklahoma,Kiersten Wang,9.9000,,,9.9000
+Florida,2015,10,no meet title,Mar-13-2015,Florida,Kennedy Baker,,9.8250,,
+Florida,2015,10,no meet title,Mar-13-2015,Florida,Claire Boyce,,,9.9250,9.8250
+Florida,2015,10,no meet title,Mar-13-2015,Florida,Bridgette Caquatto,9.8750,9.8250,,9.8750
+Florida,2015,10,no meet title,Mar-13-2015,Florida,Bianca Dancose-Giambattisto,,9.9000,,
+Florida,2015,10,no meet title,Mar-13-2015,Florida,Ericha Fassbender,,,9.8500,9.8250
+Florida,2015,10,no meet title,Mar-13-2015,Florida,Kytra Hunter,9.9000,9.9000,9.9000,9.9750
+Florida,2015,10,no meet title,Mar-13-2015,Florida,Alex McMurtry,9.9000,9.8250,9.8750,
+Florida,2015,10,no meet title,Mar-13-2015,Florida,Bridget Sloan,9.9500,10.0000,9.8000,
+Florida,2015,10,no meet title,Mar-13-2015,Florida,Rachel Spicer,9.7500,,9.9000,9.8750
+Florida,2015,10,no meet title,Mar-13-2015,Florida,Kiersten Wang,9.9000,,,9.9250
+Florida,2015,11,SEC Championship Session II,Mar-21-2015,,Kennedy Baker,9.9000,9.8500,,9.9500
+Florida,2015,11,SEC Championship Session II,Mar-21-2015,,Claire Boyce,,,9.9000,9.7500
+Florida,2015,11,SEC Championship Session II,Mar-21-2015,,Bridgette Caquatto,,9.9500,,9.9500
+Florida,2015,11,SEC Championship Session II,Mar-21-2015,,Bianca Dancose-Giambattisto,,9.8500,,
+Florida,2015,11,SEC Championship Session II,Mar-21-2015,,Ericha Fassbender,,,9.2750,
+Florida,2015,11,SEC Championship Session II,Mar-21-2015,,Kytra Hunter,9.9500,9.9000,9.6000,9.9750
+Florida,2015,11,SEC Championship Session II,Mar-21-2015,,Alex McMurtry,9.9500,9.8750,9.3000,
+Florida,2015,11,SEC Championship Session II,Mar-21-2015,,Bridget Sloan,9.9250,10.0000,9.9500,
+Florida,2015,11,SEC Championship Session II,Mar-21-2015,,Rachel Spicer,9.8500,,9.8750,9.8500
+Florida,2015,11,SEC Championship Session II,Mar-21-2015,,Kiersten Wang,9.9000,,,9.8500
+Florida,2015,12,Morgantown Regional,Apr-04-2015,,Kennedy Baker,9.9000,9.8000,,9.8500
+Florida,2015,12,Morgantown Regional,Apr-04-2015,,Claire Boyce,,,9.8000,9.8500
+Florida,2015,12,Morgantown Regional,Apr-04-2015,,Bridgette Caquatto,9.8500,9.7750,,9.1000
+Florida,2015,12,Morgantown Regional,Apr-04-2015,,Bianca Dancose-Giambattisto,,9.7750,,
+Florida,2015,12,Morgantown Regional,Apr-04-2015,,Ericha Fassbender,,,9.8500,
+Florida,2015,12,Morgantown Regional,Apr-04-2015,,Kytra Hunter,9.9500,9.2250,9.9000,9.9500
+Florida,2015,12,Morgantown Regional,Apr-04-2015,,Alex McMurtry,9.9500,9.8250,9.8000,
+Florida,2015,12,Morgantown Regional,Apr-04-2015,,Bridget Sloan,9.9750,9.9500,9.9250,9.9500
+Florida,2015,12,Morgantown Regional,Apr-04-2015,,Rachel Spicer,,,9.8500,
+Florida,2015,12,Morgantown Regional,Apr-04-2015,,Kiersten Wang,9.8500,,,9.8000
+Florida,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Kennedy Baker,9.8500,9.8500,,9.9000
+Florida,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Claire Boyce,,,9.6250,9.8250
+Florida,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Bridgette Caquatto,,9.9000,,9.9000
+Florida,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Bianca Dancose-Giambattisto,,9.8250,,
+Florida,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Ericha Fassbender,,,9.8250,
+Florida,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Kytra Hunter,9.8500,9.9000,9.9000,9.9500
+Florida,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Alex McMurtry,9.9000,9.8500,9.9000,
+Florida,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Bridget Sloan,9.9250,9.9500,9.8750,9.6750
+Florida,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Rachel Spicer,9.7250,,9.7750,
+Florida,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Kiersten Wang,9.8500,,,9.8000
+Florida,2015,14,NCAA Championships Team Finals,Apr-18-2015,,Kennedy Baker,9.9000,9.8500,,9.9250
+Florida,2015,14,NCAA Championships Team Finals,Apr-18-2015,,Claire Boyce,,,9.8500,9.8000
+Florida,2015,14,NCAA Championships Team Finals,Apr-18-2015,,Bridgette Caquatto,9.3250,9.8500,,9.9000
+Florida,2015,14,NCAA Championships Team Finals,Apr-18-2015,,Bianca Dancose-Giambattisto,,9.8500,,
+Florida,2015,14,NCAA Championships Team Finals,Apr-18-2015,,Ericha Fassbender,,,9.8500,
+Florida,2015,14,NCAA Championships Team Finals,Apr-18-2015,,Kytra Hunter,9.9250,9.8250,9.9000,9.9750
+Florida,2015,14,NCAA Championships Team Finals,Apr-18-2015,,Alex McMurtry,9.9000,9.9500,9.7000,
+Florida,2015,14,NCAA Championships Team Finals,Apr-18-2015,,Bridget Sloan,9.9000,9.9500,9.8500,9.9500
+Florida,2015,14,NCAA Championships Team Finals,Apr-18-2015,,Rachel Spicer,,,9.8500,
+Florida,2015,14,NCAA Championships Team Finals,Apr-18-2015,,Kiersten Wang,9.8250,,,9.9000
+Florida,2015,15,NCAA Championships Individual Event Finals,Apr-19-2015,,Kennedy Baker,,,,9.7750
+Florida,2015,15,NCAA Championships Individual Event Finals,Apr-19-2015,,Bridgette Caquatto,,,,9.3375
+Florida,2015,15,NCAA Championships Individual Event Finals,Apr-19-2015,,Kytra Hunter,,,9.8750,9.9625
+Florida,2015,15,NCAA Championships Individual Event Finals,Apr-19-2015,,Alex McMurtry,,,9.8250,
+Florida,2015,15,NCAA Championships Individual Event Finals,Apr-19-2015,,Bridget Sloan,9.9250,9.9500,,

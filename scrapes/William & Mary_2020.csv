@@ -1,0 +1,73 @@
+team,year,meetnum,meettitle,date,host,gymnast,vault,bars,beam,floor
+William & Mary,2020,1,no meet title,Jan-12-2020,North Carolina,Caroline Caponi,,,9.7000,8.7500
+William & Mary,2020,1,no meet title,Jan-12-2020,North Carolina,Brianna Greenlow,9.6500,9.6000,9.7500,9.1750
+William & Mary,2020,1,no meet title,Jan-12-2020,North Carolina,Erika Marr,9.7500,9.6750,8.5750,
+William & Mary,2020,1,no meet title,Jan-12-2020,North Carolina,Evan Pakshong,,9.7750,9.2000,
+William & Mary,2020,1,no meet title,Jan-12-2020,North Carolina,Elizabeth Snoddy,,,,9.7250
+William & Mary,2020,1,no meet title,Jan-12-2020,North Carolina,Katie Waldman,9.8000,8.9000,9.8000,9.7250
+William & Mary,2020,1,no meet title,Jan-12-2020,North Carolina,Taylor White,9.6000,9.7250,,8.9500
+William & Mary,2020,1,no meet title,Jan-12-2020,North Carolina,Emma Wiley,9.5250,8.9000,9.6500,
+William & Mary,2020,1,no meet title,Jan-12-2020,North Carolina,Lauren Winkler,9.4000,,,
+William & Mary,2020,2,no meet title,Jan-17-2020,Towson,Caroline Caponi,,,9.6750,9.6750
+William & Mary,2020,2,no meet title,Jan-17-2020,Towson,Mary Graceyn Gordon,9.6250,8.5750,9.2750,
+William & Mary,2020,2,no meet title,Jan-17-2020,Towson,Brianna Greenlow,9.6500,9.5500,,9.6500
+William & Mary,2020,2,no meet title,Jan-17-2020,Towson,Erika Marr,9.7000,9.6500,9.7000,
+William & Mary,2020,2,no meet title,Jan-17-2020,Towson,Evan Pakshong,,9.5250,8.5500,
+William & Mary,2020,2,no meet title,Jan-17-2020,Towson,Elizabeth Snoddy,,,,9.6000
+William & Mary,2020,2,no meet title,Jan-17-2020,Towson,Katie Waldman,9.6750,9.6500,9.8250,9.6750
+William & Mary,2020,2,no meet title,Jan-17-2020,Towson,Taylor White,9.3500,9.7000,,9.7000
+William & Mary,2020,2,no meet title,Jan-17-2020,Towson,Emma Wiley,9.5250,,9.1250,
+William & Mary,2020,3,no meet title,Jan-31-2020,George Washington,Caroline Caponi,,,9.6500,9.5500
+William & Mary,2020,3,no meet title,Jan-31-2020,George Washington,Mary Graceyn Gordon,8.9500,9.6250,,9.6250
+William & Mary,2020,3,no meet title,Jan-31-2020,George Washington,Brianna Greenlow,9.4750,9.6000,9.0000,9.5250
+William & Mary,2020,3,no meet title,Jan-31-2020,George Washington,Erika Marr,9.7500,9.6250,9.1000,
+William & Mary,2020,3,no meet title,Jan-31-2020,George Washington,Evan Pakshong,,9.1000,,
+William & Mary,2020,3,no meet title,Jan-31-2020,George Washington,Elizabeth Snoddy,,,,9.7000
+William & Mary,2020,3,no meet title,Jan-31-2020,George Washington,Katie Waldman,9.7750,9.7250,9.2000,9.7500
+William & Mary,2020,3,no meet title,Jan-31-2020,George Washington,Taylor White,9.5750,9.6000,9.4250,9.5500
+William & Mary,2020,3,no meet title,Jan-31-2020,George Washington,Emma Wiley,9.4500,,9.6750,
+William & Mary,2020,4,no meet title,Feb-16-2020,Pennsylvania,Caroline Caponi,,,9.4500,9.5500
+William & Mary,2020,4,no meet title,Feb-16-2020,Pennsylvania,Mary Graceyn Gordon,9.6000,9.7000,9.4500,9.6250
+William & Mary,2020,4,no meet title,Feb-16-2020,Pennsylvania,Brianna Greenlow,9.6250,9.0500,9.1250,9.0000
+William & Mary,2020,4,no meet title,Feb-16-2020,Pennsylvania,Erika Marr,9.7250,9.8000,9.5500,
+William & Mary,2020,4,no meet title,Feb-16-2020,Pennsylvania,Evan Pakshong,,9.7500,,
+William & Mary,2020,4,no meet title,Feb-16-2020,Pennsylvania,Elizabeth Snoddy,,,,9.3250
+William & Mary,2020,4,no meet title,Feb-16-2020,Pennsylvania,Katie Waldman,9.6500,9.8500,9.6250,9.7250
+William & Mary,2020,4,no meet title,Feb-16-2020,Pennsylvania,Taylor White,9.6000,9.7500,9.0000,9.4750
+William & Mary,2020,4,no meet title,Feb-16-2020,Pennsylvania,Emma Wiley,9.4500,,,
+William & Mary,2020,5,no meet title,Feb-21-2020,North Carolina State,Caroline Caponi,,,9.7750,9.6750
+William & Mary,2020,5,no meet title,Feb-21-2020,North Carolina State,Mary Graceyn Gordon,9.7500,9.7500,9.3750,9.6500
+William & Mary,2020,5,no meet title,Feb-21-2020,North Carolina State,Brianna Greenlow,9.6250,9.7250,9.1500,9.7000
+William & Mary,2020,5,no meet title,Feb-21-2020,North Carolina State,Erika Marr,9.7250,9.7750,8.7250,
+William & Mary,2020,5,no meet title,Feb-21-2020,North Carolina State,Evan Pakshong,,9.8000,,
+William & Mary,2020,5,no meet title,Feb-21-2020,North Carolina State,Elizabeth Snoddy,,,,9.6500
+William & Mary,2020,5,no meet title,Feb-21-2020,North Carolina State,Katie Waldman,9.7500,9.8000,9.7250,9.8000
+William & Mary,2020,5,no meet title,Feb-21-2020,North Carolina State,Taylor White,9.5250,9.8250,,9.7000
+William & Mary,2020,5,no meet title,Feb-21-2020,North Carolina State,Emma Wiley,9.4750,,9.1000,
+William & Mary,2020,6,no meet title,Feb-23-2020,William & Mary,Caroline Caponi,,,9.2750,9.7750
+William & Mary,2020,6,no meet title,Feb-23-2020,William & Mary,Mary Graceyn Gordon,9.7000,9.7250,9.7500,9.7750
+William & Mary,2020,6,no meet title,Feb-23-2020,William & Mary,Brianna Greenlow,9.7000,9.7000,9.6250,9.8000
+William & Mary,2020,6,no meet title,Feb-23-2020,William & Mary,Erika Marr,9.7250,9.7500,9.7750,
+William & Mary,2020,6,no meet title,Feb-23-2020,William & Mary,Evan Pakshong,,8.5500,,
+William & Mary,2020,6,no meet title,Feb-23-2020,William & Mary,Elizabeth Snoddy,,,,9.7250
+William & Mary,2020,6,no meet title,Feb-23-2020,William & Mary,Katie Waldman,9.8000,9.8250,9.3500,9.7500
+William & Mary,2020,6,no meet title,Feb-23-2020,William & Mary,Taylor White,9.7500,9.7750,9.7750,9.6250
+William & Mary,2020,6,no meet title,Feb-23-2020,William & Mary,Emma Wiley,9.4000,,,
+William & Mary,2020,7,no meet title,Mar-01-2020,Maryland,Caroline Caponi,,,9.7000,9.7500
+William & Mary,2020,7,no meet title,Mar-01-2020,Maryland,Mary Graceyn Gordon,9.8250,9.6750,9.4000,9.4750
+William & Mary,2020,7,no meet title,Mar-01-2020,Maryland,Brianna Greenlow,9.5500,8.9500,,8.9000
+William & Mary,2020,7,no meet title,Mar-01-2020,Maryland,Erika Marr,9.8250,,9.6500,
+William & Mary,2020,7,no meet title,Mar-01-2020,Maryland,Evan Pakshong,,9.7750,9.0000,
+William & Mary,2020,7,no meet title,Mar-01-2020,Maryland,Elizabeth Snoddy,,,,9.7750
+William & Mary,2020,7,no meet title,Mar-01-2020,Maryland,Katie Waldman,9.8000,9.7750,9.6250,9.8000
+William & Mary,2020,7,no meet title,Mar-01-2020,Maryland,Taylor White,9.7750,9.7250,9.6750,9.7000
+William & Mary,2020,7,no meet title,Mar-01-2020,Maryland,Emma Wiley,9.4250,9.6250,,
+William & Mary,2020,8,no meet title,Mar-08-2020,George Washington,Caroline Caponi,,,8.9750,9.7750
+William & Mary,2020,8,no meet title,Mar-08-2020,George Washington,Mary Graceyn Gordon,9.7750,9.8000,9.6750,9.5250
+William & Mary,2020,8,no meet title,Mar-08-2020,George Washington,Brianna Greenlow,9.6750,9.7000,9.8250,9.7250
+William & Mary,2020,8,no meet title,Mar-08-2020,George Washington,Erika Marr,9.8750,9.7250,9.8000,
+William & Mary,2020,8,no meet title,Mar-08-2020,George Washington,Evan Pakshong,,9.7750,9.2750,
+William & Mary,2020,8,no meet title,Mar-08-2020,George Washington,Elizabeth Snoddy,,,,9.7750
+William & Mary,2020,8,no meet title,Mar-08-2020,George Washington,Katie Waldman,9.7750,9.9250,9.8000,9.6750
+William & Mary,2020,8,no meet title,Mar-08-2020,George Washington,Taylor White,9.6250,9.7250,,9.7250
+William & Mary,2020,8,no meet title,Mar-08-2020,George Washington,Emma Wiley,9.5500,,,
