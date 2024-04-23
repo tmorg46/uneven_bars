@@ -1,0 +1,91 @@
+team,year,meetnum,meettitle,date,host,gymnast,vault,bars,beam,floor
+Denver,2020,1,Colegiate Challenge,Jan-04-2020,,Lynnzee Brown,9.8500,9.9250,9.8500,9.9500
+Denver,2020,1,Colegiate Challenge,Jan-04-2020,,Emma Brown,,,,9.7500
+Denver,2020,1,Colegiate Challenge,Jan-04-2020,,Emily Glynn,9.7000,9.8250,,9.7000
+Denver,2020,1,Colegiate Challenge,Jan-04-2020,,Maddie Karr,9.8750,9.9000,9.9000,9.8750
+Denver,2020,1,Colegiate Challenge,Jan-04-2020,,Amoree Lockhart,,,9.8250,9.8750
+Denver,2020,1,Colegiate Challenge,Jan-04-2020,,Alexandria Ruiz,,9.8000,9.8250,
+Denver,2020,1,Colegiate Challenge,Jan-04-2020,,AK Subject,9.6750,9.8250,,9.6500
+Denver,2020,1,Colegiate Challenge,Jan-04-2020,,Mia Sundstrom,9.7500,9.7250,9.8500,
+Denver,2020,1,Colegiate Challenge,Jan-04-2020,,Alexis Vasquez,,,10.0000,
+Denver,2020,2,no meet title,Jan-12-2020,Denver,Lynnzee Brown,9.8500,9.8750,9.9000,9.9250
+Denver,2020,2,no meet title,Jan-12-2020,Denver,Emily Glynn,9.7250,9.8500,,9.7750
+Denver,2020,2,no meet title,Jan-12-2020,Denver,Maddie Karr,9.9000,9.9500,9.9000,9.8750
+Denver,2020,2,no meet title,Jan-12-2020,Denver,Amoree Lockhart,,,9.6250,9.8000
+Denver,2020,2,no meet title,Jan-12-2020,Denver,Alexandria Ruiz,9.7000,9.7750,9.7750,9.7750
+Denver,2020,2,no meet title,Jan-12-2020,Denver,AK Subject,9.7500,9.8250,,9.7250
+Denver,2020,2,no meet title,Jan-12-2020,Denver,Mia Sundstrom,9.8250,9.8000,9.7000,
+Denver,2020,2,no meet title,Jan-12-2020,Denver,Alexis Vasquez,,,9.9750,
+Denver,2020,3,no meet title,Jan-17-2020,Arkansas,Emma Brown,,,9.8500,9.7250
+Denver,2020,3,no meet title,Jan-17-2020,Arkansas,Lynnzee Brown,9.9250,9.9000,9.9000,9.9250
+Denver,2020,3,no meet title,Jan-17-2020,Arkansas,Emily Glynn,9.7500,9.9000,,9.6000
+Denver,2020,3,no meet title,Jan-17-2020,Arkansas,Maddie Karr,9.9250,9.9250,9.9250,9.9000
+Denver,2020,3,no meet title,Jan-17-2020,Arkansas,Amoree Lockhart,,,9.8250,9.7750
+Denver,2020,3,no meet title,Jan-17-2020,Arkansas,Alexandria Ruiz,9.7500,9.8000,9.8500,9.8000
+Denver,2020,3,no meet title,Jan-17-2020,Arkansas,AK Subject,9.7500,9.8750,,
+Denver,2020,3,no meet title,Jan-17-2020,Arkansas,Mia Sundstrom,9.9000,9.8250,,
+Denver,2020,3,no meet title,Jan-17-2020,Arkansas,Alexis Vasquez,,,9.9250,
+Denver,2020,4,Metroplex Challenge,Jan-25-2020,,Emma Brown,,,,9.5750
+Denver,2020,4,Metroplex Challenge,Jan-25-2020,,Lynnzee Brown,9.8500,9.9000,9.9000,9.8500
+Denver,2020,4,Metroplex Challenge,Jan-25-2020,,Emily Glynn,9.8750,9.8500,,9.8000
+Denver,2020,4,Metroplex Challenge,Jan-25-2020,,Maddie Karr,9.8750,9.9750,9.9000,9.9000
+Denver,2020,4,Metroplex Challenge,Jan-25-2020,,Amoree Lockhart,,,9.6500,9.6500
+Denver,2020,4,Metroplex Challenge,Jan-25-2020,,Alexandria Ruiz,9.8000,9.8750,9.6500,9.7750
+Denver,2020,4,Metroplex Challenge,Jan-25-2020,,AK Subject,9.7500,9.3000,,
+Denver,2020,4,Metroplex Challenge,Jan-25-2020,,Mia Sundstrom,9.8250,9.9000,8.8500,
+Denver,2020,4,Metroplex Challenge,Jan-25-2020,,Alexis Vasquez,,,9.7750,
+Denver,2020,5,no meet title,Feb-02-2020,Denver,Emma Brown,,,9.7250,
+Denver,2020,5,no meet title,Feb-02-2020,Denver,Lynnzee Brown,9.8500,9.8250,9.8750,9.9500
+Denver,2020,5,no meet title,Feb-02-2020,Denver,Emily Glynn,9.8000,9.9000,,9.8500
+Denver,2020,5,no meet title,Feb-02-2020,Denver,Maddie Karr,9.9000,9.9750,9.8000,9.9250
+Denver,2020,5,no meet title,Feb-02-2020,Denver,Amoree Lockhart,,,9.7750,9.8750
+Denver,2020,5,no meet title,Feb-02-2020,Denver,Alexandria Ruiz,9.8250,9.8500,,9.5000
+Denver,2020,5,no meet title,Feb-02-2020,Denver,AK Subject,9.7250,9.8750,,9.8250
+Denver,2020,5,no meet title,Feb-02-2020,Denver,Mia Sundstrom,9.8500,9.8750,9.9000,
+Denver,2020,5,no meet title,Feb-02-2020,Denver,Alexis Vasquez,,,9.9500,
+Denver,2020,6,no meet title,Feb-07-2020,Florida,Emma Brown,,,9.8250,
+Denver,2020,6,no meet title,Feb-07-2020,Florida,Lynnzee Brown,9.9750,9.8750,9.9000,9.9500
+Denver,2020,6,no meet title,Feb-07-2020,Florida,Emily Glynn,9.7750,9.9000,,9.8250
+Denver,2020,6,no meet title,Feb-07-2020,Florida,Maddie Karr,10.0000,9.3750,9.9250,9.9000
+Denver,2020,6,no meet title,Feb-07-2020,Florida,Amoree Lockhart,,,9.8500,9.8500
+Denver,2020,6,no meet title,Feb-07-2020,Florida,Natalie Morton,,9.5750,,
+Denver,2020,6,no meet title,Feb-07-2020,Florida,Alexandria Ruiz,9.8000,9.8500,9.8000,9.8750
+Denver,2020,6,no meet title,Feb-07-2020,Florida,AK Subject,9.7750,9.9000,,9.3500
+Denver,2020,6,no meet title,Feb-07-2020,Florida,Alexis Vasquez,,,9.9250,
+Denver,2020,7,no meet title,Feb-16-2020,Denver,Emma Brown,,,9.8500,
+Denver,2020,7,no meet title,Feb-16-2020,Denver,Lynnzee Brown,9.8750,9.9250,9.9250,9.2500
+Denver,2020,7,no meet title,Feb-16-2020,Denver,Emily Glynn,9.8250,9.9250,,9.8500
+Denver,2020,7,no meet title,Feb-16-2020,Denver,Maddie Karr,9.9000,9.9750,9.9500,9.9500
+Denver,2020,7,no meet title,Feb-16-2020,Denver,Amoree Lockhart,,9.8250,9.8250,9.8500
+Denver,2020,7,no meet title,Feb-16-2020,Denver,Alexandria Ruiz,9.7750,9.8500,9.9250,9.6500
+Denver,2020,7,no meet title,Feb-16-2020,Denver,AK Subject,9.7750,9.9000,,9.7500
+Denver,2020,7,no meet title,Feb-16-2020,Denver,Alexis Vasquez,,,10.0000,
+Denver,2020,8,no meet title,Feb-22-2020,Denver,Emma Brown,,,9.8500,9.8250
+Denver,2020,8,no meet title,Feb-22-2020,Denver,Victoria Fitts,9.1250,,,
+Denver,2020,8,no meet title,Feb-22-2020,Denver,Emily Glynn,9.8000,9.8500,,9.9000
+Denver,2020,8,no meet title,Feb-22-2020,Denver,Maddie Karr,9.8000,9.7750,9.9000,9.9500
+Denver,2020,8,no meet title,Feb-22-2020,Denver,Amoree Lockhart,9.5250,8.5500,9.5500,9.1000
+Denver,2020,8,no meet title,Feb-22-2020,Denver,Natalie Morton,,8.8250,,
+Denver,2020,8,no meet title,Feb-22-2020,Denver,Alexandria Ruiz,9.7750,9.8750,9.1750,9.8750
+Denver,2020,8,no meet title,Feb-22-2020,Denver,Callie Schlottman,,,9.8500,
+Denver,2020,8,no meet title,Feb-22-2020,Denver,AK Subject,9.7250,9.8000,,9.8000
+Denver,2020,8,no meet title,Feb-22-2020,Denver,Alexis Vasquez,,,9.9250,
+Denver,2020,9,no meet title,Feb-29-2020,Oklahoma,Emma Brown,,,9.8250,9.8500
+Denver,2020,9,no meet title,Feb-29-2020,Oklahoma,Victoria Fitts,9.8250,,,
+Denver,2020,9,no meet title,Feb-29-2020,Oklahoma,Emily Glynn,9.8500,9.8250,,9.8000
+Denver,2020,9,no meet title,Feb-29-2020,Oklahoma,Maddie Karr,10.0000,9.9500,9.8500,9.9250
+Denver,2020,9,no meet title,Feb-29-2020,Oklahoma,Amoree Lockhart,,9.0250,9.8500,9.7250
+Denver,2020,9,no meet title,Feb-29-2020,Oklahoma,Natalie Morton,,9.6250,,
+Denver,2020,9,no meet title,Feb-29-2020,Oklahoma,Alexandria Ruiz,9.8500,9.8500,9.8250,9.8750
+Denver,2020,9,no meet title,Feb-29-2020,Oklahoma,Callie Schlottman,,,9.2250,
+Denver,2020,9,no meet title,Feb-29-2020,Oklahoma,AK Subject,9.8000,9.8500,,9.8250
+Denver,2020,9,no meet title,Feb-29-2020,Oklahoma,Alexis Vasquez,,,9.9500,
+Denver,2020,10,no meet title,Mar-08-2020,Denver,Emma Brown,,,9.8000,9.2750
+Denver,2020,10,no meet title,Mar-08-2020,Denver,Emily Glynn,9.8000,9.9000,,9.8500
+Denver,2020,10,no meet title,Mar-08-2020,Denver,Maddie Karr,9.9000,9.9750,9.9000,9.9500
+Denver,2020,10,no meet title,Mar-08-2020,Denver,Amoree Lockhart,,9.8250,9.7500,9.8750
+Denver,2020,10,no meet title,Mar-08-2020,Denver,Natalie Morton,,9.7500,,
+Denver,2020,10,no meet title,Mar-08-2020,Denver,Alexandria Ruiz,9.8000,9.8750,9.8000,9.8500
+Denver,2020,10,no meet title,Mar-08-2020,Denver,Callie Schlottman,,,9.8250,
+Denver,2020,10,no meet title,Mar-08-2020,Denver,AK Subject,9.6750,9.8500,,9.8000
+Denver,2020,10,no meet title,Mar-08-2020,Denver,Alexis Vasquez,9.7250,,9.9500,

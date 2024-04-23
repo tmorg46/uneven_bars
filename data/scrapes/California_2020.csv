@@ -1,0 +1,96 @@
+team,year,meetnum,meettitle,date,host,gymnast,vault,bars,beam,floor
+California,2020,1,Collegiate Challenge,Jan-04-2020,,Maya Bordas,9.8250,9.8500,9.7250,9.8250
+California,2020,1,Collegiate Challenge,Jan-04-2020,,Milan Clausi,9.8500,,9.6500,9.8500
+California,2020,1,Collegiate Challenge,Jan-04-2020,,Nevaeh DeSouza,9.7750,9.8500,9.7500,9.8000
+California,2020,1,Collegiate Challenge,Jan-04-2020,,Kyana George,9.9000,9.9000,9.9000,9.8500
+California,2020,1,Collegiate Challenge,Jan-04-2020,,Talitha Jones,9.6750,9.7750,9.7750,
+California,2020,1,Collegiate Challenge,Jan-04-2020,,Alma Kuc,,9.8000,,
+California,2020,1,Collegiate Challenge,Jan-04-2020,,Rachael Mastrangelo,,,,9.5000
+California,2020,1,Collegiate Challenge,Jan-04-2020,,Grace Quinn,9.8000,,9.4500,9.7000
+California,2020,1,Collegiate Challenge,Jan-04-2020,,Emi Watterson,,9.8250,,
+California,2020,2,NorCal Classic,Jan-12-2020,UC Davis,Maya Bordas,,8.9500,9.7500,9.7500
+California,2020,2,NorCal Classic,Jan-12-2020,UC Davis,Milan Clausi,9.9500,,9.8000,9.7750
+California,2020,2,NorCal Classic,Jan-12-2020,UC Davis,Nevaeh DeSouza,9.7750,9.8250,9.7750,9.7000
+California,2020,2,NorCal Classic,Jan-12-2020,UC Davis,Kyana George,9.9000,9.8250,9.8750,9.8250
+California,2020,2,NorCal Classic,Jan-12-2020,UC Davis,Talitha Jones,9.7250,9.8000,9.4500,
+California,2020,2,NorCal Classic,Jan-12-2020,UC Davis,Alma Kuc,,9.8250,,
+California,2020,2,NorCal Classic,Jan-12-2020,UC Davis,Grace Quinn,9.6750,,,8.8000
+California,2020,2,NorCal Classic,Jan-12-2020,UC Davis,Natalie Sadighi,9.6500,,,
+California,2020,2,NorCal Classic,Jan-12-2020,UC Davis,Emi Watterson,,9.8750,9.7250,
+California,2020,2,NorCal Classic,Jan-12-2020,UC Davis,Ashton Woodbury,,,,8.5000
+California,2020,3,no meet title,Jan-19-2020,California,Maya Bordas,9.7750,9.9250,9.8750,9.8750
+California,2020,3,no meet title,Jan-19-2020,California,Milan Clausi,9.7250,,9.7750,9.9000
+California,2020,3,no meet title,Jan-19-2020,California,Nevaeh DeSouza,9.8000,9.8250,9.8750,9.8500
+California,2020,3,no meet title,Jan-19-2020,California,Kyana George,9.8750,9.9000,9.8500,9.9500
+California,2020,3,no meet title,Jan-19-2020,California,Talitha Jones,,,9.8000,
+California,2020,3,no meet title,Jan-19-2020,California,Alma Kuc,,9.8250,,
+California,2020,3,no meet title,Jan-19-2020,California,Rachael Mastrangelo,9.8000,,,9.0000
+California,2020,3,no meet title,Jan-19-2020,California,Grace Quinn,9.8000,,,9.8500
+California,2020,3,no meet title,Jan-19-2020,California,Nina Schank,,9.9500,,
+California,2020,3,no meet title,Jan-19-2020,California,Emi Watterson,,9.9750,9.8750,
+California,2020,4,no meet title,Jan-26-2020,Washington,Maya Bordas,9.7500,9.9250,9.8500,9.8750
+California,2020,4,no meet title,Jan-26-2020,Washington,Milan Clausi,9.8750,,9.8500,9.9500
+California,2020,4,no meet title,Jan-26-2020,Washington,Nevaeh DeSouza,9.8000,9.8000,9.8750,9.7500
+California,2020,4,no meet title,Jan-26-2020,Washington,Kyana George,9.9250,6.7500,9.8750,9.8750
+California,2020,4,no meet title,Jan-26-2020,Washington,Talitha Jones,,,9.4750,
+California,2020,4,no meet title,Jan-26-2020,Washington,Alma Kuc,,9.8250,,
+California,2020,4,no meet title,Jan-26-2020,Washington,Rachael Mastrangelo,9.7000,,,8.9500
+California,2020,4,no meet title,Jan-26-2020,Washington,Grace Quinn,,,,9.8250
+California,2020,4,no meet title,Jan-26-2020,Washington,Nina Schank,9.8250,9.9250,,
+California,2020,4,no meet title,Jan-26-2020,Washington,Emi Watterson,,9.9250,9.7750,
+California,2020,5,no meet title,Feb-01-2020,Arizona State,Maya Bordas,9.7500,9.4000,9.8250,9.7500
+California,2020,5,no meet title,Feb-01-2020,Arizona State,Milan Clausi,9.8250,,9.8500,9.8250
+California,2020,5,no meet title,Feb-01-2020,Arizona State,Nevaeh DeSouza,9.8500,9.9000,9.8000,9.8250
+California,2020,5,no meet title,Feb-01-2020,Arizona State,Kyana George,9.8750,9.8500,9.8750,9.8750
+California,2020,5,no meet title,Feb-01-2020,Arizona State,Talitha Jones,,9.8000,9.8250,
+California,2020,5,no meet title,Feb-01-2020,Arizona State,Rachael Mastrangelo,9.8500,,,9.7500
+California,2020,5,no meet title,Feb-01-2020,Arizona State,Grace Quinn,,,,9.8000
+California,2020,5,no meet title,Feb-01-2020,Arizona State,Nina Schank,9.7750,9.3750,,
+California,2020,5,no meet title,Feb-01-2020,Arizona State,Emi Watterson,,9.8750,9.7250,
+California,2020,6,no meet title,Feb-08-2020,California,Maya Bordas,9.7750,9.9000,9.8750,9.9000
+California,2020,6,no meet title,Feb-08-2020,California,Milan Clausi,9.8500,,9.9000,9.7250
+California,2020,6,no meet title,Feb-08-2020,California,Nevaeh DeSouza,9.8750,9.9000,9.8500,9.8500
+California,2020,6,no meet title,Feb-08-2020,California,Kyana George,9.8250,9.9000,9.9000,9.9250
+California,2020,6,no meet title,Feb-08-2020,California,Maya Green,,9.8500,,
+California,2020,6,no meet title,Feb-08-2020,California,Talitha Jones,9.8250,9.8250,9.8250,
+California,2020,6,no meet title,Feb-08-2020,California,Rachael Mastrangelo,9.8250,,,9.8750
+California,2020,6,no meet title,Feb-08-2020,California,Grace Quinn,,,,9.8500
+California,2020,6,no meet title,Feb-08-2020,California,Emi Watterson,,9.1250,9.6750,
+California,2020,7,no meet title,Feb-16-2020,Stanford,Maya Bordas,9.7750,9.9250,9.6000,9.7500
+California,2020,7,no meet title,Feb-16-2020,Stanford,Milan Clausi,9.8250,,9.8250,9.8500
+California,2020,7,no meet title,Feb-16-2020,Stanford,Nevaeh DeSouza,9.8500,9.7500,9.9000,9.8500
+California,2020,7,no meet title,Feb-16-2020,Stanford,Kyana George,9.8750,9.8250,9.9250,9.9000
+California,2020,7,no meet title,Feb-16-2020,Stanford,Maya Green,,9.8000,,
+California,2020,7,no meet title,Feb-16-2020,Stanford,Talitha Jones,,,9.8000,
+California,2020,7,no meet title,Feb-16-2020,Stanford,Rachael Mastrangelo,9.8750,,,9.8500
+California,2020,7,no meet title,Feb-16-2020,Stanford,Grace Quinn,,,,9.8250
+California,2020,7,no meet title,Feb-16-2020,Stanford,Victoria Salem,,,,
+California,2020,7,no meet title,Feb-16-2020,Stanford,Nina Schank,9.8500,9.7500,,
+California,2020,7,no meet title,Feb-16-2020,Stanford,Emi Watterson,,9.9250,9.9000,
+California,2020,8,no meet title,Feb-22-2020,California,Maya Bordas,9.9000,9.9250,9.8500,9.9000
+California,2020,8,no meet title,Feb-22-2020,California,Milan Clausi,9.9000,,9.8250,9.8500
+California,2020,8,no meet title,Feb-22-2020,California,Nevaeh DeSouza,9.9250,9.8250,9.8750,9.8250
+California,2020,8,no meet title,Feb-22-2020,California,Kyana George,9.9000,9.8500,9.7000,
+California,2020,8,no meet title,Feb-22-2020,California,Maya Green,,9.8000,,
+California,2020,8,no meet title,Feb-22-2020,California,Talitha Jones,,,9.7750,
+California,2020,8,no meet title,Feb-22-2020,California,Rachael Mastrangelo,9.8500,,,9.7750
+California,2020,8,no meet title,Feb-22-2020,California,Grace Quinn,,,,9.7750
+California,2020,8,no meet title,Feb-22-2020,California,Nina Schank,9.8250,9.8250,,9.8000
+California,2020,8,no meet title,Feb-22-2020,California,Emi Watterson,,9.8500,9.9000,
+California,2020,9,no meet title,Mar-01-2020,California,Maya Bordas,9.8500,9.9250,9.1750,9.8500
+California,2020,9,no meet title,Mar-01-2020,California,Milan Clausi,9.9500,,9.8500,9.9000
+California,2020,9,no meet title,Mar-01-2020,California,Nevaeh DeSouza,9.9000,9.7750,9.8000,9.7750
+California,2020,9,no meet title,Mar-01-2020,California,Maya Green,,8.9000,,
+California,2020,9,no meet title,Mar-01-2020,California,Rachael Mastrangelo,9.9500,,,9.8500
+California,2020,9,no meet title,Mar-01-2020,California,Grace Quinn,9.7500,9.7750,9.6250,9.8750
+California,2020,9,no meet title,Mar-01-2020,California,Nina Schank,9.8250,9.9000,9.8500,9.9000
+California,2020,9,no meet title,Mar-01-2020,California,Emi Watterson,,9.2750,9.7750,
+California,2020,10,no meet title,Mar-08-2020,UCLA,Maya Bordas,9.8250,9.8500,9.9250,9.8500
+California,2020,10,no meet title,Mar-08-2020,UCLA,Milan Clausi,9.2750,,9.7750,9.9250
+California,2020,10,no meet title,Mar-08-2020,UCLA,Nevaeh DeSouza,9.7250,9.8000,9.8500,9.7750
+California,2020,10,no meet title,Mar-08-2020,UCLA,Kyana George,9.8500,9.8250,9.7750,9.9000
+California,2020,10,no meet title,Mar-08-2020,UCLA,Maya Green,,9.8750,,
+California,2020,10,no meet title,Mar-08-2020,UCLA,Rachael Mastrangelo,9.7500,,,9.0500
+California,2020,10,no meet title,Mar-08-2020,UCLA,Grace Quinn,,,,9.8250
+California,2020,10,no meet title,Mar-08-2020,UCLA,Nina Schank,9.8500,9.9250,9.8250,
+California,2020,10,no meet title,Mar-08-2020,UCLA,Emi Watterson,,9.8250,9.3000,

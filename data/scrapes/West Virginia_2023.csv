@@ -1,0 +1,163 @@
+team,year,meetnum,meettitle,date,host,gymnast,vault,bars,beam,floor
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Chloe Asper,,9.5750,9.8000,
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Kendra Combs,,9.7250,9.4750,
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Brynn Freehling,,,,9.7750
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Heidi Hartje,9.7500,,,
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Emily Holmes-Hackerd,,9.8250,9.7750,9.8500
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Brooke Irwin,9.7500,,,
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Anna Leigh,,9.8000,9.5500,9.8250
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Kiana Lewis,9.7500,,,9.8250
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Carlee Nelson,9.6750,,,
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Abbie Pierson,9.8000,9.0000,9.7000,9.8500
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Emma Wehry,9.0500,,,
+West Virginia,2023,1,no meet title,Jan-06-2023,Florida,Kianna Yancey,,9.5750,9.6750,9.8500
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Brooke Alban,9.7250,9.0500,,
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Chloe Asper,,9.4250,9.7750,
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Kendra Combs,,9.7500,9.7750,
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Brynn Freehling,,,,9.0750
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Emily Holmes-Hackerd,,9.7250,9.6500,9.8500
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Brooke Irwin,9.6250,,,
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Anna Leigh,,9.7250,,9.8000
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Kiana Lewis,9.8250,,,9.7750
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Carlee Nelson,9.7500,,9.6500,
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Abbie Pierson,9.7750,,9.7000,9.8250
+West Virginia,2023,2,no meet title,Jan-13-2023,West Virginia,Kianna Yancey,9.8250,9.8000,9.7750,9.8500
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Brooke Alban,9.5500,9.8750,,
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Chloe Asper,,,9.5750,
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Kendra Combs,,9.8750,9.8000,9.6500
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Heidi Hartje,9.7250,,,
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Emily Holmes-Hackerd,,8.3500,9.7750,9.9250
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Brooke Irwin,9.7250,8.7500,,
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Anna Leigh,,9.6750,,9.7250
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Kiana Lewis,9.6750,,,9.8750
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Carlee Nelson,9.7250,,9.6500,
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Abbie Pierson,9.8500,,9.7750,9.8500
+West Virginia,2023,3,no meet title,Jan-20-2023,Towson,Kianna Yancey,,9.8750,9.8500,9.8250
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Brooke Alban,,9.6500,,
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Chloe Asper,,,9.8500,
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Kendra Combs,,9.8250,9.8250,9.8250
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Emily Holmes-Hackerd,,,9.8000,9.9250
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Brooke Irwin,9.8500,9.7250,,
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Anna Leigh,,9.7000,,9.8250
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Kiana Lewis,9.8250,,,9.9000
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Carlee Nelson,9.6750,,9.8750,
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Abbie Pierson,9.7750,,9.8000,9.8250
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Miranda Smith,,9.6500,,
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Emma Wehry,9.8250,,,
+West Virginia,2023,4,no meet title,Jan-29-2023,West Virginia,Kianna Yancey,9.7500,9.8750,9.8500,9.9000
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Brooke Alban,9.5000,9.8250,,
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Chloe Asper,,9.7000,,
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Ellen Collins,,,,9.8250
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Kendra Combs,,9.7250,9.7000,9.8500
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Agatha Handono,,,9.6000,
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Emily Holmes-Hackerd,,,9.7500,9.8750
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Brooke Irwin,9.7750,,,
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Anna Leigh,,9.7750,,9.7750
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Kiana Lewis,9.7250,,,9.8000
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Carlee Nelson,9.6250,,8.3500,
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Abbie Pierson,9.6000,,9.7750,9.8250
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Miranda Smith,,9.7750,,
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Emma Wehry,9.7750,,,
+West Virginia,2023,5,no meet title,Feb-03-2023,Pittsburgh,Kianna Yancey,,9.7500,9.8500,
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Brooke Alban,,9.7750,,
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Ellen Collins,9.7250,,,
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Kendra Combs,,9.8000,9.7750,9.8500
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Agatha Handono,,,8.3500,
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Emily Holmes-Hackerd,,9.7250,9.7750,9.8250
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Brooke Irwin,9.7000,,,
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Anna Leigh,,9.7750,9.8000,9.7750
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Kiana Lewis,9.7500,,,9.8500
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Abbie Pierson,9.7500,,9.7000,9.8500
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Miranda Smith,,9.6750,,
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Emma Wehry,9.6500,,,
+West Virginia,2023,6,no meet title,Feb-12-2023,Denver,Kianna Yancey,9.7000,9.8500,9.8250,9.7250
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Brooke Alban,,9.8500,,
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Ellen Collins,9.6500,,,9.9000
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Kendra Combs,,9.7750,9.7750,9.9000
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Agatha Handono,,,9.5250,
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Emily Holmes-Hackerd,,9.7250,9.7750,9.9500
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Brooke Irwin,9.8250,,,
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Anna Leigh,,9.7500,9.7500,
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Kiana Lewis,9.8000,,,9.9000
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Abbie Pierson,9.8500,,9.7750,9.9000
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Miranda Smith,,8.9500,,
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Emma Wehry,9.8750,,,
+West Virginia,2023,7,no meet title,Feb-19-2023,West Virginia,Kianna Yancey,9.8500,9.7750,9.8500,9.9250
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Brooke Alban,,9.8500,,
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Ellen Collins,9.6750,,,9.9000
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Kendra Combs,,9.6750,9.7500,
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Emily Holmes-Hackerd,,9.8000,9.7000,9.8000
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Brooke Irwin,9.7250,,,
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Anna Leigh,,9.8000,9.8500,9.8750
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Kiana Lewis,9.8000,,,9.7500
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Abbie Pierson,9.8250,,9.7750,9.8000
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Miranda Smith,,9.6500,,
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Emma Wehry,9.7750,,9.7000,
+West Virginia,2023,8,no meet title,Feb-24-2023,Oklahoma,Kianna Yancey,9.7500,9.7500,9.1000,9.7750
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Brooke Alban,9.8250,9.8250,,
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Ellen Collins,,,,9.8750
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Kendra Combs,,9.7500,9.9000,9.7000
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Emily Holmes-Hackerd,,9.8000,9.7250,9.9000
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Brooke Irwin,9.7750,,,
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Anna Leigh,,9.8000,9.7750,9.8250
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Kiana Lewis,9.8750,,,9.8250
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Abbie Pierson,9.9000,,9.2500,9.9000
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Miranda Smith,,9.8000,,
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Emma Wehry,9.9000,,9.8000,
+West Virginia,2023,9,no meet title,Feb-26-2023,Texas Woman's,Kianna Yancey,9.7750,9.7750,9.8250,
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Brooke Alban,9.8750,9.8000,,
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Ellen Collins,,,,9.9000
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Kendra Combs,,9.7500,9.9250,9.8750
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Emily Holmes-Hackerd,,9.2750,9.8750,9.9500
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Brooke Irwin,9.8500,,,
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Anna Leigh,,9.7500,9.8750,
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Kiana Lewis,9.9000,,,9.8750
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Abbie Pierson,9.9250,,9.8750,9.9250
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Miranda Smith,,9.7500,,
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Emma Wehry,9.8750,,9.7500,
+West Virginia,2023,10,no meet title,Mar-05-2023,West Virginia,Kianna Yancey,9.8000,9.8500,9.9250,9.8750
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Brooke Alban,9.8250,9.7500,,
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Ellen Collins,,,,9.8500
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Kendra Combs,,9.7750,9.8500,9.8250
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Emily Holmes-Hackerd,,9.8500,9.8250,9.9000
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Brooke Irwin,9.5250,,,
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Anna Leigh,,9.8000,9.8250,
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Kiana Lewis,9.8500,,,9.9000
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Abbie Pierson,9.8000,,9.7750,9.8250
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Miranda Smith,,9.7000,,
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Emma Wehry,9.7500,,9.7250,
+West Virginia,2023,11,no meet title,Mar-10-2023,LSU,Kianna Yancey,9.8500,9.8500,9.7000,9.8750
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Brooke Alban,9.8250,9.7250,,
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Kendra Combs,,9.8000,9.8750,9.8750
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Brynn Freehling,,,,9.7000
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Emily Holmes-Hackerd,,9.8250,9.7500,9.9250
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Brooke Irwin,9.8500,,,
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Anna Leigh,,9.8250,9.7750,9.7750
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Kiana Lewis,9.7750,,,9.8250
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Abbie Pierson,9.9000,,9.8250,9.8250
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Miranda Smith,,9.7250,,
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Emma Wehry,9.9000,,9.8000,
+West Virginia,2023,12,no meet title,Mar-12-2023,Rutgers,Kianna Yancey,9.7500,9.7750,9.8500,
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Brooke Alban,9.8500,9.0500,,
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Ellen Collins,,,,9.8000
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Kendra Combs,,9.7500,9.6500,9.9000
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Emily Holmes-Hackerd,,9.7250,9.8500,9.9250
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Brooke Irwin,9.6750,,,
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Anna Leigh,,9.7000,,
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Kiana Lewis,9.9000,,,9.8500
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Carlee Nelson,,,9.6750,
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Abbie Pierson,9.8500,,9.8250,9.9000
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Miranda Smith,,9.7250,,
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Emma Wehry,9.8000,,8.9750,
+West Virginia,2023,13,Big 12 Conference,Mar-18-2023,West Virginia,Kianna Yancey,9.7750,9.8000,9.8750,9.9000
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Brooke Alban,9.7750,9.4500,,
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Ellen Collins,,,,9.8750
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Kendra Combs,,9.7250,9.3750,9.9000
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Emily Holmes-Hackerd,,9.7500,9.8000,9.8500
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Brooke Irwin,9.6250,,,
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Kiana Lewis,9.7500,,,9.8000
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Carlee Nelson,,,9.8250,
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Abbie Pierson,9.8500,9.7000,9.7000,9.9000
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Miranda Smith,,9.7500,,
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Emma Wehry,9.9000,,9.5500,
+West Virginia,2023,14,Pittsburgh Regional II,Mar-31-2023,Pittsburgh,Kianna Yancey,9.8000,9.8500,9.7750,9.8250
