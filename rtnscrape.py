@@ -12,7 +12,7 @@ import re
 #############
 # modify the three lines below and let 'er rip
 
-rtn_team_numbers = [*range(1, 57), *range(58, 67), *range(68, 83), 128, 155, 156, 163, 164, 165] # these are all the team ids for 2024
+rtn_team_numbers = [*range(1, 57), *range(58, 67), *range(68, 83), 128, 154, 155, 156, 163, 164, 165] # these are all the team ids for 2024
 years = [2024] # make this a list!
 
 #############
