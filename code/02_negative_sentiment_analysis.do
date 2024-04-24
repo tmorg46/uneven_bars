@@ -1,6 +1,6 @@
 /*
 
-this file gets all the unique gymnast-by-team observations, orders them for ease of putting together our race crosswalk, then applies our Black indicator, marks the playoffs, and saves the full dataset
+this file does the dif-in-dif and triple dif for the schools we think might have a negative environment based on gymnasts' social media posts around 2020
 
 */
 
@@ -19,13 +19,11 @@ global route "/Users/tmac/Desktop/uneven_bars"
 
 cap mkdir "$route/output"
 
-// Alabama, Florida, UC Davis, S.E. Missouri, Auburn, Nebraska, Bowling Green, BYU
-
 
 ***********************************************
 *Open a Frame for Each Team and Set Up the Loop
 ***********************************************
-foreach team in alabama florida ucdavis semo auburn nebraska bg byu {
+foreach team in alabama florida ucdavis semo auburn nebraska bg {
 
 	// define the proper case and variable-compatible local values used in the loops:
 	if "`team'"=="alabama" {
@@ -58,15 +56,11 @@ foreach team in alabama florida ucdavis semo auburn nebraska bg byu {
 		local vartitle nebraska
 	}
 	
-	else if "`team'"=="bg" {
+	else {
 		local title "Bowling Green"
 		local vartitle bg
 	}
 	
-	else {
-		local title "BYU"
-		local vartitle byu
-	}
 	
 	frame create `vartitle' // do everything in its own frame to be organized and not need to worry about weird clears
 	frame change `vartitle'

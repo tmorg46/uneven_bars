@@ -1,6 +1,6 @@
 /*
 
-this file computes the fraction of gymnasts ever at a program who were Black (overall as well as pre- and post-floyd) and uses that as a "signal" as to the amicability of the environment to Black gymnasts in analysis
+this file does the same analysis for teams visiting established hosts (i.e. have 2015-2024 seasons) who have never had a black gymnast (BYU, Boise State, Gustavus Adolphus, UW-La Crosse) and for teams who have always had at least two black gymnasts (Florida, Michigan State, UCLA, West Virginia)
 
 */
 
@@ -20,9 +20,9 @@ global route "/Users/tmac/Desktop/uneven_bars"
 cap mkdir "$route/output"
 
 
-*********************************
-*Build the Black Selection Signal
-*********************************
+******************************************
+*Investigate the Black gymnasts' selection
+******************************************
 // pending
 *open the Black crosswalk and get moving!!
 import delimited using "$route/data/all_gymnasts_races.csv", varn(1) clear
@@ -31,6 +31,14 @@ reshape long roster, i(team gymnast black) j(year)
 drop if missing(roster)
 drop roster
 
-drop if gymnast==gymnast[_n-1] & gymnast==gymnast[_n+1] & team==team[_n-1] & team==team[_n+1] // this leaves the earliest year a gymnast recorded a score in a meet as a member of a given team and the latest year
+gen black_count = black
+collapse (mean) black (sum) black_count, by(team year)
+
+bysort team: egen min = min(black_count)
+*br if min>1 // these teams with all 10 seasons are consistently selected by multiple Black gymnasts: Florida, Michigan State, UCLA, West Virginia
 
 collapse black, by(team)
+*br if black==0 // these teams with all 10 seasons have never been selected by a Black gymnast: BYU, Boise State, Gustavus Adolphus, UW-La Crosse
+
+
+
