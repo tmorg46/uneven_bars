@@ -1,9 +1,9 @@
 /*
 
 this file does the same analysis for teams visiting established hosts (i.e. have 2015-2024 seasons) who:
-	1) got negative social media attention in 2020 (Alabama, Florida, UC Davis, S.E. Missouri, Auburn, Nebraska, Bowling Green);
+	1) got negative social media attention in 2020 (Alabama, Florida, UC Davis, S.E. Missouri, Auburn, UCLA, Nebraska, Bowling Green);
 	2) never had a black gymnast (BYU, Boise State, Gustavus Adolphus, UW-La Crosse); and
-	3) teams who have always had at least two black gymnasts (Florida again, Michigan State, UCLA, West Virginia)
+	3) teams who have always had at least two black gymnasts (Florida again, Michigan State, UCLA again, West Virginia)
 
 */
 
@@ -12,8 +12,8 @@ frames reset
 cap log close
 discard
 
-*ssc install outreg2
-*ssc install schemepack
+ssc install outreg2
+ssc install schemepack
 
 set scheme white_tableau
 

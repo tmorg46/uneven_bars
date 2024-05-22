@@ -7,7 +7,7 @@ this file gets all the unique gymnast-by-team observations, orders them for ease
 clear all
 
 *edit this to be the path with all the team-year csv files
-global route "/Users/tmac/Desktop/uneven_bars"
+global route "C:\Users\tmorg\Desktop\uneven_bars"
 
 
 *make an empty file that we'll use as an append base
