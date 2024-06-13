@@ -133,8 +133,9 @@ keep black team gymnast
 tempfile races
 save `races', replace
 
+
 use `fullappend', clear
-merge m:1 team gymnast using `races', nogen // now all the gymnasts are marked as Black or not!!
+merge m:1 team gymnast using `races', keep(1 3) nogen // now all the gymnasts are marked as Black or not!!
 
 
 *now we're gonna mark the meets that aren't regular season meets for future drops

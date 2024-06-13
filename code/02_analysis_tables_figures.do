@@ -1,9 +1,6 @@
 /*
 
-this file does the same analysis for teams visiting established hosts (i.e. have 2015-2024 seasons) who:
-	1) got negative social media attention in 2020 (Alabama, Florida, UC Davis, S.E. Missouri, Auburn, UCLA, Nebraska, Bowling Green);
-	2) never had a black gymnast (BYU, Boise State, Gustavus Adolphus, UW-La Crosse); and
-	3) teams who have always had at least two black gymnasts (Florida again, Michigan State, UCLA again, West Virginia)
+this file does the our analysis for every team in the entire NCAA that got visited by other teams over 2015-2024
 
 */
 
@@ -12,13 +9,16 @@ frames reset
 cap log close
 discard
 
+/* do the installs if you haven't already
 ssc install outreg2
+ssc install parmest
 ssc install schemepack
+*/
 
 set scheme white_tableau
 
 *edit this to be the path with all the team-year csv files
-global route "/Users/tmac/Desktop/uneven_bars"
+global route "C:\Users\tmorg\Desktop\uneven_bars"
 
 cap mkdir "$route/output"
 
@@ -26,7 +26,7 @@ cap mkdir "$route/output"
 ******************************************
 *Investigate the Black gymnasts' selection
 ******************************************
-// pending
+/* done
 *open the Black crosswalk and get moving!!
 import delimited using "$route/data/all_gymnasts_races.csv", varn(1) clear
 
@@ -35,91 +35,29 @@ drop if missing(roster)
 drop roster
 
 gen black_count = black
-collapse (mean) black (sum) black_count, by(team year)
+gen all_count = 1
+collapse (mean) black (sum) black_count all_count, by(team)
 
-bysort team: egen min = min(black_count)
-*br if min>1 // these teams with all 10 seasons are consistently selected by multiple Black gymnasts: Florida (already done), Michigan State, UCLA, West Virginia
-
-collapse black, by(team)
-*br if black==0 // these teams with all 10 seasons have never been selected by a Black gymnast: BYU, Boise State, Gustavus Adolphus, UW-La Crosse
+rename black percent_black
+save "$route/data/black_rates.dta", replace // this will make a cool graph later
+*/
 
 
 ***********************************************
 *Open a Frame for Each Team and Set Up the Loop
 ***********************************************
-foreach team in alabama florida ucdavis semo auburn nebraska bg byu boise gustavus uwlc michstate ucla wvu {
+// done
+local iteration = 0 // nothing has run yet!
 
-	// define the proper case and variable-compatible local values used in the loops:
-	if "`team'"=="alabama" {
-		local title "Alabama"
-		local vartitle alabama
-	}
+use "$route/data/all_scores_cleaned.dta", clear
+levelsof host, local(teams) // this gets every team that has teams visit it
+
+foreach team of local teams {
+
+	local iteration = `iteration' + 1 // this will let us replace logs and output files that need appends later
 	
-	else if "`team'"=="florida" {
-		local title "Florida"
-		local vartitle florida
-	}
-	
-	else if "`team'"=="ucdavis" {
-		local title "UC Davis"
-		local vartitle ucdavis
-	}
-	
-	else if "`team'"=="semo" {
-		local title "S.E. Missouri"
-		local vartitle semo
-	}
-	
-	else if "`team'"=="auburn" {
-		local title "Auburn"
-		local vartitle auburn
-	}
-	
-	else if "`team'"=="nebraska" {
-		local title "Nebraska"
-		local vartitle nebraska
-	}
-	
-	else if "`team'"=="bg" {
-		local title "Bowling Green"
-		local vartitle bg
-	}
-	
-	else if "`team'"=="byu" {
-		local title "BYU"
-		local vartitle byu
-	}
-	
-	else if "`team'"=="boise" {
-		local title "Boise State"
-		local vartitle boise
-	}
-	
-	else if "`team'"=="gustavus" {
-		local title "Gustavus Adolphus"
-		local vartitle gustavus
-	}
-	
-	else if "`team'"=="uwlc" {
-		local title "UW-La Crosse"
-		local vartitle uwlc
-	}
-	
-	else if "`team'"=="michstate" {
-		local title "Michigan State"
-		local vartitle michstate
-	}
-	
-	else if "`team'"=="ucla" {
-		local title "UCLA"
-		local vartitle ucla
-	}
-	
-	else {
-		local title "West Virginia"
-		local vartitle wvu
-	}
-	
+	local title "`team'"
+	local vartitle = ustrregexra(lower("`team'"), "\W|_", "", .) // this gives a chimchar-esque version of each teamname that works as a variable title
 	
 	frame create `vartitle' // do everything in its own frame to be organized and not need to worry about weird clears
 	frame change `vartitle'
@@ -169,7 +107,7 @@ foreach team in alabama florida ucdavis semo auburn nebraska bg byu boise gustav
 	***************************************
 	// done
 	cap log close
-	if "`title'"=="Alabama" {
+	if "`iteration'"=="1" {
 		log using "$route/output/table1_by_team.txt", text replace nomsg
 	}
 	
@@ -219,7 +157,7 @@ foreach team in alabama florida ucdavis semo auburn nebraska bg byu boise gustav
 	// done
 	*create summary tables for each event for variables of interest
 	cap log close
-	if "`title'"=="Alabama" {
+	if "`iteration'"=="1" {
 		log using "$route/output/table2_by_team.txt", text replace nomsg
 	}
 	else {
@@ -246,20 +184,45 @@ foreach team in alabama florida ucdavis semo auburn nebraska bg byu boise gustav
 	********************************************
 	// done
 	*run the fixed effects regressions and put them into tables
-	if "`title'"=="Alabama" {
+	if "`iteration'"=="1" {
 		cap erase "$route/output/table3_fe_regs.xml" // this lets us reset the table on each fresh run!
 	}
 	else {
-		di "yeehaw!"
+		di "yeehaw!" // I'm if-else paranoid
 	}
 
 	*equation 3
-	reg score black_at black at i.event, vce(cl meet_id) noomit
-	outreg2 using "$route/output/table3_fe_regs.xml", excel append keep(black_at black at 2.event 3.event 4.event) label dec(3) cttop(eq3 `vartitle')
+	xi: reg score black_at black at i.event, vce(cl meet_id) noomit
+	outreg2 using "$route/output/table3_fe_regs.xml", excel append keep(black_at _Ievent_2 _Ievent_3 _Ievent_4) label dec(3) cttop(eq3 `vartitle')
 	
 	*equation 4
 	xi: reg score black_at i.event i.gymnast i.meet_id, vce(cl meet_id) noomit
-	outreg2 using "$route/output/table3_fe_regs.xml", excel append keep(black_at 2.event 3.event 4.event) label dec(3) addtext(Gymnast Effects, X, Meet Effects, X) cttop(eq4 `vartitle')
+	outreg2 using "$route/output/table3_fe_regs.xml", excel append keep(black_at _Ievent_2 _Ievent_3 _Ievent_4) label dec(3) addtext(Gymnast Effects, X, Meet Effects, X) cttop(eq4 `vartitle')
+	
+	
+	*copy the frame to get the estimate on black_at for a cool figure later
+	cap frame copy `vartitle' parmest
+	cap frame change parmest
+	
+	parmest, format(estimate min95 max95 %8.4f p %8.1e) list(,) saving("$route\output\eq4_figure2_`vartitle'.dta", replace)
+	
+	use "$route\output\eq4_figure2_`vartitle'.dta", clear
+	gen team = "`title'"
+	
+	keep if _n==1 
+	
+	if "`iteration'"=="1" {
+		save "$route/data/figure2_set.dta", replace // the file doesn't exist yet or needs to be replaced, so this happens on the first run
+	}
+	
+	else {
+		append using "$route/data/figure2_set.dta"
+		save "$route/data/figure2_set.dta", replace // now there's an append to add the estimate with all the other ones
+	}
+	
+	erase "$route\output\eq4_figure2_`vartitle'.dta" // kill the little files
+	frame change `vartitle'
+	cap frame drop parmest
 
 
 	***********************************
@@ -267,24 +230,100 @@ foreach team in alabama florida ucdavis semo auburn nebraska bg byu boise gustav
 	***********************************
 	// done
 	*run the fixed effects regressions split by year and put them into tables
-	if "`title'"=="Alabama" {
+	if "`iteration'"=="1" {
 		cap erase "$route/output/table4_tripledif_regs.xml" // this lets us reset the table on each fresh run!
 	}
 	else {
-		di "yeehaw again!"
+		di "yeehaw again!" // :)
 	}
 
 	*run the regression from equation 6
 	xi: reg score black_at black_at_pf i.event i.gymnast i.gymnast*postfloyd i.meet_id, vce(cluster meet_id) noomit
 	outreg2 using "$route/output/table4_tripledif_regs.xml", excel append keep(black_at black_at_pf _Ievent_2 _Ievent_3 _Ievent_4) label dec(3) addtext(Gymnast Effects, X, Meet Effects, X, Gymnast-by-PostFloyd, X) cttop(triple `vartitle')
 	
+	
+	*copy the frame to get the estimates on black_at and black_at_pf for a cool figure later
+	cap frame copy `vartitle' parmest
+	cap frame change parmest
+	
+	parmest, format(estimate min95 max95 %8.4f p %8.1e) list(,) saving("$route\output\eq6_figure3_`vartitle'.dta", replace)
+	
+	use "$route\output\eq6_figure3_`vartitle'.dta", clear
+	gen team = "`title'"
+	
+	keep if _n==1 | _n==2
+	
+	if "`iteration'"=="1" {
+		save "$route/data/figure3_set.dta", replace // the file doesn't exist yet or needs to be replaced, so this happens on the first run
+	}
+	
+	else {
+		append using "$route/data/figure3_set.dta"
+		save "$route/data/figure3_set.dta", replace // now there's an append to add the estimate with all the other ones
+	}
+	
+	erase "$route\output\eq6_figure3_`vartitle'.dta" // kill the little files
+	frame change `vartitle'
+	cap frame drop parmest
+	
 	////////////
 	
 	drop _I*
 	
 	di "now leaving frame `vartitle'"
-	frame change default
+	frame change `vartitle'
 }
 
 erase "$route/output/table3_fe_regs.txt"
 erase "$route/output/table4_tripledif_regs.txt"
+*/
+
+
+**************************************************
+*make the cool figures based on Black gymnast rate
+**************************************************
+// pending
+*start with figure 2!
+use "$route/data/figure2_set", clear
+
+merge m:1 team using "$route/data/black_rates.dta", keep(1 3) nogen // this will give us the X-axis variable percent_black
+
+gen color = (min95>0) // mark the 95% CIs above 0 with a 1
+replace color = 2 if max95<0 // and the ones below with a 2
+
+graph twoway rcap min95 max95 percent_black if color==0 & parm=="black_at" || ///
+	scatter estimate percent_black if color==0 & parm=="black_at", mcolor(eltblue) || ///
+	rcap min95 max95 percent_black if color==1 & parm=="black_at", color(green)|| ///
+	scatter estimate percent_black if color==1 & parm=="black_at", m(T) mcolor(forest_green) mlabel(team) || ///
+	rcap min95 max95 percent_black if color==2 & parm=="black_at", color(cranberry) || ///
+	scatter estimate percent_black if color==2 & parm=="black_at", m(S) mcolor(red) mlabel(team) ///
+	graphregion(color(white)) ///
+	ytitle(Effect of being Black at a given University) xtitle(% Black gymnasts ever competed) xsize(7) legend(position(6) rows(1) holes(1 3 5) order(2 4 6) label(2 "CI includes 0") label(4 "CI above 0") label(6 "CI below 0"))
+
+graph export "$route/output/figure2_eq4_CIs.png", as(png) width(1080) replace
+
+
+*now do figure 3!
+use "$route/data/figure3_set", clear
+
+merge m:1 team using "$route/data/black_rates.dta", keep(1 3) nogen // this will give us the X-axis variable percent_black
+
+gen color = (min95>0) // mark the 95% CIs above 0 with a 1
+replace color = 2 if max95<0 // and the ones below with a 2
+
+graph twoway rcap min95 max95 percent_black if color==0 & parm=="black_at_pf" || ///
+	scatter estimate percent_black if color==0 & parm=="black_at_pf", mcolor(eltblue) || ///
+	rcap min95 max95 percent_black if color==1 & parm=="black_at_pf", color(green) || ///
+	scatter estimate percent_black if color==1 & parm=="black_at_pf", m(T) mcolor(forest_green) || ///
+	rcap min95 max95 percent_black if color==2 & parm=="black_at_pf", color(cranberry) || ///
+	scatter estimate percent_black if color==2 & parm=="black_at_pf", m(S) mcolor(red) mlabel(team) ///
+	graphregion(color(white)) ///
+	ytitle(Effect of being Black at a given University after 2020 (triple dif)) xtitle(% Black gymnasts ever competed) xsize(7) legend(position(6) rows(1) holes(1 3 5) order(2 4 6) label(2 "CI includes 0") label(4 "CI above 0") label(6 "CI below 0"))
+
+graph export "$route/output/figure3_eq6_CIs_post.png", as(png) width(1080) replace // this one is the postfloyd estimate, aka the triple dif stuff
+
+
+
+
+
+
