@@ -26,7 +26,7 @@ cap mkdir "$route/output"
 *************************************************************
 *Add the relevant race variables to the big dataset of scores
 *************************************************************
-/* pending
+/* done
 *make an empty file that we'll use as an append base
 import delimited using "$route/data/all_scores_2015-2024.csv", varn(1) clear
 
@@ -85,7 +85,7 @@ save "$route/data/analysis_set.dta", replace
 ******************************************
 *Table 1: Average Scores by Event and Race
 ******************************************
-/* pending
+/* done
 use "$route/data/analysis_set.dta", clear
 
 cap log close
@@ -109,7 +109,7 @@ log close
 ***************************************************
 *Table 2: Team-Years Included in Sample for Alabama
 ***************************************************
-/* pending
+/* done
 use "$route/data/analysis_set.dta", clear
 
 gen at = host=="Alabama"
@@ -128,7 +128,7 @@ log close
 *************************************************
 *Figure 2: Average Scores by Race and Meet Number
 *************************************************
-/* pending
+/* done
 use "$route/data/analysis_set.dta", clear
 
 local iteration = 0 // this will let us set the size of the dataset for the figure
@@ -202,7 +202,7 @@ graph export "$route/output/figure2.png", as(png) width(1080) replace
 ************************************************************
 *Figure 3 Prep: Open a Frame for Each Team and Run the Model
 ************************************************************
-/* pending
+/* done
 frames reset
 
 local iteration = 0 // nothing has run yet!
@@ -291,7 +291,7 @@ di "total iterations run: `iteration'" // :)
 *****************************************************
 *Figure 3: Dif-in-Dif Estimates by Black Gymnast Rate
 *****************************************************
-/* pending
+/* done
 *reopen the gymnast races file and make a rate of Black gymnast participation by team
 import delimited using "$route/data/all_gymnasts_races.csv", varn(1) clear
 
@@ -330,7 +330,7 @@ graph export "$route/output/figure3_eq4_CIs.png", as(png) width(1080) replace
 ***********************************************************
 *Table 3 Prep: Open a Frame for Each Team and Run the Model
 ***********************************************************
-// pending
+/* done
 frames reset
 
 local iteration = 0 // nothing has run yet!
