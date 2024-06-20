@@ -109,10 +109,6 @@ replace gymnast = "Sydney Ewing (Michigan State)" if gymnast=="Sydney Ewing" & t
 egen meet_id = concat(date host meettitle), punct(" / ")
 
 
-*and mark the meets that aren't regular season meets:
-gen playoffs = (strpos(meettitle, "Championship")>0) | (strpos(meettitle, "Regional")>0) | strpos(meettitle, "National")>0 | strpos(meettitle, "Conference")>0 | strpos(meettitle, "Qualifier")>0
-
-
 *and now we're done!
 compress
 sort team meetnum year
