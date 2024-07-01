@@ -405,7 +405,7 @@ graph export "$route/output/figure3_eq4_CIs.png", as(png) width(1080) replace
 frames reset
 
 local iteration = 0 // nothing has run yet!
-local teams `""Utica" "Pittsburgh" "Bridgeport" "Kent State" "Alabama" "UW-Eau Claire" "Southern Conn." "Hamline""' // this gets the seven teams with statistically-different-than-zero estimates on Figure 3 into a local
+local teams `""Utica" "Pittsburgh" "Bridgeport" "Kent State" "Alabama" "Southern Conn." "Hamline""' // this gets the seven teams with statistically-different-than-zero estimates on Figure 3 into a local
 
 foreach team of local teams {
 
