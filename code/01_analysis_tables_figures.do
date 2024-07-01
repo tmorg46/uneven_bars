@@ -468,7 +468,7 @@ foreach team of local teams {
 
 erase "$route/output/table4.txt" // clean up your messes!!
 
-di "total iterations run: `iteration'" // :) this one should be 8
+di "total iterations run: `iteration'" // :) this one should be 7
 */
 
 
