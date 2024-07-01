@@ -19,8 +19,8 @@
  12. }
 (encoding automatically selected: ISO-8859-9)
 (13 vars, 4,894 obs)
-(file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002l.tmp not found)
-file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002l.tmp saved as .dta format
+(file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000002.tmp not found)
+file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000002.tmp saved as .dta format
 (encoding automatically selected: ISO-8859-1)
 (12 vars, 112,825 obs)
 
@@ -41,8 +41,8 @@ file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002l.tmp saved as .dta format
       Total |      1,161      100.00
 (encoding automatically selected: ISO-8859-9)
 (13 vars, 4,894 obs)
-(file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002m.tmp not found)
-file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002m.tmp saved as .dta format
+(file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000003.tmp not found)
+file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000003.tmp saved as .dta format
 (encoding automatically selected: ISO-8859-1)
 (12 vars, 112,825 obs)
 
@@ -63,8 +63,8 @@ file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002m.tmp saved as .dta format
       Total |      1,168      100.00
 (encoding automatically selected: ISO-8859-9)
 (13 vars, 4,894 obs)
-(file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002n.tmp not found)
-file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002n.tmp saved as .dta format
+(file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000004.tmp not found)
+file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000004.tmp saved as .dta format
 (encoding automatically selected: ISO-8859-1)
 (12 vars, 112,825 obs)
 
@@ -85,8 +85,8 @@ file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002n.tmp saved as .dta format
       Total |      1,163      100.00
 (encoding automatically selected: ISO-8859-9)
 (13 vars, 4,894 obs)
-(file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002o.tmp not found)
-file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002o.tmp saved as .dta format
+(file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000005.tmp not found)
+file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000005.tmp saved as .dta format
 (encoding automatically selected: ISO-8859-1)
 (12 vars, 112,825 obs)
 
@@ -107,8 +107,8 @@ file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002o.tmp saved as .dta format
       Total |      1,197      100.00
 (encoding automatically selected: ISO-8859-9)
 (13 vars, 4,894 obs)
-(file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002p.tmp not found)
-file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002p.tmp saved as .dta format
+(file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000006.tmp not found)
+file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000006.tmp saved as .dta format
 (encoding automatically selected: ISO-8859-1)
 (12 vars, 112,825 obs)
 
@@ -129,8 +129,8 @@ file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002p.tmp saved as .dta format
       Total |      1,198      100.00
 (encoding automatically selected: ISO-8859-9)
 (13 vars, 4,894 obs)
-(file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002q.tmp not found)
-file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002q.tmp saved as .dta format
+(file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000007.tmp not found)
+file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000007.tmp saved as .dta format
 (encoding automatically selected: ISO-8859-1)
 (12 vars, 112,825 obs)
 
@@ -151,8 +151,8 @@ file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002q.tmp saved as .dta format
       Total |      1,172      100.00
 (encoding automatically selected: ISO-8859-9)
 (13 vars, 4,894 obs)
-(file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002r.tmp not found)
-file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002r.tmp saved as .dta format
+(file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000008.tmp not found)
+file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000008.tmp saved as .dta format
 (encoding automatically selected: ISO-8859-1)
 (12 vars, 112,825 obs)
 
@@ -173,8 +173,8 @@ file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002r.tmp saved as .dta format
       Total |        935      100.00
 (encoding automatically selected: ISO-8859-9)
 (13 vars, 4,894 obs)
-(file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002s.tmp not found)
-file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002s.tmp saved as .dta format
+(file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000009.tmp not found)
+file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_000009.tmp saved as .dta format
 (encoding automatically selected: ISO-8859-1)
 (12 vars, 112,825 obs)
 
@@ -195,8 +195,8 @@ file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002s.tmp saved as .dta format
       Total |      1,281      100.00
 (encoding automatically selected: ISO-8859-9)
 (13 vars, 4,894 obs)
-(file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002t.tmp not found)
-file C:\Users\tmorg\AppData\Local\Temp\ST_43d0_00002t.tmp saved as .dta format
+(file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_00000a.tmp not found)
+file C:\Users\tmorg\AppData\Local\Temp\ST_1c14_00000a.tmp saved as .dta format
 (encoding automatically selected: ISO-8859-1)
 (12 vars, 112,825 obs)
 
