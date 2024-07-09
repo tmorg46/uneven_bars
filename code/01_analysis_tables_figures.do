@@ -26,7 +26,7 @@ cap mkdir "$route/output"
 *****************************************************
 *get the race into onto the scores and make it pretty
 *****************************************************
-// done
+/* done
 *open the handcoded race file to save as a tempfile to merge onto the full set
 import delimited using "$route/data/all_gymnasts_races.csv", varn(1) clear
 
@@ -64,7 +64,7 @@ save "$route/data/analysis_set.dta", replace
 ***************************************************
 *Table 1: Team-Years Included in Sample for Alabama
 ***************************************************
-// done
+/* done
 use "$route/data/analysis_set.dta", clear
 
 gen at = host=="Alabama"
@@ -83,7 +83,7 @@ log close
 ***********************************************
 *Table 2: Comparing our total count to the NCAA
 ***********************************************
-// done
+/* done
 cap log close
 log using "$route/output/table2.txt", text replace nomsg
 
@@ -112,7 +112,7 @@ log close
 ******************************************
 *Table 3: Average Scores by Event and Race
 ******************************************
-// done
+/* done
 use "$route/data/analysis_set.dta", clear
 
 cap log close
@@ -136,7 +136,7 @@ log close
 *************************************************
 *Figure 2: Average Scores by Race and Meet Number
 *************************************************
-// done
+/* done
 use "$route/data/analysis_set.dta", clear
 
 local iteration = 0 // this will let us set the size of the dataset for the figure
@@ -210,7 +210,7 @@ graph export "$route/output/figure2.png", as(png) width(1080) replace
 ************************************************************
 *Figure 3 Prep: Open a Frame for Each Team and Run the Model
 ************************************************************
-// done
+/* done
 frames reset
 
 local iteration = 0 // nothing has run yet!
@@ -299,7 +299,7 @@ di "total iterations run: `iteration'" // :)
 *****************************************************
 *Figure 3: Dif-in-Dif Estimates by Black Gymnast Rate
 *****************************************************
-// done
+/* done
 *reopen the gymnast races file and make a rate of Black gymnast participation by team
 import delimited using "$route/data/all_gymnasts_races.csv", varn(1) clear
 
@@ -334,14 +334,14 @@ graph twoway rcap min95 max95 percent_black if color==0, color(eltblue%50) || //
 	graphregion(color(white)) ///
 	ytitle(Estimated effect of being Black at a given University) xtitle(% Black gymnasts ever competed on team) xsize(6) legend(position(6) rows(1) holes(1 3 5) order(2 4 6) label(2 "CI includes 0") label(4 "CI above 0") label(6 "CI below 0"))
 
-graph export "$route/output/figure3_eq4_CIs.png", as(png) width(1080) replace
+graph export "$route/output/figure3.png", as(png) width(1080) replace
 */
 
 
 ***********************************************************
 *Table 4 Prep: Open a Frame for Each Team and Run the Model
 ***********************************************************
-// done
+/* done
 frames reset
 
 local iteration = 0 // nothing has run yet!
@@ -410,5 +410,138 @@ erase "$route/output/table4.txt" // clean up your messes!!
 
 di "total iterations run: `iteration'" // :) this one should be 7
 */
+
+
+***********************************************
+*Figure 4 Prep: Bonferroni-corrected Dif-in-Dif
+***********************************************
+/* done
+frames reset
+
+local iteration = 0 // nothing has run yet!
+
+use "$route/data/analysis_set.dta", clear
+levelsof host, local(teams) // this gets every team that has teams visit it
+
+foreach team of local teams {
+
+	local iteration = `iteration' + 1 // this will let us replace logs and output files that need appends later
+	
+	local title "`team'"
+	local vartitle = ustrregexra(lower("`team'"), "\W|_", "", .) // this gives a chimchar-esque version of each teamname that works as a variable title
+	
+	frame create `vartitle' // do everything in its own frame to be organized and not need to worry about weird clears
+	frame change `vartitle'
+
+
+	*********************
+	*Cleaning the Dataset
+	*********************
+	// done!
+	*bring in the dataset and make a unique meet id
+	use "$route/data/analysis_set.dta", clear
+
+
+	*this piece of the analysis is regular-season focused on a team's vistors, so:
+	drop if team=="`title'"
+
+
+	*now narrow it to those team-years in which a team visited a given school
+	gen at = host=="`title'"
+	bysort team year: egen visited_`vartitle' = sum(at)
+	drop if visited_`vartitle'==0
+	drop visited_`vartitle'
+
+
+	*generate the key indicator variable!!
+	gen black_at = black*at
+
+
+	**********************************************
+	*Figure 4 Prep: Corrected Regression Estimates
+	**********************************************
+	// done
+	set level 99.95 // this is about equal to 1 - (0.05/87), which approximates to 0.99942... and we're being conservative so I rounded up
+	
+	*run equation 4 from the paper, the dif-in-dif!
+	qui xi: reg score black_at i.event i.gymnast i.meet_id, vce(cl meet_id) noomit
+	
+	*copy the frame to get the estimate on black_at for Figure 3
+	cap frame copy `vartitle' parmest
+	cap frame change parmest
+	
+	qui parmest, format(estimate min99_95 max99_95 %8.4f p %8.1e) list(,) saving("$route\output\eq4_figure4_`vartitle'.dta", replace)
+	
+	use "$route\output\eq4_figure4_`vartitle'.dta", clear
+	gen team = "`title'"
+	
+	keep if _n==1 
+	
+	if "`iteration'"=="1" {
+		save "$route/data/figure4_set.dta", replace // the file doesn't exist yet or needs to be replaced, so this happens on the first run
+	}
+	
+	else {
+		append using "$route/data/figure4_set.dta"
+		save "$route/data/figure4_set.dta", replace // now there's an append to add the estimate with all the other ones
+	}
+	
+	erase "$route\output\eq4_figure4_`vartitle'.dta" // kill the little files
+	frame change `vartitle'
+	cap frame drop parmest
+
+	
+	////////////
+	
+	drop _I* // kill all the fixed effects for fun
+	
+	di "now leaving frame `vartitle'"
+	frame change `vartitle'
+}
+
+di "total iterations run: `iteration'" // :)
+*/
+
+
+***********************************
+*Figure 4: Bonferroni-corrected CIs
+***********************************
+// pending
+*reopen the gymnast races file and make a rate of Black gymnast participation by team
+import delimited using "$route/data/all_gymnasts_races.csv", varn(1) clear
+
+reshape long roster, i(team gymnast black) j(year)
+drop if missing(roster)
+drop roster
+
+collapse (mean) black, by(team)
+rename black percent_black // this now marks all the teams by the percent of their total gymnasts ever who are Black
+
+tempfile rates
+save `rates', replace
+
+
+*get the coefficient estimates open and bring on the team rates!
+use "$route/data/figure4_set.dta", clear
+
+merge m:1 team using `rates', keep(1 3) nogen // this will give us the X-axis variable percent_black for a figure
+
+
+gen color = (min99_95>0) // mark the 99.94% CIs above 0 with a 1
+replace color = 2 if max99_95<0 // and the ones below with a 2
+
+graph twoway rcap min99_95 max99_95 percent_black if color==0, color(eltblue%50) || ///
+	scatter estimate percent_black if color==0, mcolor(emidblue%50) || ///
+	rcap min99_95 max99_95 percent_black if color==1, color(green)|| ///
+	scatter estimate percent_black if color==1, m(T) mcolor(forest_green) mlabel(team) mlabpos(9) || ///
+	rcap min99_95 max99_95 percent_black if color==2, color(cranberry) || ///
+	scatter estimate percent_black if color==2, m(S) mcolor(red) mlabel(team) ///
+	graphregion(color(white)) ///
+	ytitle(Estimated effect of being Black at a given University) xtitle(% Black gymnasts ever competed on team) xsize(6) legend(position(6) rows(1) holes(1 3 5) order(2 4 6) label(2 "CI includes 0") label(4 "CI above 0") label(6 "CI below 0"))
+
+graph export "$route/output/figure4.png", as(png) width(1080) replace
+*/
+
+
 
 
