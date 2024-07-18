@@ -270,6 +270,11 @@ foreach team of local teams {
 	
 	keep if _n==1 
 	
+	gen bonferroni_p = p * 87
+	replace bonferroni_p = 1 if bonferroni_p > 1
+	
+	format p %20.8g // this is to read them later for table 4
+	
 	if "`iteration'"=="1" {
 		save "$route/data/figure3_set.dta", replace // the file doesn't exist yet or needs to be replaced, so this happens on the first run
 	}
@@ -396,6 +401,8 @@ foreach team of local teams {
 	else {
 		outreg2 using "$route/output/table4", excel append sdec(4) dec(3) cttop(`title') keep(black_at _Ievent_2 _Ievent_3 _Ievent_4) // now it appends to the table from above!!
 	}
+	
+	// you can get the p-values and bonferroni-p-values in this table from the Figure 3 dataset
 
 	
 	////////////
@@ -487,6 +494,7 @@ foreach team of local teams {
 	}
 	
 	erase "$route\output\eq4_figure4_`vartitle'.dta" // kill the little files
+	
 	frame change `vartitle'
 	cap frame drop parmest
 
@@ -506,7 +514,7 @@ di "total iterations run: `iteration'" // :)
 ***********************************
 *Figure 4: Bonferroni-corrected CIs
 ***********************************
-// pending
+/* done
 *reopen the gymnast races file and make a rate of Black gymnast participation by team
 import delimited using "$route/data/all_gymnasts_races.csv", varn(1) clear
 
