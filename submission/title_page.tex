@@ -1,0 +1,134 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,textcomp}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{ae,aecompl,amsmath,amsbsy}
+\usepackage{latexsym}
+\usepackage{graphicx, multicol, latexsym, amsmath, amssymb}
+\usepackage{booktabs,caption}
+\usepackage{titlesec}
+\usepackage{lscape}
+\usepackage[T1]{fontenc}
+\usepackage[toc,page,header]{appendix}
+\usepackage{minitoc}
+\usepackage{titletoc}
+\usepackage{lipsum}
+\usepackage{longtable}
+
+
+\bibliographystyle{apalike} % apalike, acm, ...
+
+% Make the "Part I" text invisible
+\renewcommand \thepart{}
+\renewcommand \partname{}
+
+% These commands only make my text longer, so we can erase them if needed.
+\setlength{\parskip}{.4em}
+\renewcommand{\baselinestretch}{1.3}
+\usepackage{setspace}   	
+
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+
+
+% Captions figures and tables
+\usepackage{tablefootnote}
+\usepackage{threeparttable}
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+
+\renewcommand \thesection{\arabic{section}.}
+\renewcommand \thesubsection{\arabic{section}.\arabic{subsection}}
+
+\usepackage{adjustbox,lipsum}
+\usepackage{graphics}
+% Using color tables
+\usepackage{colortbl}
+% Ordinals
+\usepackage[super]{nth}
+\usepackage{chngcntr}
+
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[section]{placeins}
+\usepackage{dirtytalk}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{blkarray}
+\usepackage{bigstrut}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage{xcolor}
+
+\setcounter{MaxMatrixCols}{10}
+%\setlength{\parskip}{1.5ex}
+\renewcommand{\floatpagefraction}{1}
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+\renewcommand{\textfraction}{0}
+\setlength{\textheight}{9in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\usepackage[colorlinks=true,
+	linkcolor=red,
+	anchorcolor=black,
+	citecolor=black,
+	filecolor=black,
+	menucolor=black,
+	runcolor=black,
+	urlcolor=blue]{hyperref}
+	
+\onehalfspacing
+%\doublespacing
+
+\usepackage{titlesec}
+\usepackage[super]{nth}
+\usepackage{chngcntr}
+\titleformat{\section}
+  {\normalfont\large\bfseries}{\thesection}{1em}{}
+\usepackage{bbold}
+\providecommand*\emaillink[1]{\nolinkurl{#1}}
+\providecommand*\email[1]{\href{mailto:#1}{\emaillink{#1}}}
+
+% Footnote without asterisk
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+
+\title{Uneven Bars? Using a New Dataset of Women's Gymnastics Scores to Look for Environmental Microaggression Effects in the NCAA
+ \blfootnote{\scriptsize{The authors are grateful to Zach Flynn for his help in compiling the original data used in this study and also thank Joe Price and Jeff Denning for helpful direction in the early stages of this project. † Corresponding author. Email: tmorga39@vols.utk.edu. ‡ Email: sethbcan@wharton.upenn.edu.}}}
+
+
+%\author{Anonymous}
+\author{Tommy Morgan$^\dagger$ ~~~~~~~~~~~ Seth Cannon$^\ddagger$ 
+}
+%\\
+%\emph{Do not cite or circulate without permission}  
+
+
+\date{\today 
+\\
+\href{https://www.tmorg.org/research/uneven_bars_wp.pdf}{\emph{Link to most recent version}}
+\vspace{-1em}}
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty} 
+
+\begin{abstract}
+We create a new dataset of all NCAA Women's Gymnastics scores from meets occurring from 2015-2024. The scores were aggregated from RoadtoNationals.com, the NCAA's official statistical and ranking site for women's gymnastics since 2015, and they include important details such as host teams, meet dates, and gymnasts' names. This dataset allows researchers to easily use NCAA gymnastics data in their research. To demonstrate the potential of our dataset, we use it to examine whether Black gymnasts experience negative performance effects when competing at specific universities in the NCAA. We estimate a generalized difference-in-differences regression model with fixed effects for gymnasts and meets to analyze full regular seasons of scores for gymnastics teams as they visit a given university. Across the 87 universities to have hosted an NCAA meet from 2015-2024, we find Black gymnasts experiencing significant performance effects at just 7 universities with no obvious connections between them.
+
+
+\end{abstract}
+
+JEL Codes: J15, Z2, Z20
+
+\end{document}

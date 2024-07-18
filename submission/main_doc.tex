@@ -1,0 +1,481 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,textcomp}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{ae,aecompl,amsmath,amsbsy}
+\usepackage{latexsym}
+\usepackage{graphicx, multicol, latexsym, amsmath, amssymb}
+\usepackage{booktabs,caption}
+\usepackage{titlesec}
+\usepackage{lscape}
+\usepackage[T1]{fontenc}
+\usepackage[toc,page,header]{appendix}
+\usepackage{minitoc}
+\usepackage{titletoc}
+\usepackage{lipsum}
+\usepackage{longtable}
+
+
+\bibliographystyle{apalike} % apalike, acm, ...
+
+% Make the "Part I" text invisible
+\renewcommand \thepart{}
+\renewcommand \partname{}
+
+% These commands only make my text longer, so we can erase them if needed.
+\setlength{\parskip}{.4em}
+\renewcommand{\baselinestretch}{1.3}
+\usepackage{setspace}   	
+
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+
+
+% Captions figures and tables
+\usepackage{tablefootnote}
+\usepackage{threeparttable}
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+
+\renewcommand \thesection{\arabic{section}.}
+\renewcommand \thesubsection{\arabic{section}.\arabic{subsection}}
+
+\usepackage{adjustbox,lipsum}
+\usepackage{graphics}
+% Using color tables
+\usepackage{colortbl}
+% Ordinals
+\usepackage[super]{nth}
+\usepackage{chngcntr}
+
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[section]{placeins}
+\usepackage{dirtytalk}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{blkarray}
+\usepackage{bigstrut}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{chngcntr}
+\usepackage{xcolor}
+
+\setcounter{MaxMatrixCols}{10}
+%\setlength{\parskip}{1.5ex}
+\renewcommand{\floatpagefraction}{1}
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+\renewcommand{\textfraction}{0}
+\setlength{\textheight}{9in}
+\setlength{\evensidemargin}{0in}
+\setlength{\oddsidemargin}{0in}
+
+\usepackage[colorlinks=true,
+	linkcolor=red,
+	anchorcolor=black,
+	citecolor=black,
+	filecolor=black,
+	menucolor=black,
+	runcolor=black,
+	urlcolor=blue]{hyperref}
+	
+\onehalfspacing
+%\doublespacing
+
+\usepackage{titlesec}
+\usepackage[super]{nth}
+\usepackage{chngcntr}
+\titleformat{\section}
+  {\normalfont\large\bfseries}{\thesection}{1em}{}
+\usepackage{bbold}
+\providecommand*\emaillink[1]{\nolinkurl{#1}}
+\providecommand*\email[1]{\href{mailto:#1}{\emaillink{#1}}}
+
+
+
+
+\title{Uneven Bars? Using a New Dataset of Women's Gymnastics Scores to Look for Environmental Microaggression Effects in the NCAA}
+
+
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty} 
+
+\begin{abstract}
+We create a new dataset of all NCAA Women's Gymnastics scores from meets occurring from 2015-2024. The scores were aggregated from RoadtoNationals.com, the NCAA's official statistical and ranking site for women's gymnastics since 2015, and they include important details such as host teams, meet dates, and gymnasts' names. This dataset allows researchers to easily use NCAA gymnastics data in their research. To demonstrate the potential of our dataset, we use it to examine whether Black gymnasts experience negative performance effects when competing at specific universities in the NCAA. We estimate a generalized difference-in-differences regression model with fixed effects for gymnasts and meets to analyze full regular seasons of scores for gymnastics teams as they visit a given university. Across the 87 universities to have hosted an NCAA meet from 2015-2024, we find Black gymnasts experiencing significant performance effects at just 7 universities with no obvious connections between them.
+
+
+\end{abstract}
+
+JEL Codes: J15, Z2, Z20
+
+\pagebreak
+
+\setcounter{page}{1}
+
+%%%%%%%%%%%%%
+%INTRODUCTION
+%%%%%%%%%%%%%
+
+\section{Introduction}
+
+Research investigating behavioral effects using women’s gymnastics has primarily focused on elite-level gymnasts. These papers most frequently deal with race-agnostic biases present in judges, such as difficulty bias (\citealp{rotthoff_2020}) and ordering bias (\citealp{damisch_mussweiler_plessner_2006}; \citealp{morgan_rotthoff_2014}; \citealp{rotthoff_2015}; \citealp{joustra_koning_krumer_2020}; \citealp{rotthoff_2020}). Other gymnastics-based research has focused on biases held by competitors, like in \cite{meissner_rai_rotthoff_2021}, which focuses on Simone Biles’ superstar effect on her competitors. These papers make use of the unique context of gymnastics competitions (individual scoring within team competition, tournament settings, judge panels, etc.) to investigate these biases in a convincing way. However, due to the infrequent nature of elite-level tournaments relative to other gymnastics competitions, these papers frequently rely on a few tournaments' worth of data to draw their conclusions (with \cite{meissner_rai_rotthoff_2021} being a notable exception).
+
+We contribute to research based on gymnastics by creating a dataset of all NCAA Women's Gymnastics scores from meets occurring from 2015-2024. To our knowledge, our dataset of scores is the only comprehensive pre-processed source for these scores. While these scores have been made publicly available for many years thanks to the hard work of the people behind RoadtoNationals.com, the data itself is not readily available for download at that source. In total, our dataset includes 230,088 scores across all four women’s gymnastics events received by 4,720 gymnasts over 3,581 meets. We make our full dataset of NCAA women's gymnastics scores and all code used for the analysis in this paper available\footnote{These will be made available on a GitHub repository after publication}.
+
+We use our dataset of scores from NCAA women's gymnastics meets from 2015-2024 to examine whether Black gymnasts experience a negative performance effect relative to their peers at each of the 87 universities that have hosted a meet over that time period. For each university, we analyze the performance of NCAA gymnasts who are \textbf{not} on their team over the entire regular season(s) in which they performed at a meet hosted by said team at least once, and we include scores from the full set of non-invitational regular season meets from the season in which they visited that team. For example, Table 1 shows the full set of team-seasons we include when estimating our empirical model using the University of Alabama as a host. 
+
+We leverage the unique circumstances of NCAA women's gymnastics competition, in which the score a gymnast receives is given at the individual level; this is important because any negative effect from environmental racial microaggression (explained below) should also manifest itself primarily at the individual level. We estimate a generalized difference-in-differences model of these scores that uses an indicator variable for being a Black gymnast competing at a given host school as the independent variable of greatest interest. We argue that our model controls for all relevant factors that could affect a gymnast’s score, including innate ability, preparation, potential judge bias, and so on. We then plot these estimated effects against the percentage of the full set of gymnasts who ever performed for a given university who were Black and see no generalized trend.
+
+
+%%%%%%%%%%%%%%%%%
+%Background & Lit
+%%%%%%%%%%%%%%%%%
+\section{Background {\&} Related Literature}
+\subsection{Women's Artistic Gymnastics}
+In women’s artistic gymnastics, a regular season meet is composed of four events: vault, uneven bars, balance beam, and floor exercise. Gymnasts are allowed to compete in all four events at any given meet, but typically complete in only one or two of these events. Each performance is scored out of 10 by two to four judges whose independent scores are averaged to a final performance score. The typical regular season meet has four judges – two from in-region and two from out of region – each judging two events, with two judges per event. When there are more than two teams at a given meet, at least eight individual judges judge one event each (still with two judges per event) with no rotation between events. In each event, five to six gymnasts from each team perform, and if six gymnasts perform, the lowest of those six scores is dropped when calculating the overall team score. 
+
+At the NCAA level, scores are determined by two factors: the “start value” of the routine, which is the score a gymnast would receive by performing their prepared routine perfectly, and deductions taken from the start value for technical or execution errors. Routines are required by rule to have at least a 9.4 point start value, but collegiate level gymnasts are typically sufficiently skilled to begin at the maximum 10 point start value. Though an individual score can theoretically range anywhere from zero to 10 in each event, routines without major errors typically cluster within the 9.6 - 9.9 range. Even routines with major errors can score relatively high; for example, at the 2024 meet between West Virginia and BYU, West Virginia's Emma Wehry received a score of 7.7 for her performance on the uneven bars despite having crashed directly into the lower bar and, as a result, not completing her routine.
+
+After all events are complete, the five highest scores in each event are summed to compute each team’s meet score. Because the practical range of scores is so small, tiny differences in average scores separate elite teams from great and decent teams: elite gymnastics teams have the potential to hit a 198.00 meet score, which is obtainable only with an average score of 9.9 from every gymnast in every event across the entire meet; great teams can consistently hit a 197.00 meet score (a 9.85 average performance score); and good teams can consistently hit a 196.00 meet score (a 9.8 average performance score) (\citealp{grimsley_2019}). These are differences of 0.05 points on average per routine, so a negative effect that impacts some gymnasts even to the extent that they lose one-hundredth of a point (0.01) could be substantially harmful to their team's success.
+
+The unique attributes of artistic gymnastics meets offer us several key advantages. One such advantage is that scores are assigned to gymnasts on an individual basis. Though research has shown that there may be an overall ordering bias in judging (\citealp{damisch_mussweiler_plessner_2006}; \citealp{morgan_rotthoff_2014}; \citealp{rotthoff_2015}; \citealp{joustra_koning_krumer_2020}; \citealp{rotthoff_2020}), that same research generally shows that a gymnast's performance is not affected by the performances immediately preceding it. Because scores are mostly independent across individual gymnasts, we can use individual routine scores to look for the presence of an environmental effect that would manifest at the individual level.
+
+Another advantage is that each of the four gymnastics events is a high-intensity, high-focus exercise. We hypothesize that any unusual outside pressure could cause gymnasts to make mistakes they would not make absent such pressure, with potential pressures of this kind including a negative environmental microaggression effect as we will soon define. If Black gymnasts were to experience such an effect when performing at a given host university to a degree that it negatively affected their performance relative to their non-Black peers, we would see it in our data. Whether such an effect, if present, would be significant enough to affect competitive performance to a detectable degree is the focus of the study.
+
+
+\subsection{Racial Microaggression Theory}
+Recent research that investigates the effects of environmental microaggressions on Black individuals is largely based on the model of microaggression theory presented in \citet{microagressions_2007}, which suggests that environmental factors such as the names of buildings or overall racial climates can constitute “[m]acro-level microaggressions, which are more apparent on systemic and environmental levels” than other types of interpersonal microaggressions. Research on this topic is often focused on qualitative interviews or surveys of Black students’ experiences at predominantly White institutions (PWIs) (\citealp{mills_2020}; \citealp{holliday_squires_2020}). This observation is also generally true of literature in this field historically, as evidenced by the many hundreds of papers based on interviewing Black students attending PWIs published from 1965-2013 that are summarized in \cite{willie_cunnigen_1981}, \cite{sedlacek_1987}, and \cite{holliday_squires_2020}. 
+
+In addition to recent research on racial bias founded on microaggression theory, much research exists on racial biases within the world of sports. Generally, this research focuses on racial biases in referee/judge decisions (as in \citealp{price_wolfers_2010}; \citealp{parsons_sulaeman_yates_hamermesh_2011}; \citealp{gallo_grund_reade_2012}; \citealp{rotthoff_2020}; \citealp{eiserloh_foreman_heintz_2020}; and \citealp{pelechrinis_2023}) or in fan/commentator preferences (as in \citealp{andersen_lacroix_1991}; \citealp{preston_szymanski_2008}; \citealp{reilly_witt_2011}; \citealp{principe_vanours_2022}; and \citealp{quansah_lang_frick_2023}). These studies use data from professional sports leagues in many sports and around the world to generally show that racial biases can affect sports teams both in competitive outcomes and perceived value. We contribute to racial microaggression research by trying to find evidence of one of its subtypes in a novel setting. Additionally, we aim to quantify this specific type of microaggression effect within a statistical framework that could uncover causality, which has not been done previously in the context of environmental microaggression theory to our knowledge.
+
+Two more investigations warrant particular note in this paper. The first is Dix’s body of work on sports programs at historically Black colleges and universities (or HBCUs) in which he shows teams from HBCUs experiencing negative effects in football (\citealp{dix_2017}, \citealp{dix_2021a}), men’s basketball (\citealp{dix_2022a}, \citealp{dix_2022b}), women’s basketball (\citealp{dix_2019}, \citealp{dix_2020a}, \citealp{dix_2022b}), baseball (\citealp{dix_2020b}), softball (\citealp{dix_2021b}), and volleyball (\citealp{dix_2023}). This line of research helps bridge the gap between previous work on professional sports and research at the college level. Though Dix's work focuses primarily on averaged team results and not on individual-level effects, it is nonetheless useful for contextualizing our work in this paper. We differentiate ourselves from Dix by focusing on individual-level effects as opposed to team-level effects.
+
+The second investigation of note is found in \cite{caselli_falco_mattera_2023}. In their paper, the authors show that African players in a professional Italian soccer league improved their performance when COVID-19 prevented fans from attending their games. They argue that this effect stems from the absence of overtly racist fan behavior, which is common in that league. This research is relevant to our paper because it is, to our knowledge, the closest existing paper to this one. Like we will in this paper, Caselli, Falco, and Mattera evaluate individual-level performance scores (in this case, those scores assigned algorithmically to individual soccer players based on in-game contributions) in a generalized fixed effects model that allows them to control for player- and match-based fixed effects. They also model the effects of a quasi-environmental removal of direct racial aggressions, which mirrors our empirical strategy in which we exploit the introduction of gymnasts into a potentially indirect environmental microaggression. We differentiate ourselves from Caselli, Falco, and Mattera by focusing on the introduction of a potential racial microaggression to college-level athletes as opposed to the removal of an overt set of racial aggressions from professional athletes.
+
+
+%%%%%%%%%%%%%%%%%%%%
+% Empirical Strategy
+%%%%%%%%%%%%%%%%%%%%
+
+\section{Empirical Strategy}
+\subsection{Model}
+To be able to attribute causality to any estimate we produce, we must be reasonably sure that we have controlled for as many other factors that could influence a gymnast’s score as possible. We suggest a simple model of a gymnast’s score in any given event that breaks down influential factors into four principal categories:
+
+\begin{equation}
+    \text{score} = \text{ability} + \text{preparation} + \text{environment} + \text{event} +  \varepsilon
+\end{equation}
+
+In this model, ability-related factors could include, for example, the genetic makeup of a given gymnast, the age at which they began training, and the set of skills they have the physical capacity to perform. Preparation-related factors might include the quality of the team and coaches surrounding a gymnast, the number of years a gymnast has been competing, the types of skills a gymnast chooses to practice, and the number of meets that have already occurred in a season. Environment-related factors could include the relative competency or biases of judges at a given meet; the altitude, location, quality, and name of the venue; the time of the meet; and so on. Event-related factors adjust the score for the nuances of each event; for example, it is possible to fall off of the uneven bars, but not the floor exercise. Finally, because there is bound to be stochastic error in any model of human behavior, we also include an error term in our model.
+
+Having put forth this general framework, we further posit that gymnasts and their coaches behave as score maximizers. We assume that these agents aim to maximize the score a gymnast will receive in a given event by selecting routines of appropriate difficulty and practicing them adequately; this implies that a gymnast has perfect information about the ability- and preparation-related elements of the proposed scoring model. We also assume that a gymnast has no control over the environment-related factors of her scoring.
+
+\subsection{Sample Construction}
+
+We begin by narrowing our sample to scores from a subset of 3,212 meets in our dataset that meet a certain set of criteria. We want to avoid incorporating playoff meets into our sample, as these meets could induce a different set of incentives than score maximizing under certain circumstances. For example, if a final gymnast only needed a relatively low score on her beam routine to guarantee moving her team to the next round, she might change her routine to minimize the chance of a major mistake instead of trying a riskier, more difficult routine that could maximize her score. In addition, we want to only consider non-invitational meets. Invitational meets often represent a different environment than a typical regular season meet, as they are often hosted by gymnastics organizations instead of specific universities.
+
+Explaining which meets we include in our sample for each university is easiest via an example, so suppose we take the University of Alabama as a host university. The University of Arkansas women’s gymnastics team performed at Alabama every other year beginning in 2016 through 2024, so we include every score from every Arkansas gymnast at every one of their non-invitational regular season meets from those five years (2016, 2018, 2020, 2022, and 2024) in our sample. In contrast, we include every score from every University of Denver gymnast at every one of their non-invitational regular season meets from only 2019, as this is the only season in which Denver visited Alabama over our 2015-2024 time span. We repeat this process for every team that visited Alabama over that time period, collecting scores from meets in seasons in which they visited Alabama to eventually build the full Alabama sample described in Table 1. We then estimate the model we will describe below for Alabama and repeat this process for each successive host university.
+
+In order to examine the effect of being Black when performing at a given university, we also need to know which gymnasts are Black and which ones are not. Since we do not have the individual-level data that each gymnast reports to the NCAA, we coded each gymnast as Black or not based on visual inspection of their official photographs from each school’s official gymnastics website. Figure 1 shows an example of a typical web page used in this process. We are aware that binary assignment of race based on skin color and other visual features subjects us to the "eye of the beholder" problem discussed in \cite{fort_gill_2020}. For this reason, we compare our classifications to aggregated racial demographics provided by the NCAA (\citealp{ncaa_2018}) in Table 2. It should be noted that their database includes all registered student-athletes, whereas our data only includes those who competed and received at least one score in a given year. In addition, we may identify gymnasts as Black when they identify in the NCAA demographics as Other, including mixed race. Our percentages of Black gymnasts in each year from 2015-2023 (2024 data has yet to be published) are not identical to the NCAA's data, but they do follow similar trends year by year.
+
+\subsection{Estimation Strategy}
+
+We begin our estimation strategy with a baseline differences-in-differences model:
+\begin{equation}
+    \text{score}_{iem} = \beta_0 + \beta_1 \text{Black}_i + \beta_2 \text{atHost}_m + \beta_3 \text{Black*atHost}_{im} + [\text{event}]_e + u_{iem}
+\end{equation}
+\noindent where subscripts \textit{i}, \textit{e}, and \textit{m} refer to individual gymnasts, events, and meets, respectively. The dependent variable is the score earned by a gymnast in a given event, and the interaction term $\text{(Black*atHost)}_{im}$ takes a value of 1 if the observation is a score received by a Black gymnast competing at a host university and 0 otherwise. $\text{Black}_i$ and $\text{atHost}_m$ represent binary variables for a gymnast being Black and a meet being held at said university. We also include fixed effects for the event in which a given score was received  (i.e. vault, bars, etc.) denoted as $[\text{event}]_e$. The inclusion of this piece is supported by the event score means presented in Table 3, where the events that can be fallen off of (bars and beam) average lower scores than the events that can't (vault and floor), and it broadly controls for the nuances particular to each event. A stochastic error term, represented by $u_{iem}$, is also included. In this model, $\beta_0$ is the regression constant term, and the coefficient of interest is $\beta_3$, which we interpret as the differential impact of competing at that university on Black gymnasts relative to non-Black gymnasts and other venues.
+
+This baseline model certainly suffers from omitted variable bias. To combat this, we introduce gymnast- and meet-level fixed effects:
+\begin{gather}
+    \text{score}_{iem}  =  \beta_0 + \beta_3 \text{(Black*atHost)}_{im} + [\text{gymnast}]_i + [\text{meet}]_m + [\text{event}]_e + \epsilon_{iem}
+\end{gather}
+\noindent where each of the new square bracketed terms denotes a relevant set of fixed effects and the error term is represented by $\epsilon_{iem}$. These new sets of fixed effects control for gymnast- and meet-specific characteristics that influence the score a gymnast receives at a given meet, including (but not limited to) individual judge biases, venue altitude, point-in-time effects (such as the start value a certain skill is worth in the year of a given meet), gymnasts’ innate skill and physical qualities, cumulative coach and team effects on gymnasts, and so on. We argue that these fixed effects control for every possible relevant factor to the score a gymnast receives as put forth in our generalized scoring model. Finally, to account for possible correlation between the scores received at a given meet (due to shared judges, etc.), we report standard errors clustered at the meet level.
+
+For a causal interpretation of $\beta_3$ to be possible, the gymnasts in our sample must satisfy the parallel trends assumption. Specifically, we assume that Black gymnasts performing at a given host university would experience the same relative change in performance at that venue as their non-Black counterparts would at the same venue in the absence of any extra effect of that venue on Black gymnasts. Since different teams visit different hosts at different points in the season throughout our dataset, we attempt to support our parallel trends assumption with Figure 2, in which we plot average scores in our sample by race and meet number. The figure shows that both Black and non-Black gymnasts see their scores increase over the course of a season on average. Most notably, the lines of best fit we plot in that figure fit comfortably within one standard deviation from the average scores of gymnasts across both groups over the course of a regular season. We suggest that this figure demonstrates the baseline viability of the parallel trends assumption needed for our estimates to be interpreted as causal.
+
+We interpret a given host university's $\beta_3$ estimate as a gymnast-at-host-level effect. If that effect is statistically significant at a given university, it could be due to an environmental microaggression factor like the name of a gymnasium or a predominantly non-Black student body, or it could be some other factor at a given university affecting Black gymnasts for some reason. We reason that if we were to see negative $\beta_3$ estimates within certain sets of universities - such as those that have never had a Black gymnast on their team or those included in a web article or Twitter thread compiling gymnasts speaking out against racism within their teams (such as in \cite{duffy_2020} or \cite{boswell_2020}) - then we may reasonably conclude that an environmental microaggression effect is present for Black gymnasts at some subset of universities. However, if universities with statistically significant $\beta_3$ estimates do not follow a noticeable trend, we might instead attribute those results to statistical noise.
+
+We also considered implementing a triple difference design following \cite{olden_moen_2022}, where the third difference would come from a score being received pre- or post-May 2020. The motivating event behind that difference would have been the aftermath of George Floyd's death and its effect of raising social awareness about racial issues in the United States. However, to satisfy the parallel trends assumption for the triple difference estimator, we would have had to assume that Black gymnasts performing at a given school would have experienced the same relative change in performance pre- and post-2020 as their non-Black counterparts absent the heightened environment of racial awareness. This would mean assuming that the COVID-19 pandemic had the same effect on Black gymnasts as non-Black gymnasts. Knowing of the large body of research against this point (see \cite{covid_2021} and \cite{covid_2020} for just two examples), we decided that such a design would not be sufficiently useful to include in this paper.
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+% RESULTS 1
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+
+\section{Results}
+
+Figure 3 shows the results of estimating $\beta_3$ for each of the 87 host universities in our sample. Of those 87 universities, only seven return estimates of $\beta_3$ that are statistically different from zero, and four of those are positive. There does not appear to be a notable trend in what universities return these statistically significant estimates; they cover a large span of the Black gymnast participation rate captured on the X-axis, they are not concentrated in any one geographic region, and most of them are not contained in Boswell's compilation Twitter thread or Duffy's article (\citealp{boswell_2020}; \citealp{duffy_2020}). For a closer look at these specific universities, we record the exact results of our estimation for each of these seven universities in Table 4. Given these results, we find it unlikely that there is an environmental microaggression effect that affects Black gymnasts in the NCAA. But, then, how should we interpret the results we do see?
+
+By using 95\% confidence intervals as our judge for the statistical difference of $\beta_3$ from zero, we necessarily subject ourselves a 5\% Type I error rate, meaning we expect to estimate a truly zero effect as statistically different from zero once in twenty tries. Since our testing is also two-sided, we would expect to estimate a truly zero effect as statistically greater than zero once in forty tries, and likewise in the opposite direction. If the null hypothesis of a true-zero effect held across all 87 universities in our sample, we would nonetheless expect to see two instances of statistically negative effects and two of statistically positive effects. As such, we argue that the few statistically significant estimates we observe in Figure 3 are more likely to be a result of our choice of statistical inference method than they are to be indicative of any sort of environmental effect among certain universities as meet hosts. In addition, the fact that we see a few more positive estimates than we would expect to see by pure chance may be reflective of a trend visible in Table 3 and Figure 2 in which Black gymnasts score higher on average than their non-Black peers across the NCAA as a whole.  
+
+Given that we saw significant estimates across a seemingly random set of schools, we might ask a natural follow-up question: would a conservative adjustment to our standard errors designed to account for the multiple hypothesis tests we perform leave any school with a statistically significant estimate for $\beta_3$? After all, if significant results are the result of our method of statistical inference allowing too high of a Type I error rate (false rejection of the no effect null hypothesis), then a correction or adjustment designed to prevent Type 1 errors may help clarify our results. Following this logic, we show in Figure 4 the results of applying the Bonferroni correction\footnote{In our case, this involves creating 99.95\% confidence intervals for each estimate, approximating the $\frac{0.05}{87}$ adjustment to our p-values that approximately requires a 99.942\% CI.} to the confidence intervals used in Figure 3 (as established in \cite{dunn_1961} and discussed in \cite{armstrong_2014} and \cite{vanderweele_mathur_2019}). 
+
+We see in Figure 4 that the $\beta_3$ estimate for the University of Pittsburgh remains statistically significant even after applying the Bonferroni correction. According to \citep{armstrong_2014}, our use of the Bonferroni correction in this context can be interpreted as testing the "universal null hypothesis" that every test we ran is not statistically significant. Seeing that one of our results remains significant suggests there is some differential effect for Black gymnasts in at least one place, but we have no knowledge as to why this would be positive generally or found at the University of Pittsburgh specifically. It is possible that the Pittsburgh estimate survives because it has the greatest number of meets and scores of the previously significant estimates, implying this estimate having the greatest statistical power of that set; this would align with the fact that the Bonferroni correction generally reduces the power of a statistical estimate.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+% Conclusions
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusion}
+
+We contribute to research that uses sports to research broader effects on agents by making a comprehensive dataset of collegiate women’s gymnastics scores available to researchers for the first time. We use that dataset to test whether Black gymnasts experience a change in performance that their non-Black competitors do not experience when competing at 87 NCAA universities. Our dataset allows us to introduce important sets of fixed effects to control for relevant factors that influence scores, which allow us to isolate the interaction between a gymnast’s being Black and the host of a meet at which they perform.
+
+We find few significant differences in score distributions between Black and non-Black gymnasts using our model, and we argue that this result provides no evidence that any given university hosting a given meet negatively affects Black gymnasts’ performance to a notable degree. We do find that one result survives an extremely conservative statistical adjustment, but we have no solid explanation for why. As such, we call for further research into this effect, both in the context of collegiate sports and beyond.
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAFIA
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+\newpage
+% see line 20 for the style
+\bibliography{references} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% MAIN FIGURES AND TABLES
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section*{Figures and Tables} 
+
+\begin{table}[htp]
+\centering
+\begin{threeparttable}
+\caption{Team-Seasons Included in the Sample for the University of Alabama}
+    \begin{tabular}{lcccccccccc}
+        \toprule
+        Team              & 2015 & 2016 & 2017 & 2018 & 2019 & 2020 & 2021 & 2022 & 2023 & 2024 \\
+        \midrule
+        Arizona           & X    &      &      &      &      &      &      &      &      &      \\
+        Arkansas*         &      & X    &      & X    &      & X    &      & X    &      & X    \\
+        Auburn*           & X    &      & X    &      & X    &      & X    &      & X    &      \\
+        Boise State       & X    &      & X    &      &      &      &      &      & X    &      \\
+        Bowling Green     &      &      &      &      & X    &      &      &      &      &      \\
+        Denver            &      &      &      &      & X    &      &      &      &      &      \\
+        Florida*          & X    &      & X    &      & X    &      & X    &      & X    &      \\
+        Georgia*          &      & X    &      & X    &      & X    &      & X    &      & X    \\
+        Illinois*         &      &      &      &      &      &      &      &      &      & X    \\
+        Iowa State        &      &      & X    &      &      &      &      &      &      &      \\
+        Kentucky*         &      & X    &      & X    &      & X    & X    & X    &      & X    \\
+        LSU*              & X    &      & X    &      & X    &      & X    &      & X    &      \\
+        Michigan          &      &      &      &      & X    &      &      &      &      &      \\
+        Michigan State    &      &      &      &      &      &      &      &      & X    &      \\
+        Minnesota         &      &      &      &      &      &      &      &      &      & X    \\
+        Missouri*         &      & X    &      & X    &      & X    &      & X    &      & X    \\
+        North Carolina    &      &      &      & X    &      &      &      & X    &      &      \\
+        Northern Illinois &      &      &      &      & X    &      &      &      &      &      \\
+        Oklahoma          & X    &      &      & X    &      & X    &      &      &      &      \\
+        S.E. Missouri     &      &      &      &      & X    &      &      &      &      &      \\
+        Talladega         &      &      &      &      &      &      &      &      &      & X    \\
+        Temple            &      &      &      &      & X    &      &      &      &      &      \\
+        West Virginia     &      & X    &      &      &      &      &      &      &      &      \\
+        Western Michigan  &      &      &      &      &      &      &      & X    &      &      \\
+        \midrule
+        Scores by Year     & 1,437 & 1,173 & 1,078 & 1,441 & 2,128 & 1,079 & 768 & 1,318 & 1,127 & 1,581 \\
+        \cmidrule(lr){1-3}
+        Total Scores & \multicolumn{2}{c}{13,130} & & & & & & & \\
+        \bottomrule
+    \end{tabular}
+
+    \begin{tablenotes}[flushleft] % Adjusted to flushleft for alignment with the leftmost part of the table
+        \small
+        \item \textit{Notes}. Each X represents a year in which the team on a given row competed at Alabama in a regular season meet. If a team has a check for a given year, every non-invitational regular season meet in which that team competed in that year is included in our dataset. *Asterisks denote conference opponents.
+    \end{tablenotes}
+
+
+\end{threeparttable}
+\end{table}
+
+
+\clearpage
+
+
+\begin{figure}[htbp]
+    \centering
+    \caption{Example Screenshot of a Women’s Gymnastics Roster}
+    
+    \adjustbox{cfbox=black 1.5pt}{\includegraphics[width=0.95\textwidth]{Figures24/figure1.png}}
+
+    \vspace{0.5em}
+    
+    \captionsetup{width=0.95\textwidth}
+    \caption*{\small \textit{Notes}. This screenshot shows four gymnasts from the 2022 Utah State University women’s gymnastics roster as displayed on the official team website. The screenshot was taken by the authors from \text{https://utahstateaggies.com/sports/womens-gymnastics/roster/2022} on 28 December 2023. More photos of each gymnast were available upon clicking their names. Amari Evans was coded as Black, while the other three gymnasts pictured were not.}
+\end{figure}
+
+\clearpage
+
+\begin{table}[htbp]
+    \centering
+    \begin{threeparttable}
+    
+        \caption{NCAA Demographics Comparison}
+        
+        \begin{tabular}{lccrccr}
+            \toprule
+             & & \multicolumn{2}{c}{Our Sample} & & \multicolumn{2}{c}{NCAA Demo.} \\
+            \cmidrule(lr){3-4} \cmidrule(lr){6-7}
+            Year & & N & Black \% & & N & Black \% \\
+            \midrule
+            2015 & & 1,161 & 9.30\% & & 1,492 & 7.77\% \\
+            2016 & & 1,168 & 9.25\% & & 1,502 & 7.86\% \\
+            2017 & & 1,163 & 9.54\% & & 1,523 & 7.68\% \\
+            2018 & & 1,197 & 10.53\% & & 1,547 & 7.95\% \\
+            2019 & & 1,198 & 10.93\% & & 1,542 & 8.24\% \\
+            2020 & & 1,172 & 12.03\% & & 1,515 & 8.51\% \\
+            2021 & & 935 & 11.12\% & & 1,586 & 8.39\% \\
+            2022 & & 1,281 & 11.01\% & & 1,707 & 7.67\% \\
+            2023 & & 1,283 & 12.08\% & & 1,715 & 8.10\% \\
+            \bottomrule
+        \end{tabular}
+
+        \begin{tablenotes}[flushleft] % Adjusted to flushleft for alignment with the leftmost part of the table
+            \small
+            \item \textit{Notes}. N is total number of gymnasts and Black \% is the percentage of all gymnasts in that year who are Black. Our Sample includes only gymnasts who recorded a score at a non-invitational regular season meet in a given year; NCAA Demo includes all gymnasts registered with the NCAA in a given year whether they compete or not.
+        \end{tablenotes}
+        
+    \end{threeparttable}
+\end{table}
+
+\clearpage
+
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{threeparttable}
+    
+        \caption{Score Summary Statistics}
+        
+        \begin{tabular}{lcccc}
+            \toprule
+             & Vault & Bars & Beam & Floor \\
+            \midrule
+            \textbf{Black} \\
+            Mean & 9.707 & 9.626 & 9.617 & 9.721 \\
+            (SD) & \small(0.227) & \small(0.439) & \small(0.349) & \small(0.334) \\
+            $N$ & 6,667 & 5,306 & 4,489 & 5,960 \\
+            \midrule
+            \textbf{Not Black} \\
+            Mean & 9.646 & 9.533 & 9.566 & 9.642 \\
+            (SD) & \small(0.256) & \small(0.487) & \small(0.396) & \small(0.364) \\
+            $N$ & 37,628 & 39,174 & 40,129 & 38,417 \\
+            \bottomrule
+        \end{tabular}
+
+        \begin{tablenotes}[flushleft] % Adjusted to flushleft for alignment with the leftmost part of the table
+            \small
+            \item \textit{Notes}. This table includes only the scores we use in our sample; it contains no scores from invitational or playoff meets.
+        \end{tablenotes}
+        
+    \end{threeparttable}
+\end{table}
+
+\clearpage
+
+
+\begin{figure}[htbp]
+    \centering
+    \caption{Average Score by Race and Meet Week Number}
+    
+    \adjustbox{cfbox=black 1.5pt}{\includegraphics[width=0.95\textwidth]{Figures24/figure2.png}}
+
+    \vspace{0.5em}
+    
+    \captionsetup{width=0.95\textwidth}
+    \caption*{\small \textit{Notes}. This table includes only the scores we use in our sample; it contains no scores from invitational or playoff meets.}
+\end{figure}
+
+
+\clearpage
+
+\begin{figure}[htbp]
+    \centering
+    \caption{Dif-in-Dif Estimates Plotted by \% Black Gymnasts Ever Attending}
+    
+    \adjustbox{cfbox=black 1.5pt}{\includegraphics[width=0.95\textwidth]{Figures24/figure3.png}}
+
+    \vspace{0.5em}
+    
+    \captionsetup{width=0.95\textwidth}
+    \caption*{\small \textit{Notes}. This figure plots the $\beta_3$ estimate for all 87 host universities in our sample along with their corresponding 95\% confidence intervals. Estimates with confidence intervals above 0 are colored green and marked with triangles; those below 0 are colored red and marked with squares. \% Black gymnasts ever competed on team is calculated using gymnasts performing for a given host university from 2015-2024. Standard errors are clustered at the meet level.}
+\end{figure}
+
+
+\clearpage
+
+
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{threeparttable}
+    
+        \caption{Score Summary Statistics}
+        
+        \begin{tabular}{lrccccc}
+    \toprule
+    University & Black \% & Estimate & Unadjusted & Bonferroni & N & $\text{R}^2$ \\
+               & & \small(St. Err.) & p-value & p-value & & \\
+    \midrule
+    Utica           & 0.00\% & 0.211 & 0.0201 & 1.0000 & 239 & 0.543 \\
+                    & & \small(0.0747) & & & & \\
+    Southern Conn.  & 4.82\% & -0.206 & 0.0220 & 1.0000 & 6,374 & 0.514 \\
+                    & & \small(0.0892) & & & & \\
+    Hamline         & 6.02\% & -0.141 & 0.0013 & 0.1122 & 7,175 & 0.440 \\
+                    & & \small(0.0434) & & & & \\
+    Pittsburgh      & 15.17\% & 0.061 & 0.0004 & 0.0354 & 15,013 & 0.223 \\
+                    & & \small(0.0172) & & & & \\
+    Bridgeport      & 16.20\% & 0.084 & 0.0099 & 0.8593 & 7,272 & 0.407 \\
+                    & & \small(0.0322) & & & & \\
+    Kent State      & 16.34\% & 0.059 & 0.0196 & 1.0000 & 12,353 & 0.298 \\
+                    & & \small(0.0252) & & & & \\
+    Alabama         & 20.00\% & 0.026 & 0.0402 & 1.0000 & 13,130 & 0.289 \\
+                    & & \small(0.0128) & & & & \\
+    \bottomrule
+\end{tabular}
+
+        \begin{tablenotes}[flushleft] % Adjusted to flushleft for alignment with the leftmost part of the table
+            \small
+            \item \textit{Notes}. These universities are labeled in Figure 3 as the only universities in our sample with statistically different-from-zero estimates for $\beta_3$. Observations (N) are individual event scores received by gymnasts, selected for inclusion in each row as described in the Sample Construction subsection of our Empirical Strategy section. Standard errors are clustered at meet level. 5\%**, 1\%***.
+        \end{tablenotes}
+        
+    \end{threeparttable}
+\end{table}
+
+\clearpage
+
+
+\begin{figure}[htbp]
+    \centering
+    \caption{Dif-in-Dif Estimates With Bonferroni-Adjusted Confidence Intervals}
+    
+    \adjustbox{cfbox=black 1.5pt}{\includegraphics[width=0.95\textwidth]{Figures24/figure4.png}}
+
+    \vspace{0.5em}
+    
+    \captionsetup{width=0.95\textwidth}
+    \caption*{\small \textit{Notes}. This figure plots the $\beta_3$ estimate for all 87 host universities in our sample along with their corresponding 99.95\% confidence intervals. Estimates with confidence intervals above 0 are colored green and marked with triangles; those below 0 would be colored red and marked with squares if there were any. \% Black gymnasts ever competed on team is calculated using gymnasts performing for a given host university from 2015-2024. Standard errors are clustered at the meet level and Bonferroni-adjusted.}
+\end{figure}
+
+
+
+\end{document}
