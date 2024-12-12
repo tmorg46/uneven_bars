@@ -7,7 +7,7 @@ this file gets all the unique gymnast-by-team observations from our scrapes, mar
 clear all
 
 *edit this to be the path with all the team-year csv files
-global route "C:\Users\tmorg\Desktop\uneven_bars"
+global route "/Users/tmorg46/Desktop/uneven_bars"
 
 
 *make an empty file that we'll use as an append base
@@ -37,10 +37,16 @@ replace gymnast = "Desire' Stephens" if gymnast=="DesirÃ© Stephens" // obvious
 
 replace gymnast = "Ava Kelley" if gymnast=="Ava Kelly" & team=="Springfield College" // they spelled her name wrong and there's another Ava Kelly at Southern Conn
 
+replace gymnast = "Jessica Miley" if gymnast=="Jessisca Miley" // this is just a raw extra-S typo
+
+replace gymnast = "Sunny Hasebe" if gymnast=="Haruka Hasebe" // this is a Winona State gymnast with two names she's used for scores
+
 replace gymnast = "Kaitlin DeGuzman" if gymnast=="Kaitlin Deguzman" // they didn't capitalize her name at Kentucky but did at Clemson
 replace gymnast = "Sophia LeBlanc" if gymnast=="Sophia Leblanc" // another caps issue here
 
 replace gymnast = "Lindsey Hunter-Kempler" if team=="BYU" & (gymnast=="Linsey Hunter-Kempler" | gymnast=="Lindsey Hunter") // she got married and hyphenated her name
+replace gymnast = "Natasha Marsh" if team=="BYU" & gymnast=="Natasha Trejo" // she got married and changed her name
+replace gymnast = "Shannon Evans" if team=="BYU" & gymnast=="Shannon Hortman" // so did she
 
 replace gymnast = subinstr(gymnast, "  ", " ", .) // there's a bunch of double space gaps for no reason
 

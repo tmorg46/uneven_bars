@@ -18,7 +18,7 @@ ssc install schemepack
 set scheme white_tableau
 
 *edit this to be the path with all the team-year csv files
-global route "C:\Users\tmorg\Desktop\uneven_bars"
+global route "/Users/tmorg46/Desktop/uneven_bars"
 
 cap mkdir "$route/output"
 
@@ -43,7 +43,7 @@ merge m:1 team gymnast using `races', keep(1 3) nogen // now all the gymnasts ar
 
 *reshape the dataset so score is in one column and mark each of the events
 rename (vault bars beam floor) (score1 score2 score3 score4)
-reshape long score, i(gymnast meettitle date host) j(event)
+reshape long score, i(gymnast meet_id date host) j(event)
 drop if score==.
 
 label define event_lbl 1 "vault" 2 "bars" 3 "beam" 4 "floor"
