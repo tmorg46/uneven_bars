@@ -7,7 +7,7 @@ this file gets all the unique gymnast-by-team observations from our scrapes, mar
 clear all
 
 *edit this to be the path with all the team-year csv files
-global route "/Users/tmorg46/Desktop/uneven_bars"
+global route "C:\Users\toom\Desktop\uneven_bars"
 
 
 *make an empty file that we'll use as an append base
@@ -40,6 +40,7 @@ replace gymnast = "Marie Priest" if gymnast=="Narah Priest" // this was a weird 
 replace gymnast = "Ava Kelley" if gymnast=="Ava Kelly" & team=="Springfield College" // they spelled her name wrong and there's another Ava Kelly at Southern Conn
 
 replace gymnast = "Jessica Miley" if gymnast=="Jessisca Miley" // this is just a raw extra-S typo
+replace gymnast = "Maddie Vitolo" if gymnast=="Maddie Viltolo" // and an extra-L classic
 
 replace gymnast = "Sunny Hasebe" if gymnast=="Haruka Hasebe" // this is a Winona State gymnast with two names she's used for scores
 
@@ -121,5 +122,17 @@ egen meet_id = concat(date host meettitle), punct(" / ")
 compress
 sort team meetnum year
 export delimited using "$route/data/all_scores_2015-2024.csv", replace // and we're done!
+
+
+*actually we wanna also get a list of all the gymnasts individually:
+collapse year, by(gymnast team)
+keep gymnast team
+sort gymnast team
+drop if gymnast==gymnast[_n-1] // now it's a unique list of gymnasts, we can find their pics on any team (if they have multiple)
+
+
+
+
+
 
 
