@@ -45,13 +45,10 @@ log close
 **************************************************************
 *Table 2: Comparing our demographic ratios to the overall NCAA
 **************************************************************
-// done
+/* done
 use "$route/data/analysis_set.dta", clear
 
-gen table2_race = race // the NCAA has white, black, hisp/lat, and several more that don't align with FairFace, so I'll code the non-matching ones into an other category:
-replace table2_race = "Other" if race!="White" & race!="Black" & race!="Latino/Hispanic"
-
-collapse score, by(gymnast_id year table2_race) // get it down to a gymnast count by race and year to get a unique count of scorers
+collapse score, by(gymnast_id year ncaa_race) // get it down to a gymnast count by race and year to get a unique count of scorers
 
 cap log close 
 log using "${route}/output/table2.txt", text replace nomsg
@@ -59,7 +56,7 @@ log using "${route}/output/table2.txt", text replace nomsg
 foreach year of numlist 2015/2024 {
 	
 	di "tabs for `year':"
-	tab table2_race if year==`year' // we want to go year-by-year so it gives us %ages as well as counts to make it easier for the table!
+	tab ncaa_race if year==`year' // we want to go year-by-year so it gives us %ages as well as counts to make it easier for the table!
 }
 
 log close
@@ -69,10 +66,12 @@ log close
 ******************************************
 *Table 3: Average Scores by Event and Race
 ******************************************
-/* done
+// done
 use "$route/data/analysis_set.dta", clear
 
-cap log close
+keep if host!="" // we only want meets hosted by a specific school for this project!!
+
+/* cap log close
 log using "$route/output/table3.txt", text replace nomsg // we can put this into a table later!!
 
 foreach event in vault bars beam floor {

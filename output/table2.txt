@@ -3,12 +3,12 @@
 . foreach year of numlist 2015/2024 {
   2.         
 .         di "tabs for `year':"
-  3.         tab table2_race if year==`year' // we want to go year-by-year so it gives
->  us %ages as well as counts to make it easier for the table!
+  3.         tab ncaa_race if year==`year' // we want to go year-by-year so it gives u
+> s %ages as well as counts to make it easier for the table!
   4. }
 tabs for 2015:
 
-    table2_race |      Freq.     Percent        Cum.
+      ncaa_race |      Freq.     Percent        Cum.
 ----------------+-----------------------------------
           Black |         88        7.59        7.59
 Latino/Hispanic |         51        4.40       11.98
@@ -18,7 +18,7 @@ Latino/Hispanic |         51        4.40       11.98
           Total |      1,160      100.00
 tabs for 2016:
 
-    table2_race |      Freq.     Percent        Cum.
+      ncaa_race |      Freq.     Percent        Cum.
 ----------------+-----------------------------------
           Black |         89        7.62        7.62
 Latino/Hispanic |         65        5.57       13.18
@@ -28,7 +28,7 @@ Latino/Hispanic |         65        5.57       13.18
           Total |      1,168      100.00
 tabs for 2017:
 
-    table2_race |      Freq.     Percent        Cum.
+      ncaa_race |      Freq.     Percent        Cum.
 ----------------+-----------------------------------
           Black |         89        7.66        7.66
 Latino/Hispanic |         72        6.20       13.86
@@ -38,7 +38,7 @@ Latino/Hispanic |         72        6.20       13.86
           Total |      1,162      100.00
 tabs for 2018:
 
-    table2_race |      Freq.     Percent        Cum.
+      ncaa_race |      Freq.     Percent        Cum.
 ----------------+-----------------------------------
           Black |        100        8.41        8.41
 Latino/Hispanic |         80        6.73       15.14
@@ -48,7 +48,7 @@ Latino/Hispanic |         80        6.73       15.14
           Total |      1,189      100.00
 tabs for 2019:
 
-    table2_race |      Freq.     Percent        Cum.
+      ncaa_race |      Freq.     Percent        Cum.
 ----------------+-----------------------------------
           Black |        107        9.01        9.01
 Latino/Hispanic |         84        7.08       16.09
@@ -58,7 +58,7 @@ Latino/Hispanic |         84        7.08       16.09
           Total |      1,187      100.00
 tabs for 2020:
 
-    table2_race |      Freq.     Percent        Cum.
+      ncaa_race |      Freq.     Percent        Cum.
 ----------------+-----------------------------------
           Black |        114        9.78        9.78
 Latino/Hispanic |         84        7.20       16.98
@@ -68,7 +68,7 @@ Latino/Hispanic |         84        7.20       16.98
           Total |      1,166      100.00
 tabs for 2021:
 
-    table2_race |      Freq.     Percent        Cum.
+      ncaa_race |      Freq.     Percent        Cum.
 ----------------+-----------------------------------
           Black |         89        9.56        9.56
 Latino/Hispanic |         76        8.16       17.72
@@ -78,7 +78,7 @@ Latino/Hispanic |         76        8.16       17.72
           Total |        931      100.00
 tabs for 2022:
 
-    table2_race |      Freq.     Percent        Cum.
+      ncaa_race |      Freq.     Percent        Cum.
 ----------------+-----------------------------------
           Black |        119        9.37        9.37
 Latino/Hispanic |        114        8.98       18.35
@@ -88,7 +88,7 @@ Latino/Hispanic |        114        8.98       18.35
           Total |      1,270      100.00
 tabs for 2023:
 
-    table2_race |      Freq.     Percent        Cum.
+      ncaa_race |      Freq.     Percent        Cum.
 ----------------+-----------------------------------
           Black |        128       10.08       10.08
 Latino/Hispanic |        122        9.61       19.69
@@ -98,7 +98,7 @@ Latino/Hispanic |        122        9.61       19.69
           Total |      1,270      100.00
 tabs for 2024:
 
-    table2_race |      Freq.     Percent        Cum.
+      ncaa_race |      Freq.     Percent        Cum.
 ----------------+-----------------------------------
           Black |        142       10.59       10.59
 Latino/Hispanic |        114        8.50       19.09

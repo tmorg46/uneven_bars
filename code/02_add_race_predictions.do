@@ -36,6 +36,9 @@ gen gymnast_id = _n // there's a random id now!! yay!
 replace race = "Latino/Hispanic" if race=="Latino_Hispanic" // just make it prettier
 keep gymnast gymnast_id race // these are the only three variables we need for the rest of the project
 
+gen ncaa_race = race // the NCAA has white, black, hisp/lat, and several more that don't align with FairFace, so I'll code the non-matching ones into an other category:
+replace ncaa_race = "Other" if race!="White" & race!="Black" & race!="Latino/Hispanic"
+
 tempfile racewalk
 save `racewalk', replace
 
