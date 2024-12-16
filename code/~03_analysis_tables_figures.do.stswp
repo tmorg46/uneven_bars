@@ -58,7 +58,7 @@ log using "${route}/output/table2.txt", text replace nomsg
 
 foreach year of numlist 2015/2024 {
 	
-	di "tabs for `year':"
+	di "tabs for `year'"
 	tab table2_race if year==`year' // we want to go year-by-year so it gives us %ages as well as counts to make it easier for the table!
 }
 
