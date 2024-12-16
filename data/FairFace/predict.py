@@ -184,7 +184,7 @@ if __name__ == "__main__":
     ensure_dir(SAVE_DETECTED_AT)
 
     imgs = pd.read_csv("input_csv.csv")['img_path']
-    #detect_face(imgs, SAVE_DETECTED_AT)
+    detect_face(imgs, SAVE_DETECTED_AT)
 
     print("detected faces are saved at ", SAVE_DETECTED_AT)
     #Please change test_outputs.csv to actual name of output csv. 
