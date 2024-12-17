@@ -71,6 +71,7 @@ use "$route/data/analysis_set.dta", clear
 
 keep if host!="" // we only want meets hosted by a specific school for this project!!
 
+
 /* cap log close
 log using "$route/output/table3.txt", text replace nomsg // we can put this into a table later!!
 

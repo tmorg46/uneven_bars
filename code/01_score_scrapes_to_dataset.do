@@ -7,21 +7,31 @@ this file gets all the unique gymnast-by-team observations from our scrapes, cre
 clear all
 
 *edit this to be the path with all the team-year csv files
-global route "C:\Users\toom\Desktop\uneven_bars"
+global route "C:/Users/toom/Desktop/uneven_bars"
+
+
+************************************************************
+*tempfile the team-division crosswalk to merge on at the end
+************************************************************
+import delimited ///
+	using "${route}/data/team_divisions.csv" ///
+	, varn(1) bindquote(strict) clear
+
+tempfile divisions
+save `divisions', replace // okay, moving on to the real stuff:
 
 
 ********************************
 *append all the files together!!
 ********************************
 // make an empty file that we'll use as an append base
+clear
 tempfile appender
 save `appender', emptyok
-
 
 *define the local with all the csv files
 cd "$route/data/scrapes"
 local files: dir "$route/data/scrapes" files "*.csv"
-
 
 *run through each csv file and append it to the ever growing append tempfile
 foreach f of local files {
@@ -142,7 +152,6 @@ replace gymnast = "Sydney Ewing (Michigan State)" if gymnast=="Sydney Ewing" & t
 *fix meet title inconsistencies and errors!!
 ********************************************
 // there's a bunch of meets whose titles are missing on RTN:
-
 *fix the BIG 5 Meet from 2024:
 replace meettitle = "BIG 5 Meet" if date=="Feb-23-2024" & host==""
 
@@ -164,12 +173,14 @@ replace meettitle = "Cancun Classic" if date=="Jan-04-2019" & host==""
 // now we'd like to generate a string that uniquely identifies events within meets, but it needs a reshape:
 rename (vault bars beam floor) (score1 score2 score3 score4)
 reshape long score, i(meettitle date host gymnast) j(event)
-drop if score==.
+drop if score==. // good stuff, now let's move along:
+
+merge m:1 team using `divisions', nogen // now we've got divisions attached to the teams!
 
 label define event_lbl 1 "Vault" 2 "Uneven Bars" 3 "Balance Beam" 4 "Floor Exercise"
-label values event event_lbl
+label values event event_lbl // event is well-labeled now:
 
-egen event_meet_id = concat(event date host meettitle), punct(" / ")
+egen event_meet_id = concat(event date host meettitle), punct(" / ") // and now we have a unique event-within-meet identifier!
 
 *and now we're done!
 compress
