@@ -167,9 +167,9 @@ replace meettitle = "Cancun Classic" if date=="Jan-04-2019" & host==""
 // there are two untitled meets involving Georgia in March 2023, they had to do some emergency repairs to their arena so they went to a semi-neutral site. so they kinda hosted, but not enough to mark them as hosts (for the purposes of this project) or to title the meet. their event_meet_id made below is still unique for both of the meets.
 
 
-*****************************************
-*final formatting: reshape & save & so on
-*****************************************
+***********************************************
+*final formatting: reshape & numeric ids & save
+***********************************************
 // now we'd like to generate a string that uniquely identifies events within meets, but it needs a reshape:
 rename (vault bars beam floor) (score1 score2 score3 score4)
 reshape long score, i(meettitle date host gymnast) j(event)
@@ -180,7 +180,18 @@ merge m:1 team using `divisions', nogen // now we've got divisions attached to t
 label define event_lbl 1 "Vault" 2 "Uneven Bars" 3 "Balance Beam" 4 "Floor Exercise"
 label values event event_lbl // event is well-labeled now:
 
-egen event_meet_id = concat(event date host meettitle), punct(" / ") // and now we have a unique event-within-meet identifier!
+egen event_meet_id = concat(event date host meettitle), punct(" / ") // and now we have a unique event-within-meet identifier! but we'll want a numeric version for fixed effects later as well:
+
+sort event_meet_id
+gen emnumid  = 1
+gen emchange = event_meet_id!=event_meet_id[_n-1]
+replace emnumid = emnumid[_n-1] + emchange in 2/L // this block creates a unique group id (called emnumid for event-meet-numeric-id) for each event-by-meet identifier!
+drop emchange
+
+sort team
+gen teamid = 1
+gen swaps  = team!=team[_n-1]
+replace teamid = teamid[_n-1] + swaps in 2/L // and now we've got one for teams as well, again for fixed effects later. We'll also make one for gymnasts in do-file 2 once we get race predictions on there
 
 *and now we're done!
 compress

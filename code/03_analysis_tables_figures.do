@@ -20,21 +20,21 @@ set scheme white_tableau
 *edit this to be the path with all the team-year csv files
 global route "C:\Users\toom\Desktop\uneven_bars"
 
-cap mkdir "$route/output"
+cap mkdir "${route}/output"
 
 
 ***************************************************
 *Table 1: Team-Years Included in Sample for Alabama
 ***************************************************
 /* done
-use "$route/data/analysis_set.dta", clear
+use "${route}/data/analysis_set.dta", clear
 
 gen at = host=="Alabama"
 bysort team year: egen visited_bama = sum(at)
 drop if visited_bama==0 | team=="Alabama" // now it's only the teams that visited Alabama in those seasons!!
 
 cap log close
-log using "$route/output/table1.txt", text replace nomsg
+log using "${route}/output/table1.txt", text replace nomsg
 
 tab team year
 
@@ -46,7 +46,7 @@ log close
 *Table 2: Comparing our demographic ratios to the overall NCAA
 **************************************************************
 /* done
-use "$route/data/analysis_set.dta", clear
+use "${route}/data/analysis_set.dta", clear
 
 collapse score, by(gymnast_id year ncaa_race) // get it down to a gymnast count by race and year to get a unique count of scorers
 
@@ -66,8 +66,9 @@ log close
 *****************************************************
 *Table 3: Average Scores by Event, Division, and Race
 *****************************************************
+/* done
 // we're gonna swap through summarizing scores by these categories and putting the means and sd's into locals
-use "$route/data/analysis_set.dta", clear
+use "${route}/data/analysis_set.dta", clear
 
 keep if host!="" // we only want meets hosted by a specific school for this project!!
 
@@ -396,7 +397,83 @@ putexcel B19 = `nond1_white_vault_score'	///
 		 E24 = `nond1_all_floor_stdev'	///
 		 F24 = `nond1_all_overall_stdev', nformat(#0.00) // that's panel 3! donezo!!
 
+*/
 
+
+*******************************************************************
+*Table 4a: Find venues with significant Black-to-White coefficients 
+*******************************************************************
+// pending
+*so let's start by tryna find the teams with significant coefficients on our diff-in-diff!
+use "${route}/data/analysis_set.dta", clear
+
+local iteration = 0 // nothing has run yet, and we wanna run a replace vs. an append later...
+levelsof host, local(teams) // this gets every team that has hosts a meet from the dataset!
+
+cap log close
+log using "${route}/output/table4a_log.txt", text replace nomsg // we gotta get the list of 
+
+quietly {
+	foreach team of local teams {
+
+		local iteration = `iteration' + 1 // this will let us replace logs and output files that need appends later
+		
+		local title "`team'" // now we've got which team we're focused on for this loop, and:
+		local vartitle = ustrregexra(lower("`team'"), "\W|_", "", .) // this gives a chimchar-esque version of each team name that works as a variable title
+
+		// let's clean the dataset and prep it for a nice lil analysis:
+		use "${route}/data/analysis_set.dta", clear
+		
+		*keep if meetnum < 11 // we're only checking meets before week 11 via Figure 2 logic
+		
+		keep if inlist(race, "White", "Black") // this is the Black-White comp section
+
+		*this piece of the analysis is regular-season focused on a team's vistors, so:
+		drop if team=="`title'"
+
+		*now narrow it to those team-years in which a team visited a given school
+		gen at = host=="`title'"
+		bysort team year: egen visited_`vartitle' = sum(at) // this will mark each season for each team when they visited the host for this loop!
+		
+		drop if visited_`vartitle'==0 // because it's only for team-seasons visiting that host
+		drop visited_`vartitle'
+
+		*generate the key indicator variable!!
+		gen black 	 = race=="Black"
+		gen black_at = black*at
+		
+		*now we'll run our very excellent model, but we don't need 2000 lines of output:
+		qui reg score black_at			 ///
+			i.gymnast i.teamid i.emnumid ///
+			, vce(cl emnumid) noomit 	// and that's the model!
+			
+		*check if the p-value on the diff-in-diff coefficient is significant
+		local p_`vartitle' = r(table)[4,1] // this is the p-value from the regression above!
+		
+		*if the p is significant, we're gonna want these three stats as well, without rerunning:
+		local beta_`vartitle' = r(table)[1,1]
+		local ster_`vartitle' = r(table)[2,1]
+		local obsN_`vartitle' = `e(N)'
+		local bnfr_`vartitle' = min(`p_`vartitle'' * 87, 1) // the bonferroni p, adjusted for 87 hosts
+
+		if `p_`vartitle''<0.05 {
+			noisily di "`title' ESTIMATE IS SIGNIFICANT!!!!!!!!"
+			noisily di "beta: `beta_`vartitle''"
+			noisily di "ster: `ster_`vartitle''"
+			noisily di "pval: `p_`vartitle''"
+			noisily di "observations: `obsN_`vartitle''"
+			noisily di "bonferroni p: `bnfr_`vartitle''"
+			noisily di "----"
+		}
+		else {
+			noisily di "`title' estimate is not significant."
+			noisily di "----"
+		}
+		
+	} // end the for loop
+} // end the quietly block
+
+log close
 */
 
 
@@ -404,74 +481,180 @@ putexcel B19 = `nond1_white_vault_score'	///
 *Figure 2: Average Scores by Race and Meet Number
 *************************************************
 /* done
-use "$route/data/analysis_set.dta", clear
+*here's the code for the first subfigure, which motivates the narrowing to meetweek 10 in this figure
+use "${route}/data/analysis_set.dta", clear
+
+keep if host!="" // we only want meets hosted by a specific school for this project!!
+
+gen untitled = meettitle=="no meet title" // this gives us a binary for 'normal' meets
+
+local iteration = 0 // this will let us set the size of the dataset for the figure
+levelsof meetnum, local(nums) // now we can iterate through each meet week
+
+foreach num of local nums { 
+	
+	local iteration = `iteration' + 1 // this will let us set the number of observations for the figure dataset after the loops
+	
+	sum untitled if meetnum==`num'
+	
+	local frac_untitled_`num' = `r(mean)' // save the fraction of untitled meets...
+	local obs_`num' 		  = `r(N)'	  // and the score counts...
+	local meet_`num'		  = `num'	  // by meet number!
+}
+
+clear
+
+local obs = `iteration' // one fraction per meetnum
+set obs `obs'
+
+gen meetnum = 0
+gen obs = 0
+gen frac_untitled = 0 // need the variables to exist to replace their values!
+
+local obs_num = 0 // for filling in each row, as used below:
+
+foreach num of local nums {
+	
+	local obs_num = `obs_num' + 1 // row by row replaces:
+	
+	replace meetnum    		= `meet_`num''  		in `obs_num' // now we've got a row...
+	replace obs		   		= `obs_`num''   		in `obs_num' // for each meet number...
+	replace frac_untitled 	= `frac_untitled_`num'' in `obs_num' // and its stats!
+}
+
+twoway ///
+	scatter frac_untitled meetnum [fw=obs]	///
+		, m(Oh)	mcolor(gs5)					///
+	|| ///
+	scatter frac_untitled meetnum	///		
+		, m(o) mcolor(gs1)			///
+	graphregion(color(white)) 										 ///
+	ytitle(Average Score by Race) 									 ///
+	xtitle(Meet Number)  xlabel(1(1)`iteration') xtick(0.5) xsize(6) ///
+	legend(															 ///
+		position(6) rows(1) order(2 1) 								 ///
+		label(2 "Fraction of Scores from Untitled Meets")			 ///
+		label(1 "Number of Scores in Meet Week")) 					// yuh!!!
+		
+graph export "${route}/output/figure2a.png", as(png) width(1080) replace // and now we've got the first part done!
+
+
+*here's the code for the second and third figures in the three-piece, the "parallel trends" figures
+use "${route}/data/analysis_set.dta", clear
+
+keep if host!="" // we only want meets hosted by a specific school for this project!!
+
+gen black   = race=="Black"
+gen white   = race=="White"
+gen n_white = race!="White" // we want these for the forloop down yonder, for the three lines we're putting on the figure
 
 local iteration = 0 // this will let us set the size of the dataset for the figure
 levelsof meetnum, local(nums) // now we can iterate through each meet week
 
 foreach num of local nums {
 	
-	local iteration = `iteration' + 1 // this will let us track which meet number these scores are for
+	local iteration = `iteration' + 1 // this will let us set the number of observations for the figure dataset after the loops
 	
-	foreach black in 0 1 {
+	foreach check in black white n_white {
 		
-		sum score if black==`black' & meetnum==`num'
-		local score`num'_`black' = `r(mean)' // save the score in a local
-		local min`num'_`black' = `r(mean)' - `r(sd)' // make the bottom of a +- 2 sd range
-		local max`num'_`black' = `r(mean)' + `r(sd)' // make the top of a +- 2 sd range
-		local meet`num'_`black' = `iteration' // save the meet number in another local
+		sum score if `check'==1 & meetnum==`num' // for example, white==1 & meetnum==6
+		
+		local score`num'_`check' = `r(mean)' // save the score in a local
+		local obs`num'_`check'   = `r(N)' 	 // save the count of observations for weighting
+		local meet`num'_`check'  = `num' 	 // save the meet number in another local
 	}
 }
 
 clear
 
-local obs = `iteration' * 2 // one for each meet for Black and not Black
+local obs = `iteration' * 3 // three per meetnum: white, black, and not_white
 set obs `obs'
 
 gen meetnum = 0
+gen obs = 0
 gen score_mean = 0
-gen min = 0
-gen max = 0
-gen black = 0 // need the variables to exist to replace their values
+gen check = "" // need the variables to exist to replace their values!
 
-local newi = 0 // for new iteration, as used below for the ins
+local obs_num = 0 // for filling in each row, as used below:
 
 foreach num of local nums {
-	foreach black in 0 1 {
+	foreach check in black white n_white {
 		
-		local newi = `newi' + 1
+		local obs_num = `obs_num' + 1 // row by row replaces:
 		
-		replace meetnum = `meet`num'_`black'' in `newi'
-		replace score_mean = `score`num'_`black'' in `newi'
-		replace min = `min`num'_`black'' in `newi'
-		replace max = `max`num'_`black'' in `newi'
-		
-		if "`black'"=="1" {
-			replace black = 1 in `newi'
-		}
-		
-		else {
-			qui di "" // do nothing!
-		}
-		
+		replace meetnum    = `meet`num'_`check''  in `obs_num'
+		replace obs		   = `obs`num'_`check''   in `obs_num'
+		replace score_mean = `score`num'_`check'' in `obs_num'
+		replace check      = "`check'" 			  in `obs_num' // now we've made a row out of this line's meetnum, i.e. a row for white scores in meet week 6, etc.	
 	}
 }
 
-replace meetnum = meetnum - 0.1 if black==1
-replace meetnum = meetnum + 0.1 if black==0
-
-
-twoway lfit score_mean meetnum if black==1, color(green) text(9.725 7 `"`eq1'"', color(forest_green) size(medsmall)) || ///
-	lfit score_mean meetnum if black==0, color(blue) text(9.565 7 `"`eq0'"', color(edkblue) size(medsmall)) || ///
-	rcap min max meetnum if black==1, color(green%50) || ///
-	scatter score_mean meetnum if black==1, m(S) mcolor(forest_green) || ///
-	rcap min max meetnum if black==0, color(eltblue) || ///
-	scatter score_mean meetnum if black==0, m(T) mcolor(edkblue) ///
-	graphregion(color(white)) ///
-	ytitle(Average Score by Race) xscale(range(1 10)) xtitle(Meet Number) xlabel(1(1)13) xsize(6) legend(position(6) rows(1) holes(2 5) order(4 6 1 3) label(4 "Black") label(6 "not Black") label(1 "Lines of Best Fit") label(3 "+/- 1 St. Dev."))
+*here's the first figure, with all the weeks
+twoway ///
+	fpfit score_mean meetnum [fw=obs] if check=="black" 	/// the line fit for Black gymnasts
+		, lpattern(shortdash) lcolor(gs10)					///
+		|| ///
+	fpfit score_mean meetnum [fw=obs] if check=="n_white"	/// the line fit for not-White gymnasts
+		, lpattern(dash) lcolor(gs11) 						///
+		|| ///
+	fpfit score_mean meetnum [fw=obs] if check=="white"		/// the line fit for White gymnasts
+		, lpattern(shortdash_dot) lcolor(gs9) 				///
+		|| ///
+	scatter score_mean meetnum if check=="black"		/// the scatter for Black gymnasts
+		, m(S) msize(small) mcolor(gs2) 				///
+		|| ///
+	scatter score_mean meetnum if check=="n_white"		/// the scatter for non-White gymnasts
+		, m(T) msize(small) mcolor(gs2) 				///
+		|| ///
+	scatter score_mean meetnum if check=="white"		/// the scatter for White gymnasts
+		, m(O) msize(small) mcolor(gs2) 				///
+	graphregion(color(white)) 										 ///
+	ytitle(Average Score by Race) 									 ///
+	xtitle(Meet Number)  xlabel(1(1)`iteration') xtick(0.5) xsize(6) /// 
+	legend(															 ///
+		position(6) rows(2) holes(1 2 3) order(4 5 6) 				 ///
+		label(4 "Black") label(5 "Not White") label(6 "White"))		// yuh!!
 	
-graph export "$route/output/figure2.png", as(png) width(1080) replace
+graph export "${route}/output/figure2b.png", as(png) width(1080) replace
+
+*here's the third figure, with only through week 10
+twoway ///
+	fpfit score_mean meetnum [fw=obs] 			///
+		if check=="black" & meetnum<11 			/// the polynomial fit for Black gymnasts
+		, lpattern(shortdash) lcolor(gs10)		///
+		|| ///
+	fpfit score_mean meetnum [fw=obs] 			///
+	if check=="n_white"	& meetnum<11			/// the polynomial fit for not-White gymnasts
+		, lpattern(dash) lcolor(gs10) 			///
+		|| ///
+	fpfit score_mean meetnum [fw=obs] 			///
+	if check=="white" & meetnum<11				/// the polynomial fit for White gymnasts
+		, lpattern(shortdash_dot) lcolor(gs10) 	///
+		|| ///
+	scatter score_mean meetnum			 	///
+		if check=="black" & meetnum<10.5	/// the scatter for Black gymnasts
+		, m(S) msize(small) mcolor(gs2) 	///
+		|| ///
+	scatter score_mean meetnum			 	///
+		if check=="n_white" & meetnum<10.5	/// the scatter for non-White gymnasts
+		, m(T) msize(small) mcolor(gs2) 	///
+		|| ///
+	scatter score_mean meetnum			 	///
+		if check=="white" & meetnum<10.5	/// the scatter for White gymnasts
+		, m(O) msize(small) mcolor(gs2) 	///
+	graphregion(color(white)) 								///
+	ytitle(Average Score by Race) 							///
+	xtitle(Meet Number)  xlabel(1(1)10) xtick(0.5) xsize(6) ///
+	legend(													///
+		position(6) rows(2) holes(1 2 3) order(4 5 6) 		///
+		label(4 "Black") label(5 "Not White") label(6 "White")) // yuh!!!
+	
+graph export "${route}/output/figure2c.png", as(png) width(1080) replace // game!
 */
+
+
+
+
 
 
 ************************************************************
@@ -482,7 +665,7 @@ frames reset
 
 local iteration = 0 // nothing has run yet!
 
-use "$route/data/analysis_set.dta", clear
+use "${route}/data/analysis_set.dta", clear
 levelsof host, local(teams) // this gets every team that has teams visit it
 
 foreach team of local teams {
@@ -490,7 +673,7 @@ foreach team of local teams {
 	local iteration = `iteration' + 1 // this will let us replace logs and output files that need appends later
 	
 	local title "`team'"
-	local vartitle = ustrregexra(lower("`team'"), "\W|_", "", .) // this gives a chimchar-esque version of each teamname that works as a variable title
+	local vartitle = ustrregexra(lower("`team'"), "\W|_", "", .) // this gives a chimchar-esque version of each team name that works as a variable title
 	
 	frame create `vartitle' // do everything in its own frame to be organized and not need to worry about weird clears
 	frame change `vartitle'
@@ -501,19 +684,16 @@ foreach team of local teams {
 	*********************
 	// done!
 	*bring in the dataset and make a unique meet id
-	use "$route/data/analysis_set.dta", clear
-
+	use "${route}/data/analysis_set.dta", clear
 
 	*this piece of the analysis is regular-season focused on a team's vistors, so:
 	drop if team=="`title'"
-
 
 	*now narrow it to those team-years in which a team visited a given school
 	gen at = host=="`title'"
 	bysort team year: egen visited_`vartitle' = sum(at)
 	drop if visited_`vartitle'==0
 	drop visited_`vartitle'
-
 
 	*generate the key indicator variable!!
 	gen black_at = black*at
@@ -530,9 +710,9 @@ foreach team of local teams {
 	cap frame copy `vartitle' parmest
 	cap frame change parmest
 	
-	qui parmest, format(estimate min95 max95 %8.4f p %8.1e) list(,) saving("$route\output\eq4_figure3_`vartitle'.dta", replace)
+	qui parmest, format(estimate min95 max95 %8.4f p %8.1e) list(,) saving("${route}\output\eq4_figure3_`vartitle'.dta", replace)
 	
-	use "$route\output\eq4_figure3_`vartitle'.dta", clear
+	use "${route}\output\eq4_figure3_`vartitle'.dta", clear
 	gen team = "`title'"
 	
 	keep if _n==1 
@@ -543,15 +723,15 @@ foreach team of local teams {
 	format p %20.8g // this is to read them later for table 4
 	
 	if "`iteration'"=="1" {
-		save "$route/data/figure3_set.dta", replace // the file doesn't exist yet or needs to be replaced, so this happens on the first run
+		save "${route}/data/figure3_set.dta", replace // the file doesn't exist yet or needs to be replaced, so this happens on the first run
 	}
 	
 	else {
-		append using "$route/data/figure3_set.dta"
-		save "$route/data/figure3_set.dta", replace // now there's an append to add the estimate with all the other ones
+		append using "${route}/data/figure3_set.dta"
+		save "${route}/data/figure3_set.dta", replace // now there's an append to add the estimate with all the other ones
 	}
 	
-	erase "$route\output\eq4_figure3_`vartitle'.dta" // kill the little files
+	erase "${route}\output\eq4_figure3_`vartitle'.dta" // kill the little files
 	frame change `vartitle'
 	cap frame drop parmest
 
@@ -566,257 +746,4 @@ foreach team of local teams {
 
 di "total iterations run: `iteration'" // :)
 */
-
-
-*****************************************************
-*Figure 3: Dif-in-Dif Estimates by Black Gymnast Rate
-*****************************************************
-/* done
-*reopen the gymnast races file and make a rate of Black gymnast participation by team
-import delimited using "$route/data/all_gymnasts_races.csv", varn(1) clear
-
-reshape long roster, i(team gymnast black) j(year)
-drop if missing(roster)
-drop roster
-
-collapse (mean) black, by(team)
-rename black percent_black // this now marks all the teams by the percent of their total gymnasts ever who are Black
-
-tempfile rates
-save `rates', replace
-
-
-*get the coefficient estimates open and bring on the team rates!
-use "$route/data/figure3_set.dta", clear
-
-merge m:1 team using `rates', keep(1 3) nogen // this will give us the X-axis variable percent_black for a figure
-
-gen color = (min95>0) // mark the 95% CIs above 0 with a 1
-replace color = 2 if max95<0 // and the ones below with a 2
-replace color = 3 if team=="Pittsburgh" // we need this label to go to the left
-
-graph twoway rcap min95 max95 percent_black if color==0, color(eltblue%50) || ///
-	scatter estimate percent_black if color==0, mcolor(emidblue%50) || ///
-	rcap min95 max95 percent_black if color==1, color(green)|| ///
-	scatter estimate percent_black if color==1, m(T) mcolor(forest_green) mlabel(team) || ///
-	rcap min95 max95 percent_black if color==2, color(cranberry) || ///
-	scatter estimate percent_black if color==2, m(S) mcolor(red) mlabel(team) || ///
-	rcap min95 max95 percent_black if color==3, color(green) || ///
-	scatter estimate percent_black if color==3, m(T) mcolor(forest_green) mlabel(team) mlabp(9) ///
-	graphregion(color(white)) ///
-	ytitle(Estimated effect of being Black at a given University) xtitle(% Black gymnasts ever competed on team) xsize(6) legend(position(6) rows(1) holes(1 3 5) order(2 4 6) label(2 "CI includes 0") label(4 "CI above 0") label(6 "CI below 0"))
-
-graph export "$route/output/figure3.png", as(png) width(1080) replace
-*/
-
-
-***********************************************************
-*Table 4 Prep: Open a Frame for Each Team and Run the Model
-***********************************************************
-/* done
-frames reset
-
-local iteration = 0 // nothing has run yet!
-local teams `""Utica" "Pittsburgh" "Bridgeport" "Kent State" "Alabama" "Southern Conn." "Hamline""' // this gets the seven teams with statistically-different-than-zero estimates on Figure 3 into a local
-
-foreach team of local teams {
-
-	local iteration = `iteration' + 1 // this will let us replace logs and output files that need appends later
-	
-	local title "`team'"
-	local vartitle = ustrregexra(lower("`team'"), "\W|_", "", .) // this gives a chimchar-esque version of each teamname that works as a variable title
-	
-	frame create `vartitle' // do everything in its own frame to be organized and not need to worry about weird clears
-	frame change `vartitle'
-
-
-	*********************
-	*Cleaning the Dataset
-	*********************
-	// done!
-	*bring in the dataset and make a unique meet id
-	use "$route/data/analysis_set.dta", clear
-
-
-	*this piece of the analysis is regular-season focused on a team's vistors, so:
-	drop if team=="`title'"
-
-
-	*now narrow it to those team-years in which a team visited a given school
-	gen at = host=="`title'"
-	bysort team year: egen visited_`vartitle' = sum(at)
-	drop if visited_`vartitle'==0
-	drop visited_`vartitle'
-
-
-	*generate the key indicator variable!!
-	gen black_at = black*at
-
-
-	********************************************
-	*Table 4: Fixed Effects Regression Estimates
-	********************************************
-	// done
-	*run equation 4 from the paper, the dif-in-dif!
-	qui xi: reg score black_at i.event i.gymnast i.meet_id, vce(cl meet_id) noomit
-	
-	if "`iteration'"=="1" {
-		cap erase "$route/output/table4.txt" // this prevents extra columns along with the replace option below:
-		outreg2 using "$route/output/table4", excel replace sdec(4) dec(3) cttop(`title') keep(black_at _Ievent_2 _Ievent_3 _Ievent_4)
-	}
-	
-	else {
-		outreg2 using "$route/output/table4", excel append sdec(4) dec(3) cttop(`title') keep(black_at _Ievent_2 _Ievent_3 _Ievent_4) // now it appends to the table from above!!
-	}
-	
-	// you can get the p-values and bonferroni-p-values in this table from the Figure 3 dataset
-
-	
-	////////////
-	
-	drop _I* // kill all the fixed effects for fun
-	
-	di "now leaving frame `vartitle'"
-	frame change `vartitle'
-}
-
-erase "$route/output/table4.txt" // clean up your messes!!
-
-di "total iterations run: `iteration'" // :) this one should be 7
-*/
-
-
-***********************************************
-*Figure 4 Prep: Bonferroni-corrected Dif-in-Dif
-***********************************************
-/* done
-frames reset
-
-local iteration = 0 // nothing has run yet!
-
-use "$route/data/analysis_set.dta", clear
-levelsof host, local(teams) // this gets every team that has teams visit it
-
-foreach team of local teams {
-
-	local iteration = `iteration' + 1 // this will let us replace logs and output files that need appends later
-	
-	local title "`team'"
-	local vartitle = ustrregexra(lower("`team'"), "\W|_", "", .) // this gives a chimchar-esque version of each teamname that works as a variable title
-	
-	frame create `vartitle' // do everything in its own frame to be organized and not need to worry about weird clears
-	frame change `vartitle'
-
-
-	*********************
-	*Cleaning the Dataset
-	*********************
-	// done!
-	*bring in the dataset and make a unique meet id
-	use "$route/data/analysis_set.dta", clear
-
-
-	*this piece of the analysis is regular-season focused on a team's vistors, so:
-	drop if team=="`title'"
-
-
-	*now narrow it to those team-years in which a team visited a given school
-	gen at = host=="`title'"
-	bysort team year: egen visited_`vartitle' = sum(at)
-	drop if visited_`vartitle'==0
-	drop visited_`vartitle'
-
-
-	*generate the key indicator variable!!
-	gen black_at = black*at
-
-
-	**********************************************
-	*Figure 4 Prep: Corrected Regression Estimates
-	**********************************************
-	// done
-	set level 99.95 // this is about equal to 1 - (0.05/87), which approximates to 0.99942... and we're being conservative so I rounded up
-	
-	*run equation 4 from the paper, the dif-in-dif!
-	qui xi: reg score black_at i.event i.gymnast i.meet_id, vce(cl meet_id) noomit
-	
-	*copy the frame to get the estimate on black_at for Figure 3
-	cap frame copy `vartitle' parmest
-	cap frame change parmest
-	
-	qui parmest, format(estimate min99_95 max99_95 %8.4f p %8.1e) list(,) saving("$route\output\eq4_figure4_`vartitle'.dta", replace)
-	
-	use "$route\output\eq4_figure4_`vartitle'.dta", clear
-	gen team = "`title'"
-	
-	keep if _n==1 
-	
-	if "`iteration'"=="1" {
-		save "$route/data/figure4_set.dta", replace // the file doesn't exist yet or needs to be replaced, so this happens on the first run
-	}
-	
-	else {
-		append using "$route/data/figure4_set.dta"
-		save "$route/data/figure4_set.dta", replace // now there's an append to add the estimate with all the other ones
-	}
-	
-	erase "$route\output\eq4_figure4_`vartitle'.dta" // kill the little files
-	
-	frame change `vartitle'
-	cap frame drop parmest
-
-	
-	////////////
-	
-	drop _I* // kill all the fixed effects for fun
-	
-	di "now leaving frame `vartitle'"
-	frame change `vartitle'
-}
-
-di "total iterations run: `iteration'" // :)
-*/
-
-
-***********************************
-*Figure 4: Bonferroni-corrected CIs
-***********************************
-/* done
-*reopen the gymnast races file and make a rate of Black gymnast participation by team
-import delimited using "$route/data/all_gymnasts_races.csv", varn(1) clear
-
-reshape long roster, i(team gymnast black) j(year)
-drop if missing(roster)
-drop roster
-
-collapse (mean) black, by(team)
-rename black percent_black // this now marks all the teams by the percent of their total gymnasts ever who are Black
-
-tempfile rates
-save `rates', replace
-
-
-*get the coefficient estimates open and bring on the team rates!
-use "$route/data/figure4_set.dta", clear
-
-merge m:1 team using `rates', keep(1 3) nogen // this will give us the X-axis variable percent_black for a figure
-
-
-gen color = (min99_95>0) // mark the 99.94% CIs above 0 with a 1
-replace color = 2 if max99_95<0 // and the ones below with a 2
-
-graph twoway rcap min99_95 max99_95 percent_black if color==0, color(eltblue%50) || ///
-	scatter estimate percent_black if color==0, mcolor(emidblue%50) || ///
-	rcap min99_95 max99_95 percent_black if color==1, color(green)|| ///
-	scatter estimate percent_black if color==1, m(T) mcolor(forest_green) mlabel(team) mlabpos(9) || ///
-	rcap min99_95 max99_95 percent_black if color==2, color(cranberry) || ///
-	scatter estimate percent_black if color==2, m(S) mcolor(red) mlabel(team) ///
-	graphregion(color(white)) ///
-	ytitle(Estimated effect of being Black at a given University) xtitle(% Black gymnasts ever competed on team) xsize(6) legend(position(6) rows(1) holes(1 3 5) order(2 4 6) label(2 "CI includes 0") label(4 "CI above 0") label(6 "CI below 0"))
-
-graph export "$route/output/figure4.png", as(png) width(1080) replace
-*/
-
-
-
 
