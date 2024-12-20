@@ -17,6 +17,8 @@ ssc install schemepack
 
 set scheme white_tableau
 
+set maxvar 20000 // we need more than the default 5,000 for some of our fixed effects, so we can use a reasonable number that's larger than the total number of gymnasts (4,720) plus the total number of event-by-meets (14,319), i.e. 20,000
+
 *edit this to be the path with all the team-year csv files
 global route "C:\Users\toom\Desktop\uneven_bars"
 
@@ -403,7 +405,7 @@ putexcel B19 = `nond1_white_vault_score'	///
 *******************************************************************
 *Table 4a: Find venues with significant Black-to-White coefficients 
 *******************************************************************
-// pending
+/* done
 *so let's start by tryna find the teams with significant coefficients on our diff-in-diff!
 use "${route}/data/analysis_set.dta", clear
 
@@ -424,7 +426,7 @@ quietly {
 		// let's clean the dataset and prep it for a nice lil analysis:
 		use "${route}/data/analysis_set.dta", clear
 		
-		*keep if meetnum < 11 // we're only checking meets before week 11 via Figure 2 logic
+		keep if meetnum < 11 // we're only checking meets before week 11 via Figure 2 logic
 		
 		keep if inlist(race, "White", "Black") // this is the Black-White comp section
 
@@ -444,6 +446,81 @@ quietly {
 		
 		*now we'll run our very excellent model, but we don't need 2000 lines of output:
 		qui reg score black_at			 ///
+			i.gymnast i.teamid i.emnumid ///
+			, vce(cl emnumid) noomit 	// and that's the model!
+			
+		*check if the p-value on the diff-in-diff coefficient is significant
+		local p_`vartitle' = r(table)[4,1] // this is the p-value from the regression above!
+		
+		*if the p is significant, we're gonna want these three stats as well, without rerunning:
+		local beta_`vartitle' = r(table)[1,1]
+		local ster_`vartitle' = r(table)[2,1]
+		local obsN_`vartitle' = `e(N)'
+		local bnfr_`vartitle' = min(`p_`vartitle'' * 87, 1) // the bonferroni p, adjusted for 87 hosts
+
+		if `p_`vartitle''<0.05 {
+			noisily di "`title' ESTIMATE IS SIGNIFICANT!!!!!!!!"
+			noisily di "beta: `beta_`vartitle''"
+			noisily di "ster: `ster_`vartitle''"
+			noisily di "pval: `p_`vartitle''"
+			noisily di "observations: `obsN_`vartitle''"
+			noisily di "bonferroni p: `bnfr_`vartitle''"
+			noisily di "----"
+		}
+		else {
+			noisily di "`title' estimate is not significant."
+			noisily di "----"
+		}
+		
+	} // end the for loop
+} // end the quietly block
+
+log close
+*/
+
+
+*****************************************************************
+*Table 4b: Find venues with significant White-to-not coefficients 
+*****************************************************************
+// pending
+*so let's start by tryna find the teams with significant coefficients on our diff-in-diff!
+use "${route}/data/analysis_set.dta", clear
+
+local iteration = 0 // nothing has run yet, and we wanna run a replace vs. an append later...
+levelsof host, local(teams) // this gets every team that has hosts a meet from the dataset!
+
+cap log close
+log using "${route}/output/table4b_log.txt", text replace nomsg // we gotta get the list of 
+
+quietly {
+	foreach team of local teams {
+
+		local iteration = `iteration' + 1 // this will let us replace logs and output files that need appends later
+		
+		local title "`team'" // now we've got which team we're focused on for this loop, and:
+		local vartitle = ustrregexra(lower("`team'"), "\W|_", "", .) // this gives a chimchar-esque version of each team name that works as a variable title
+
+		// let's clean the dataset and prep it for a nice lil analysis:
+		use "${route}/data/analysis_set.dta", clear
+		
+		keep if meetnum < 11 // we're only checking meets before week 11 via Figure 2 logic
+
+		*this piece of the analysis is regular-season focused on a team's vistors, so:
+		drop if team=="`title'"
+
+		*now narrow it to those team-years in which a team visited a given school
+		gen at = host=="`title'"
+		bysort team year: egen visited_`vartitle' = sum(at) // this will mark each season for each team when they visited the host for this loop!
+		
+		drop if visited_`vartitle'==0 // because it's only for team-seasons visiting that host
+		drop visited_`vartitle'
+
+		*generate the key indicator variable!!
+		gen white    = race=="White"
+		gen white_at = white*at
+		
+		*now we'll run our very excellent model, but we don't need 2000 lines of output:
+		qui reg score white_at			 ///
 			i.gymnast i.teamid i.emnumid ///
 			, vce(cl emnumid) noomit 	// and that's the model!
 			
@@ -558,7 +635,7 @@ foreach num of local nums {
 	foreach check in black white n_white {
 		
 		sum score if `check'==1 & meetnum==`num' // for example, white==1 & meetnum==6
-		
+
 		local score`num'_`check' = `r(mean)' // save the score in a local
 		local obs`num'_`check'   = `r(N)' 	 // save the count of observations for weighting
 		local meet`num'_`check'  = `num' 	 // save the meet number in another local
@@ -581,11 +658,11 @@ foreach num of local nums {
 	foreach check in black white n_white {
 		
 		local obs_num = `obs_num' + 1 // row by row replaces:
-		
+
 		replace meetnum    = `meet`num'_`check''  in `obs_num'
 		replace obs		   = `obs`num'_`check''   in `obs_num'
 		replace score_mean = `score`num'_`check'' in `obs_num'
-		replace check      = "`check'" 			  in `obs_num' // now we've made a row out of this line's meetnum, i.e. a row for white scores in meet week 6, etc.	
+		replace check      = "`check'" 			  in `obs_num' // now we've made a row out of this line's meetnum, i.e. a row for white scores in meet week 6, etc.
 	}
 }
 
@@ -614,7 +691,7 @@ twoway ///
 	legend(															 ///
 		position(6) rows(2) holes(1 2 3) order(4 5 6) 				 ///
 		label(4 "Black") label(5 "Not White") label(6 "White"))		// yuh!!
-	
+		
 graph export "${route}/output/figure2b.png", as(png) width(1080) replace
 
 *here's the third figure, with only through week 10
@@ -624,11 +701,11 @@ twoway ///
 		, lpattern(shortdash) lcolor(gs10)		///
 		|| ///
 	fpfit score_mean meetnum [fw=obs] 			///
-	if check=="n_white"	& meetnum<11			/// the polynomial fit for not-White gymnasts
+		if check=="n_white"	& meetnum<11		/// the polynomial fit for not-White gymnasts
 		, lpattern(dash) lcolor(gs10) 			///
 		|| ///
 	fpfit score_mean meetnum [fw=obs] 			///
-	if check=="white" & meetnum<11				/// the polynomial fit for White gymnasts
+		if check=="white" & meetnum<11			/// the polynomial fit for White gymnasts
 		, lpattern(shortdash_dot) lcolor(gs10) 	///
 		|| ///
 	scatter score_mean meetnum			 	///
@@ -651,6 +728,10 @@ twoway ///
 	
 graph export "${route}/output/figure2c.png", as(png) width(1080) replace // game!
 */
+
+
+
+
 
 
 

@@ -56,10 +56,10 @@ Greenville estimate is not significant.
 Gustavus Adolphus estimate is not significant.
 ----
 Hamline ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.1403976817497953
-ster: .0704585272320427
-pval: .0465558200558206
-observations: 8018
+beta: -.1307956670976635
+ster: .0645267215545202
+pval: .042901691534462
+observations: 8653
 bonferroni p: 1
 ----
 Illinois estimate is not significant.
@@ -165,11 +165,11 @@ Utah estimate is not significant.
 Utah State estimate is not significant.
 ----
 Utica ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .3707967027880377
-ster: .112890688986494
-pval: .0021630844007689
-observations: 192
-bonferroni p: .1881883428668943
+beta: .3711909930352594
+ster: .1140849841964982
+pval: .0022219510728571
+observations: 199
+bonferroni p: .1933097433385677
 ----
 Washington estimate is not significant.
 ----
