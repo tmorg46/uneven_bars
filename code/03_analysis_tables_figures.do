@@ -8,6 +8,7 @@ clear all
 frames reset
 cap log close
 discard
+pause on
 
 /* do the installs if you haven't already
 ssc install outreg2
@@ -482,7 +483,7 @@ log close
 *****************************************************************
 *Table 4b: Find venues with significant White-to-not coefficients 
 *****************************************************************
-// pending
+/* pending
 *so let's start by tryna find the teams with significant coefficients on our diff-in-diff!
 use "${route}/data/analysis_set.dta", clear
 
@@ -557,7 +558,7 @@ log close
 *************************************************
 *Figure 2: Average Scores by Race and Meet Number
 *************************************************
-/* done
+// done
 *here's the code for the first subfigure, which motivates the narrowing to meetweek 10 in this figure
 use "${route}/data/analysis_set.dta", clear
 
@@ -612,7 +613,8 @@ twoway ///
 		position(6) rows(1) order(2 1) 								 ///
 		label(2 "Fraction of Scores from Untitled Meets")			 ///
 		label(1 "Number of Scores in Meet Week")) 					// yuh!!!
-		
+
+
 graph export "${route}/output/figure2a.png", as(png) width(1080) replace // and now we've got the first part done!
 
 
@@ -636,9 +638,9 @@ foreach num of local nums {
 		
 		sum score if `check'==1 & meetnum==`num' // for example, white==1 & meetnum==6
 
-		local score`num'_`check' = `r(mean)' // save the score in a local
-		local obs`num'_`check'   = `r(N)' 	 // save the count of observations for weighting
-		local meet`num'_`check'  = `num' 	 // save the meet number in another local
+		cap local score`num'_`check' = `r(mean)' // save the score in a local
+		cap local obs`num'_`check'   = `r(N)' 	 // save the count of observations for weighting
+		cap local meet`num'_`check'  = `num' 	 // save the meet number in another local
 	}
 }
 
@@ -659,12 +661,14 @@ foreach num of local nums {
 		
 		local obs_num = `obs_num' + 1 // row by row replaces:
 
-		replace meetnum    = `meet`num'_`check''  in `obs_num'
-		replace obs		   = `obs`num'_`check''   in `obs_num'
-		replace score_mean = `score`num'_`check'' in `obs_num'
-		replace check      = "`check'" 			  in `obs_num' // now we've made a row out of this line's meetnum, i.e. a row for white scores in meet week 6, etc.
+		cap replace meetnum    = `meet`num'_`check''  in `obs_num'
+		cap replace obs		   = `obs`num'_`check''   in `obs_num'
+		cap replace score_mean = `score`num'_`check'' in `obs_num'
+		cap replace check      = "`check'" 			  in `obs_num' // now we've made a row out of this line's meetnum, i.e. a row for white scores in meet week 6, etc.
 	}
 }
+
+drop if obs==0
 
 *here's the first figure, with all the weeks
 twoway ///
@@ -691,7 +695,7 @@ twoway ///
 	legend(															 ///
 		position(6) rows(2) holes(1 2 3) order(4 5 6) 				 ///
 		label(4 "Black") label(5 "Not White") label(6 "White"))		// yuh!!
-		
+
 graph export "${route}/output/figure2b.png", as(png) width(1080) replace
 
 *here's the third figure, with only through week 10
@@ -728,12 +732,6 @@ twoway ///
 	
 graph export "${route}/output/figure2c.png", as(png) width(1080) replace // game!
 */
-
-
-
-
-
-
 
 
 
