@@ -1,0 +1,106 @@
+team,year,meetnum,meettitle,date,host,gymnast,vault,bars,beam,floor
+Stanford,2018,1,Norcal Classic,Jan-08-2018,Stanford,Kyla  Bryant,9.6250,9.3250,9.8500,9.9250
+Stanford,2018,1,Norcal Classic,Jan-08-2018,Stanford,Kaylee Cole,9.5000,,9.7000,9.8250
+Stanford,2018,1,Norcal Classic,Jan-08-2018,Stanford,Taryn Fitzgerald,,,9.6750,
+Stanford,2018,1,Norcal Classic,Jan-08-2018,Stanford,Rachael Flam,9.6250,9.1500,,9.6000
+Stanford,2018,1,Norcal Classic,Jan-08-2018,Stanford,Taylor Lawson,9.6000,9.8250,,9.8500
+Stanford,2018,1,Norcal Classic,Jan-08-2018,Stanford,Lauren Navarro,9.7000,9.8250,9.8000,9.8500
+Stanford,2018,1,Norcal Classic,Jan-08-2018,Stanford,Elizabeth Price,9.8500,10.0000,9.8250,9.9750
+Stanford,2018,1,Norcal Classic,Jan-08-2018,Stanford,Ashley Tai,,,9.8000,
+Stanford,2018,2,Elevate The Stage,Jan-14-2018,,Kyla  Bryant,9.8000,9.9000,9.8000,9.8000
+Stanford,2018,2,Elevate The Stage,Jan-14-2018,,Kaylee Cole,9.7500,,9.7750,9.8250
+Stanford,2018,2,Elevate The Stage,Jan-14-2018,,Taryn Fitzgerald,,,9.2750,
+Stanford,2018,2,Elevate The Stage,Jan-14-2018,,Rachael Flam,9.7500,9.0500,,9.7000
+Stanford,2018,2,Elevate The Stage,Jan-14-2018,,Taylor Lawson,9.7500,9.6250,,9.8000
+Stanford,2018,2,Elevate The Stage,Jan-14-2018,,Lauren Navarro,9.8250,9.6000,9.8250,9.8000
+Stanford,2018,2,Elevate The Stage,Jan-14-2018,,Elizabeth Price,9.9500,9.9000,9.8500,9.9500
+Stanford,2018,2,Elevate The Stage,Jan-14-2018,,Ashley Tai,,,9.7750,
+Stanford,2018,3,no meet title,Jan-20-2018,Stanford,Kyla  Bryant,9.8750,9.8250,9.9000,
+Stanford,2018,3,no meet title,Jan-20-2018,Stanford,Kaylee Cole,9.7250,,9.6500,9.8000
+Stanford,2018,3,no meet title,Jan-20-2018,Stanford,Taryn Fitzgerald,,,9.1250,
+Stanford,2018,3,no meet title,Jan-20-2018,Stanford,Rachael Flam,9.2500,9.6000,,9.7000
+Stanford,2018,3,no meet title,Jan-20-2018,Stanford,Hailee Hoffman,,,,9.7500
+Stanford,2018,3,no meet title,Jan-20-2018,Stanford,Taylor Lawson,9.6750,9.6750,,9.5000
+Stanford,2018,3,no meet title,Jan-20-2018,Stanford,Lauren Navarro,9.6750,9.6250,9.9250,9.7500
+Stanford,2018,3,no meet title,Jan-20-2018,Stanford,Elizabeth Price,9.9500,9.9500,9.9500,9.9250
+Stanford,2018,3,no meet title,Jan-20-2018,Stanford,Ashley Tai,,,9.7250,
+Stanford,2018,4,no meet title,Jan-27-2018,Oregon State,Kyla  Bryant,9.8250,9.8500,9.8750,9.8750
+Stanford,2018,4,no meet title,Jan-27-2018,Oregon State,Kaylee Cole,9.7750,,9.0250,9.6000
+Stanford,2018,4,no meet title,Jan-27-2018,Oregon State,Taryn Fitzgerald,,,9.4000,
+Stanford,2018,4,no meet title,Jan-27-2018,Oregon State,Rachael Flam,9.8500,9.7750,,9.0250
+Stanford,2018,4,no meet title,Jan-27-2018,Oregon State,Hailee Hoffman,8.6500,,,9.8250
+Stanford,2018,4,no meet title,Jan-27-2018,Oregon State,Taylor Lawson,,9.8250,,9.8500
+Stanford,2018,4,no meet title,Jan-27-2018,Oregon State,Lauren Navarro,9.7500,9.8000,9.8250,
+Stanford,2018,4,no meet title,Jan-27-2018,Oregon State,Elizabeth Price,9.8500,9.9750,9.8750,9.9000
+Stanford,2018,4,no meet title,Jan-27-2018,Oregon State,Ashley Tai,,,9.2500,
+Stanford,2018,5,no meet title,Feb-02-2018,UC Davis,Kyla  Bryant,9.8250,9.8500,9.6750,9.7250
+Stanford,2018,5,no meet title,Feb-02-2018,UC Davis,Kaylee Cole,9.7500,,9.8250,9.7250
+Stanford,2018,5,no meet title,Feb-02-2018,UC Davis,Rachael Flam,9.8750,9.8000,9.8250,9.8750
+Stanford,2018,5,no meet title,Feb-02-2018,UC Davis,Hailee Hoffman,,,,9.7750
+Stanford,2018,5,no meet title,Feb-02-2018,UC Davis,Nicole Hoffman,,,9.8000,
+Stanford,2018,5,no meet title,Feb-02-2018,UC Davis,Taylor Lawson,,9.8000,,8.8500
+Stanford,2018,5,no meet title,Feb-02-2018,UC Davis,Lauren Navarro,9.7250,9.7500,9.7750,9.8250
+Stanford,2018,5,no meet title,Feb-02-2018,UC Davis,Elizabeth Price,9.8750,9.9250,,
+Stanford,2018,5,no meet title,Feb-02-2018,UC Davis,Ashley Tai,,,9.7250,
+Stanford,2018,6,no meet title,Feb-11-2018,Arizona,Kyla  Bryant,9.8500,9.8250,9.8750,9.8500
+Stanford,2018,6,no meet title,Feb-11-2018,Arizona,Kaylee Cole,9.7000,,9.8250,9.7500
+Stanford,2018,6,no meet title,Feb-11-2018,Arizona,Rachael Flam,9.8750,9.7250,9.8750,9.8250
+Stanford,2018,6,no meet title,Feb-11-2018,Arizona,Hailee Hoffman,,,,9.8000
+Stanford,2018,6,no meet title,Feb-11-2018,Arizona,Taylor Lawson,9.6500,8.9000,,
+Stanford,2018,6,no meet title,Feb-11-2018,Arizona,Lauren Navarro,9.7500,9.7500,9.8750,9.5250
+Stanford,2018,6,no meet title,Feb-11-2018,Arizona,Elizabeth Price,9.9000,9.2750,9.8500,9.9250
+Stanford,2018,6,no meet title,Feb-11-2018,Arizona,Ashley Tai,,,9.8500,
+Stanford,2018,7,no meet title,Feb-17-2018,Stanford,Kyla  Bryant,9.8250,9.8250,9.8750,9.8500
+Stanford,2018,7,no meet title,Feb-17-2018,Stanford,Kaylee Cole,9.7500,,9.7750,
+Stanford,2018,7,no meet title,Feb-17-2018,Stanford,Rachael Flam,9.8500,9.1500,9.8000,9.7500
+Stanford,2018,7,no meet title,Feb-17-2018,Stanford,Hailee Hoffman,,,,9.8000
+Stanford,2018,7,no meet title,Feb-17-2018,Stanford,Taylor Lawson,,9.7250,,9.8750
+Stanford,2018,7,no meet title,Feb-17-2018,Stanford,Lauren Navarro,9.8250,9.6000,9.8250,9.8500
+Stanford,2018,7,no meet title,Feb-17-2018,Stanford,Elizabeth Price,9.9750,9.9000,9.8000,10.0000
+Stanford,2018,7,no meet title,Feb-17-2018,Stanford,Catherine Rogers,,9.7000,,
+Stanford,2018,7,no meet title,Feb-17-2018,Stanford,Ashley Tai,,,9.0500,
+Stanford,2018,8,no meet title,Feb-24-2018,Washington,Kyla  Bryant,9.8250,9.9000,9.6250,9.8750
+Stanford,2018,8,no meet title,Feb-24-2018,Washington,Kaylee Cole,9.8000,,9.8000,9.8000
+Stanford,2018,8,no meet title,Feb-24-2018,Washington,Rachael Flam,9.9250,9.1000,9.7500,9.0500
+Stanford,2018,8,no meet title,Feb-24-2018,Washington,Hailee Hoffman,,,,9.8000
+Stanford,2018,8,no meet title,Feb-24-2018,Washington,Nicole Hoffman,,,9.6250,
+Stanford,2018,8,no meet title,Feb-24-2018,Washington,Taylor Lawson,,9.7000,,9.8500
+Stanford,2018,8,no meet title,Feb-24-2018,Washington,Lauren Navarro,9.7750,9.7500,9.7500,
+Stanford,2018,8,no meet title,Feb-24-2018,Washington,Elizabeth Price,9.9000,9.9000,9.8250,9.8000
+Stanford,2018,8,no meet title,Feb-24-2018,Washington,Catherine Rogers,,8.0500,,
+Stanford,2018,9,Elevate the Stage,Mar-02-2018,,Kyla  Bryant,9.7750,9.8250,9.8250,9.6750
+Stanford,2018,9,Elevate the Stage,Mar-02-2018,,Kaylee Cole,9.7000,,9.7500,9.7500
+Stanford,2018,9,Elevate the Stage,Mar-02-2018,,Taryn Fitzgerald,9.6250,,,
+Stanford,2018,9,Elevate the Stage,Mar-02-2018,,Rachael Flam,9.7750,9.7750,9.6750,9.8250
+Stanford,2018,9,Elevate the Stage,Mar-02-2018,,Hailee Hoffman,,,,9.7000
+Stanford,2018,9,Elevate the Stage,Mar-02-2018,,Taylor Lawson,,9.7250,,9.8000
+Stanford,2018,9,Elevate the Stage,Mar-02-2018,,Lauren Navarro,9.7500,9.6250,9.8750,
+Stanford,2018,9,Elevate the Stage,Mar-02-2018,,Elizabeth Price,9.9000,9.9500,9.9000,9.9000
+Stanford,2018,9,Elevate the Stage,Mar-02-2018,,Catherine Rogers,,8.8000,,
+Stanford,2018,9,Elevate the Stage,Mar-02-2018,,Ashley Tai,,,9.8000,
+Stanford,2018,10,no meet title,Mar-11-2018,Stanford,Kyla  Bryant,9.8000,9.8750,9.9000,9.9000
+Stanford,2018,10,no meet title,Mar-11-2018,Stanford,Kaylee Cole,9.7500,,9.8750,9.6500
+Stanford,2018,10,no meet title,Mar-11-2018,Stanford,Taryn Fitzgerald,9.6750,,,
+Stanford,2018,10,no meet title,Mar-11-2018,Stanford,Rachael Flam,9.8000,9.2500,9.8750,9.8500
+Stanford,2018,10,no meet title,Mar-11-2018,Stanford,Taylor Lawson,,9.8000,,9.8750
+Stanford,2018,10,no meet title,Mar-11-2018,Stanford,Lauren Navarro,9.8250,9.8000,9.8250,9.8250
+Stanford,2018,10,no meet title,Mar-11-2018,Stanford,Elizabeth Price,9.9750,9.9500,9.9000,10.0000
+Stanford,2018,10,no meet title,Mar-11-2018,Stanford,Ashley Tai,,,8.5750,
+Stanford,2018,11,Pac-12 Championships,Mar-24-2018,Arizona,Kyla  Bryant,9.8250,9.8500,9.8000,9.8750
+Stanford,2018,11,Pac-12 Championships,Mar-24-2018,Arizona,Kaylee Cole,9.7500,,9.7250,
+Stanford,2018,11,Pac-12 Championships,Mar-24-2018,Arizona,Taryn Fitzgerald,9.7500,,9.8500,
+Stanford,2018,11,Pac-12 Championships,Mar-24-2018,Arizona,Rachael Flam,9.8500,9.8000,9.0750,9.8750
+Stanford,2018,11,Pac-12 Championships,Mar-24-2018,Arizona,Hailee Hoffman,,,,9.7250
+Stanford,2018,11,Pac-12 Championships,Mar-24-2018,Arizona,Taylor Lawson,,9.7500,,9.7000
+Stanford,2018,11,Pac-12 Championships,Mar-24-2018,Arizona,Lauren Navarro,9.7000,9.7000,9.7750,9.8000
+Stanford,2018,11,Pac-12 Championships,Mar-24-2018,Arizona,Elizabeth Price,9.9000,9.9750,9.8250,9.9500
+Stanford,2018,11,Pac-12 Championships,Mar-24-2018,Arizona,Catherine Rogers,,9.0500,,
+Stanford,2018,12,NCAA Salt Lake City Regional,Apr-07-2018,Utah,Kyla  Bryant,9.8000,9.7500,9.9000,9.9250
+Stanford,2018,12,NCAA Salt Lake City Regional,Apr-07-2018,Utah,Kaylee Cole,9.7500,,9.6000,9.8500
+Stanford,2018,12,NCAA Salt Lake City Regional,Apr-07-2018,Utah,Taryn Fitzgerald,9.7250,,9.8250,
+Stanford,2018,12,NCAA Salt Lake City Regional,Apr-07-2018,Utah,Rachael Flam,9.8000,9.1000,9.8000,9.8750
+Stanford,2018,12,NCAA Salt Lake City Regional,Apr-07-2018,Utah,Taylor Lawson,,9.7250,,9.8500
+Stanford,2018,12,NCAA Salt Lake City Regional,Apr-07-2018,Utah,Lauren Navarro,9.7000,9.5750,9.7750,9.8500
+Stanford,2018,12,NCAA Salt Lake City Regional,Apr-07-2018,Utah,Elizabeth Price,9.9000,9.9000,9.8250,9.9500
+Stanford,2018,12,NCAA Salt Lake City Regional,Apr-07-2018,Utah,Catherine Rogers,,8.9750,,
+Stanford,2018,13,NCAA Championships Semifinals II,Apr-20-2018,,Elizabeth Price,9.8875,10.0000,9.8625,9.9250

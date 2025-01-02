@@ -1,0 +1,110 @@
+team,year,meetnum,meettitle,date,host,gymnast,vault,bars,beam,floor
+Michigan,2015,1,no meet title,Jan-10-2015,Georgia,Nicole Artz,9.8500,9.8000,9.9000,9.9000
+Michigan,2015,1,no meet title,Jan-10-2015,Georgia,Brianna Brown,9.8500,9.8500,9.7750,9.7750
+Michigan,2015,1,no meet title,Jan-10-2015,Georgia,Briley Casanova,9.7000,8.8000,,
+Michigan,2015,1,no meet title,Jan-10-2015,Georgia,Talia Chiarelli,9.9000,,9.9000,9.8750
+Michigan,2015,1,no meet title,Jan-10-2015,Georgia,Nichelle Christopherson,,9.8000,,
+Michigan,2015,1,no meet title,Jan-10-2015,Georgia,Brooke Parker,9.8500,,7.3000,9.7750
+Michigan,2015,1,no meet title,Jan-10-2015,Georgia,Sachi Sugiyama,9.8750,9.8250,9.7000,9.7250
+Michigan,2015,1,no meet title,Jan-10-2015,Georgia,Lindsay Williams,,9.7500,9.8250,9.8250
+Michigan,2015,2,no meet title,Jan-17-2015,Ohio State,Nicole Artz,9.7500,9.8500,9.8500,9.9500
+Michigan,2015,2,no meet title,Jan-17-2015,Ohio State,Brianna Brown,9.8250,9.8750,9.8750,9.8000
+Michigan,2015,2,no meet title,Jan-17-2015,Ohio State,Briley Casanova,9.8000,9.8250,9.8000,
+Michigan,2015,2,no meet title,Jan-17-2015,Ohio State,Talia Chiarelli,9.7750,,9.8500,9.8250
+Michigan,2015,2,no meet title,Jan-17-2015,Ohio State,Nichelle Christopherson,,9.8250,,
+Michigan,2015,2,no meet title,Jan-17-2015,Ohio State,Brooke Parker,9.8500,,,9.8500
+Michigan,2015,2,no meet title,Jan-17-2015,Ohio State,Sachi Sugiyama,9.9250,9.8500,9.8500,9.8250
+Michigan,2015,2,no meet title,Jan-17-2015,Ohio State,Lindsay Williams,,9.9250,9.7500,9.8000
+Michigan,2015,3,no meet title,Jan-25-2015,Michigan,Nicole Artz,9.8000,9.7500,9.9000,9.9500
+Michigan,2015,3,no meet title,Jan-25-2015,Michigan,Brianna Brown,9.8000,9.8500,9.8500,9.8500
+Michigan,2015,3,no meet title,Jan-25-2015,Michigan,Briley Casanova,9.7500,,9.8250,
+Michigan,2015,3,no meet title,Jan-25-2015,Michigan,Talia Chiarelli,9.8500,,9.8750,9.8000
+Michigan,2015,3,no meet title,Jan-25-2015,Michigan,Nichelle Christopherson,,9.7750,,
+Michigan,2015,3,no meet title,Jan-25-2015,Michigan,Brooke Parker,9.8000,,,9.8500
+Michigan,2015,3,no meet title,Jan-25-2015,Michigan,Austin Sheppard,,9.8250,,
+Michigan,2015,3,no meet title,Jan-25-2015,Michigan,Sachi Sugiyama,9.8750,9.8750,9.7750,9.9000
+Michigan,2015,3,no meet title,Jan-25-2015,Michigan,Lindsay Williams,,9.7750,9.8000,9.8250
+Michigan,2015,4,no meet title,Jan-31-2015,Michigan,Nicole Artz,9.9000,9.8750,9.8500,9.9750
+Michigan,2015,4,no meet title,Jan-31-2015,Michigan,Brianna Brown,9.8250,9.9000,9.8250,9.9000
+Michigan,2015,4,no meet title,Jan-31-2015,Michigan,Briley Casanova,9.7500,,9.8750,
+Michigan,2015,4,no meet title,Jan-31-2015,Michigan,Talia Chiarelli,9.8250,,9.8750,9.6500
+Michigan,2015,4,no meet title,Jan-31-2015,Michigan,Nichelle Christopherson,,9.8250,,
+Michigan,2015,4,no meet title,Jan-31-2015,Michigan,Brooke Parker,9.8000,,,9.8750
+Michigan,2015,4,no meet title,Jan-31-2015,Michigan,Austin Sheppard,,9.3250,,
+Michigan,2015,4,no meet title,Jan-31-2015,Michigan,Sachi Sugiyama,9.9500,9.7750,9.8500,9.9250
+Michigan,2015,4,no meet title,Jan-31-2015,Michigan,Lindsay Williams,,9.8250,9.6750,9.8500
+Michigan,2015,5,no meet title,Feb-07-2015,Maryland,Nicole Artz,9.8750,9.8500,9.9250,9.7250
+Michigan,2015,5,no meet title,Feb-07-2015,Maryland,Brianna Brown,9.7750,9.9000,9.9000,9.8000
+Michigan,2015,5,no meet title,Feb-07-2015,Maryland,Briley Casanova,,,9.7250,
+Michigan,2015,5,no meet title,Feb-07-2015,Maryland,Talia Chiarelli,9.8750,,9.3750,9.8250
+Michigan,2015,5,no meet title,Feb-07-2015,Maryland,Brooke Parker,9.8000,9.9000,,9.8500
+Michigan,2015,5,no meet title,Feb-07-2015,Maryland,Austin Sheppard,,9.9250,,
+Michigan,2015,5,no meet title,Feb-07-2015,Maryland,Sachi Sugiyama,9.8750,9.9000,9.8250,9.9250
+Michigan,2015,5,no meet title,Feb-07-2015,Maryland,Lindsay Williams,,9.7500,9.9000,9.7750
+Michigan,2015,6,no meet title,Feb-13-2015,Michigan State,Nicole Artz,9.8250,9.8250,9.9250,9.7500
+Michigan,2015,6,no meet title,Feb-13-2015,Michigan State,Brianna Brown,9.8000,9.9500,9.8750,9.7750
+Michigan,2015,6,no meet title,Feb-13-2015,Michigan State,Briley Casanova,,,9.8000,
+Michigan,2015,6,no meet title,Feb-13-2015,Michigan State,Talia Chiarelli,9.8000,,9.7500,9.9000
+Michigan,2015,6,no meet title,Feb-13-2015,Michigan State,Brooke Parker,9.7500,9.8000,,9.8250
+Michigan,2015,6,no meet title,Feb-13-2015,Michigan State,Austin Sheppard,9.7000,9.7500,,
+Michigan,2015,6,no meet title,Feb-13-2015,Michigan State,Sachi Sugiyama,9.9000,9.8750,9.8750,9.9000
+Michigan,2015,6,no meet title,Feb-13-2015,Michigan State,Lindsay Williams,,9.0500,9.8250,9.0000
+Michigan,2015,7,no meet title,Feb-20-2015,Michigan,Nicole Artz,9.8250,9.9000,9.9500,9.9250
+Michigan,2015,7,no meet title,Feb-20-2015,Michigan,Brianna Brown,9.7750,9.9250,9.2500,9.8500
+Michigan,2015,7,no meet title,Feb-20-2015,Michigan,Briley Casanova,,,9.8000,
+Michigan,2015,7,no meet title,Feb-20-2015,Michigan,Talia Chiarelli,9.8000,,9.9000,9.9000
+Michigan,2015,7,no meet title,Feb-20-2015,Michigan,Brooke Parker,9.7750,9.7750,,9.8750
+Michigan,2015,7,no meet title,Feb-20-2015,Michigan,Austin Sheppard,9.8500,9.9000,,
+Michigan,2015,7,no meet title,Feb-20-2015,Michigan,Sachi Sugiyama,9.9000,9.8750,9.8250,9.8750
+Michigan,2015,7,no meet title,Feb-20-2015,Michigan,Lindsay Williams,,9.7750,9.8250,9.8250
+Michigan,2015,8,no meet title,Feb-28-2015,Michigan,Nicole Artz,9.8500,9.8250,9.9000,9.9500
+Michigan,2015,8,no meet title,Feb-28-2015,Michigan,Brianna Brown,9.8250,9.9000,9.8000,9.8250
+Michigan,2015,8,no meet title,Feb-28-2015,Michigan,Briley Casanova,,,9.9000,
+Michigan,2015,8,no meet title,Feb-28-2015,Michigan,Talia Chiarelli,9.8750,,9.9000,9.9750
+Michigan,2015,8,no meet title,Feb-28-2015,Michigan,Brooke Parker,9.7250,9.6500,,9.8750
+Michigan,2015,8,no meet title,Feb-28-2015,Michigan,Austin Sheppard,9.8750,9.2500,,
+Michigan,2015,8,no meet title,Feb-28-2015,Michigan,Sachi Sugiyama,9.9000,9.8500,9.2250,9.9250
+Michigan,2015,8,no meet title,Feb-28-2015,Michigan,Lindsay Williams,,9.8500,9.8000,9.6750
+Michigan,2015,9,no meet title,Mar-06-2015,Utah,Nicole Artz,9.8500,9.9500,9.9000,9.8500
+Michigan,2015,9,no meet title,Mar-06-2015,Utah,Brianna Brown,9.8250,9.9500,9.9250,9.8500
+Michigan,2015,9,no meet title,Mar-06-2015,Utah,Briley Casanova,,9.8000,9.8000,9.8250
+Michigan,2015,9,no meet title,Mar-06-2015,Utah,Talia Chiarelli,9.8250,,9.9750,9.9000
+Michigan,2015,9,no meet title,Mar-06-2015,Utah,Brooke Parker,9.8000,,,9.9000
+Michigan,2015,9,no meet title,Mar-06-2015,Utah,Austin Sheppard,9.9000,9.8500,,
+Michigan,2015,9,no meet title,Mar-06-2015,Utah,Sachi Sugiyama,9.9000,9.9250,9.7750,9.9250
+Michigan,2015,9,no meet title,Mar-06-2015,Utah,Lindsay Williams,,9.8000,9.8750,
+Michigan,2015,10,Big Ten Qualifier,Mar-14-2015,Minnesota,Nicole Artz,9.9500,9.8500,9.9000,9.8500
+Michigan,2015,10,Big Ten Qualifier,Mar-14-2015,Minnesota,Brianna Brown,9.7500,9.8500,9.8500,9.7750
+Michigan,2015,10,Big Ten Qualifier,Mar-14-2015,Minnesota,Briley Casanova,,9.8000,9.8500,9.7250
+Michigan,2015,10,Big Ten Qualifier,Mar-14-2015,Minnesota,Talia Chiarelli,9.8500,,9.8000,9.6750
+Michigan,2015,10,Big Ten Qualifier,Mar-14-2015,Minnesota,Brooke Parker,9.8750,,,9.8750
+Michigan,2015,10,Big Ten Qualifier,Mar-14-2015,Minnesota,Austin Sheppard,9.9000,9.7750,,
+Michigan,2015,10,Big Ten Qualifier,Mar-14-2015,Minnesota,Sachi Sugiyama,9.9500,9.8000,9.8000,9.9250
+Michigan,2015,10,Big Ten Qualifier,Mar-14-2015,Minnesota,Lindsay Williams,,9.8250,9.7500,
+Michigan,2015,11,Big Ten Championships Session II,Mar-21-2015,Michigan,Nicole Artz,9.8500,9.9500,9.9500,9.9000
+Michigan,2015,11,Big Ten Championships Session II,Mar-21-2015,Michigan,Brianna Brown,9.8750,9.9250,9.9000,9.8500
+Michigan,2015,11,Big Ten Championships Session II,Mar-21-2015,Michigan,Briley Casanova,,9.8500,9.9000,9.8250
+Michigan,2015,11,Big Ten Championships Session II,Mar-21-2015,Michigan,Talia Chiarelli,9.9000,,9.8000,9.9250
+Michigan,2015,11,Big Ten Championships Session II,Mar-21-2015,Michigan,Brooke Parker,9.8750,,,9.8500
+Michigan,2015,11,Big Ten Championships Session II,Mar-21-2015,Michigan,Austin Sheppard,9.8750,9.9000,,
+Michigan,2015,11,Big Ten Championships Session II,Mar-21-2015,Michigan,Sachi Sugiyama,9.8750,9.9000,9.8500,9.9250
+Michigan,2015,11,Big Ten Championships Session II,Mar-21-2015,Michigan,Lindsay Williams,,9.8250,9.8500,
+Michigan,2015,12,Columbus Regional,Apr-04-2015,,Nicole Artz,9.7250,9.3750,9.9000,9.9000
+Michigan,2015,12,Columbus Regional,Apr-04-2015,,Brianna Brown,9.8000,9.8750,9.7250,9.8750
+Michigan,2015,12,Columbus Regional,Apr-04-2015,,Briley Casanova,,9.8000,9.8250,9.8500
+Michigan,2015,12,Columbus Regional,Apr-04-2015,,Talia Chiarelli,9.8000,,9.9000,9.9000
+Michigan,2015,12,Columbus Regional,Apr-04-2015,,Brooke Parker,9.8000,,,9.9000
+Michigan,2015,12,Columbus Regional,Apr-04-2015,,Austin Sheppard,9.8500,9.8500,,
+Michigan,2015,12,Columbus Regional,Apr-04-2015,,Sachi Sugiyama,9.9250,9.8000,9.7750,9.8500
+Michigan,2015,12,Columbus Regional,Apr-04-2015,,Lindsay Williams,,9.8250,9.8500,
+Michigan,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Nicole Artz,9.8500,9.8250,9.9000,9.8500
+Michigan,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Brianna Brown,9.8250,9.8750,9.7750,9.8500
+Michigan,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Briley Casanova,,9.8000,9.8250,9.8500
+Michigan,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Talia Chiarelli,9.8750,,9.9000,9.9250
+Michigan,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Brooke Parker,9.7750,,,9.8000
+Michigan,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Austin Sheppard,9.8500,9.8250,,
+Michigan,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Sachi Sugiyama,9.7750,9.8500,9.7250,9.9000
+Michigan,2015,13,NCAA Championships Semifinal I,Apr-17-2015,,Lindsay Williams,,9.8500,9.8500,
+Michigan,2015,14,NCAA Championships Individual Event Finals,Apr-19-2015,,Nicole Artz,,,9.8125,
+Michigan,2015,14,NCAA Championships Individual Event Finals,Apr-19-2015,,Talia Chiarelli,,,9.8250,9.9000
+Michigan,2015,14,NCAA Championships Individual Event Finals,Apr-19-2015,,Sachi Sugiyama,,,,9.9000
