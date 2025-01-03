@@ -83,9 +83,7 @@ twoway ///
 		position(6) rows(2)	rowgap(0) order(4 5 6 1 2 3)					///
 		size(medsmall)														///
 		label(4 "Black") label(5 "Not White") label(6 "White") 				///
-		label(1 "") label(2 "") label(3 "")) 								///
-		caption("Lines are observation-weighted fractional polynomial fits" 	///
-			, size(vsmall) placement(s) justification(center))				// yuh!!!
+		label(1 "") label(2 "") label(3 "")) 								// yuh!!!
 			
 gr_edit .legend.plotregion1.label[1].yoffset = -1
 gr_edit .legend.plotregion1.label[2].yoffset = -1
@@ -128,9 +126,7 @@ twoway ///
 		position(6) rows(2)	rowgap(0) order(4 5 6 1 2 3)					///
 		size(medsmall)														///
 		label(4 "Black") label(5 "Not White") label(6 "White") 				///
-		label(1 "") label(2 "") label(3 "")) 								///
-		caption("Lines are observation-weighted fractional polynomial fits" 	///
-			, size(vsmall) placement(s) justification(center))				// yuh!!!
+		label(1 "") label(2 "") label(3 "")) 								// yuh!!!
 		
 gr_edit .legend.plotregion1.label[1].yoffset = -1
 gr_edit .legend.plotregion1.label[2].yoffset = -1
