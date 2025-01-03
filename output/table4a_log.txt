@@ -1,0 +1,190 @@
+
+. 
+. quietly {
+Air Force estimate is not significant.
+----
+Alabama estimate is not significant.
+----
+Alaska estimate is not significant.
+----
+Arizona estimate is not significant.
+----
+Arizona State estimate is not significant.
+----
+Arkansas estimate is not significant.
+----
+Auburn estimate is not significant.
+----
+BYU estimate is not significant.
+----
+Ball State estimate is not significant.
+----
+Boise State estimate is not significant.
+----
+Bowling Green estimate is not significant.
+----
+Bridgeport estimate is not significant.
+----
+Brockport estimate is not significant.
+----
+Brown estimate is not significant.
+----
+California estimate is not significant.
+----
+Centenary College estimate is not significant.
+----
+Central Michigan estimate is not significant.
+----
+Clemson estimate is not significant.
+----
+Cornell estimate is not significant.
+----
+Cortland State estimate is not significant.
+----
+Denver estimate is not significant.
+----
+Eastern Michigan estimate is not significant.
+----
+Florida estimate is not significant.
+----
+George Washington estimate is not significant.
+----
+Georgia estimate is not significant.
+----
+Greenville estimate is not significant.
+----
+Gustavus Adolphus estimate is not significant.
+----
+Hamline ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.1403976817500249
+ster: .0704585272320283
+pval: .0465558200554183
+observations: 8018
+bonferroni p: 1
+----
+Illinois estimate is not significant.
+----
+Illinois State estimate is not significant.
+----
+Iowa estimate is not significant.
+----
+Iowa State estimate is not significant.
+----
+Ithaca College estimate is not significant.
+----
+Kent State estimate is not significant.
+----
+Kentucky estimate is not significant.
+----
+LIU estimate is not significant.
+----
+LSU estimate is not significant.
+----
+Lindenwood estimate is not significant.
+----
+Maryland estimate is not significant.
+----
+Michigan estimate is not significant.
+----
+Michigan State estimate is not significant.
+----
+Minnesota estimate is not significant.
+----
+Missouri estimate is not significant.
+----
+Nebraska estimate is not significant.
+----
+New Hampshire estimate is not significant.
+----
+North Carolina estimate is not significant.
+----
+North Carolina State estimate is not significant.
+----
+Northern Illinois estimate is not significant.
+----
+Ohio State estimate is not significant.
+----
+Oklahoma estimate is not significant.
+----
+Oregon State estimate is not significant.
+----
+Penn State estimate is not significant.
+----
+Pennsylvania estimate is not significant.
+----
+Pittsburgh estimate is not significant.
+----
+Rhode Island College estimate is not significant.
+----
+Rutgers estimate is not significant.
+----
+S.E. Missouri estimate is not significant.
+----
+Sacramento State estimate is not significant.
+----
+San Jose State estimate is not significant.
+----
+Seattle Pacific estimate is not significant.
+----
+Simpson estimate is not significant.
+----
+Southern Conn. estimate is not significant.
+----
+Southern Utah estimate is not significant.
+----
+Springfield College estimate is not significant.
+----
+Stanford estimate is not significant.
+----
+Temple estimate is not significant.
+----
+Texas Woman's estimate is not significant.
+----
+Towson estimate is not significant.
+----
+UC Davis estimate is not significant.
+----
+UCLA estimate is not significant.
+----
+UIC estimate is not significant.
+----
+UW-Eau Claire estimate is not significant.
+----
+UW-La Crosse estimate is not significant.
+----
+UW-Oshkosh estimate is not significant.
+----
+UW-Stout estimate is not significant.
+----
+UW-Whitewater estimate is not significant.
+----
+Ursinus College estimate is not significant.
+----
+Utah estimate is not significant.
+----
+Utah State estimate is not significant.
+----
+Utica ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: .3707967027880371
+ster: .1128906889864939
+pval: .0021630844007689
+observations: 192
+bonferroni p: .1881883428668943
+----
+Washington estimate is not significant.
+----
+West Chester estimate is not significant.
+----
+West Virginia estimate is not significant.
+----
+Western Michigan estimate is not significant.
+----
+William & Mary estimate is not significant.
+----
+Winona State estimate is not significant.
+----
+Yale estimate is not significant.
+----
+
+. 
+. log close

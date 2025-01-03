@@ -74,12 +74,22 @@ twoway ///
 		|| ///
 	scatter score_mean meetnum if check=="white"		/// scatter for White gymnasts
 		, m(O) msize(small) mcolor(gs2) 				///
-	graphregion(color(white)) 										 ///
-	ytitle(Average score by race) 									 ///
-	xtitle(Meet number)  xlabel(1(1)`iteration') xtick(0.5) xsize(6) /// 
-	legend(															 ///
-		position(6) rows(2) holes(1 2 3) order(4 5 6) 				 ///
-		label(4 "Black") label(5 "Not White") label(6 "White"))		// yuh!!
+	///
+	/// whole graph options incoming:
+	graphregion(color(white)) 												///
+	ytitle(Average score by race) 											///
+	xtitle(Meet number)  xlabel(1(1)`iteration') xtick(0.5) xsize(6) 		///
+	legend(																	///
+		position(6) rows(2)	rowgap(0) order(4 5 6 1 2 3)					///
+		size(medsmall)														///
+		label(4 "Black") label(5 "Not White") label(6 "White") 				///
+		label(1 "") label(2 "") label(3 "")) 								///
+		caption("Lines are observation-weighted fractional polynomial fits" 	///
+			, size(vsmall) placement(s) justification(center))				// yuh!!!
+			
+gr_edit .legend.plotregion1.label[1].yoffset = -1
+gr_edit .legend.plotregion1.label[2].yoffset = -1
+gr_edit .legend.plotregion1.label[3].yoffset = -1 // these move the text on the legend to justify them better with the two symbol markers
 
 graph export "${route}/output/figure2a.png", as(png) width(1080) replace
 
@@ -109,12 +119,22 @@ twoway ///
 	scatter score_mean meetnum			 	///
 		if check=="white" & meetnum<11		/// scatter for White gymnasts
 		, m(O) msize(small) mcolor(gs2) 	///
-	graphregion(color(white)) 								///
-	ytitle(Average score by race) 							///
-	xtitle(Meet number)  xlabel(1(1)10) xtick(0.5) xsize(6) ///
-	legend(													///
-		position(6) rows(2) holes(1 2 3) order(4 5 6) 		///
-		label(4 "Black") label(5 "Not White") label(6 "White")) // yuh!!!
+	///
+	/// whole graph options incoming:
+	graphregion(color(white)) 												///
+	ytitle(Average score by race) 											///
+	xtitle(Meet number)  xlabel(1(1)10) xtick(0.5) xsize(6) 				///
+	legend(																	///
+		position(6) rows(2)	rowgap(0) order(4 5 6 1 2 3)					///
+		size(medsmall)														///
+		label(4 "Black") label(5 "Not White") label(6 "White") 				///
+		label(1 "") label(2 "") label(3 "")) 								///
+		caption("Lines are observation-weighted fractional polynomial fits" 	///
+			, size(vsmall) placement(s) justification(center))				// yuh!!!
+		
+gr_edit .legend.plotregion1.label[1].yoffset = -1
+gr_edit .legend.plotregion1.label[2].yoffset = -1
+gr_edit .legend.plotregion1.label[3].yoffset = -1 // these move the text on the legend to justify them better with the two symbol markers
 	
 graph export "${route}/output/figure2b.png", as(png) width(1080) replace // game!
 */
