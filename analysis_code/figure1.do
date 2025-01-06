@@ -1,6 +1,6 @@
-*************************************************
-*Figure 1: Average scores by race and meet number
-*************************************************
+********************************************************
+*Figure 1: Fraction of untitle meets from each meet week
+********************************************************
 // done
 *here's the code for figure 1, which motivates the narrowing to meetweek 10 in this figure
 use "${route}/data/analysis_set.dta", clear
