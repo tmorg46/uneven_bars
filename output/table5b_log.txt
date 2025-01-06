@@ -23,12 +23,7 @@ Boise State estimate is not significant.
 ----
 Bowling Green estimate is not significant.
 ----
-Bridgeport ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0803050061330474
-ster: .0132019659303683
-pval: .0089215169898903
-observations: 5469
-bonferroni p: .7761719781204561
+Bridgeport estimate is not significant.
 ----
 Brockport estimate is not significant.
 ----
@@ -140,7 +135,12 @@ Temple estimate is not significant.
 ----
 Texas Woman's estimate is not significant.
 ----
-Towson estimate is not significant.
+Towson ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: .0509454278714819
+ster: .0212541583106918
+pval: .0166127920856794
+observations: 17559
+bonferroni p: 1
 ----
 UC Davis estimate is not significant.
 ----
@@ -158,12 +158,7 @@ UW-Stout estimate is not significant.
 ----
 UW-Whitewater estimate is not significant.
 ----
-Ursinus College ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.12184830516244
-ster: .0321758860977656
-pval: .0322901882159333
-observations: 8047
-bonferroni p: 1
+Ursinus College estimate is not significant.
 ----
 Utah estimate is not significant.
 ----
@@ -181,12 +176,7 @@ Western Michigan estimate is not significant.
 ----
 William & Mary estimate is not significant.
 ----
-Winona State ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0857529272834067
-ster: .0196524778374437
-pval: .0222536841855824
-observations: 9187
-bonferroni p: 1
+Winona State estimate is not significant.
 ----
 Yale estimate is not significant.
 ----

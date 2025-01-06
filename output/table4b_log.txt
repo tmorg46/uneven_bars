@@ -39,7 +39,12 @@ Clemson estimate is not significant.
 ----
 Cornell estimate is not significant.
 ----
-Cortland State estimate is not significant.
+Cortland State ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.0590165362113375
+ster: .0138011672691665
+pval: .0234845072759343
+observations: 8573
+bonferroni p: 1
 ----
 Denver estimate is not significant.
 ----
@@ -77,7 +82,12 @@ LSU estimate is not significant.
 ----
 Lindenwood estimate is not significant.
 ----
-Maryland estimate is not significant.
+Maryland ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.0205851600854856
+ster: .0034201429695334
+pval: .0091914061794199
+observations: 19487
+bonferroni p: .7996523376095312
 ----
 Michigan estimate is not significant.
 ----
@@ -125,7 +135,12 @@ Simpson estimate is not significant.
 ----
 Southern Conn. estimate is not significant.
 ----
-Southern Utah estimate is not significant.
+Southern Utah ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.0253230112422716
+ster: .0042527891138432
+pval: .0094736637677522
+observations: 13538
+bonferroni p: .8242087477944414
 ----
 Springfield College estimate is not significant.
 ----
@@ -135,12 +150,7 @@ Temple estimate is not significant.
 ----
 Texas Woman's estimate is not significant.
 ----
-Towson ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0509454278714819
-ster: .0212541583106918
-pval: .0166127920856794
-observations: 17559
-bonferroni p: 1
+Towson estimate is not significant.
 ----
 UC Davis estimate is not significant.
 ----
@@ -158,7 +168,12 @@ UW-Stout estimate is not significant.
 ----
 UW-Whitewater estimate is not significant.
 ----
-Ursinus College estimate is not significant.
+Ursinus College ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: .0535913556357747
+ster: .0097849891063046
+pval: .0119689222580527
+observations: 9244
+bonferroni p: 1
 ----
 Utah estimate is not significant.
 ----

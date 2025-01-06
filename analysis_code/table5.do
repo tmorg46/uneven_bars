@@ -1,5 +1,5 @@
 *******************************************************************
-*Table 4a: Find venues with significant Black-to-White coefficients 
+*Table 5a: Find venues with significant Black-to-White coefficients 
 *******************************************************************
 // done
 *so let's start by tryna find the teams with significant coefficients on our diff-in-diff!
@@ -9,7 +9,7 @@ local iteration = 0 // nothing has run yet, and we wanna run a replace vs. an ap
 levelsof host, local(teams) // this gets every team that has hosts a meet from the dataset!
 
 cap log close
-log using "${route}/output/table4a_log.txt", text replace nomsg // we gotta get the list of 
+log using "${route}/output/table5a_log.txt", text replace nomsg // we gotta get the list of 
 
 quietly {
 	foreach team of local teams {
@@ -41,9 +41,9 @@ quietly {
 		gen black_at = black*at
 		
 		*now we'll run our very excellent model, but we don't need 2000 lines of output:
-		qui xi: reg score black_at			 ///
-			at black i.event ///
-			, vce(cl event) noomit 	// and that's the model!
+		qui reg score black_at			 ///
+			i.gymnast i.teamid i.emnumid ///
+			, vce(cl emnumid) noomit 	// and that's the model!
 			
 		*check if the p-value on the diff-in-diff coefficient is significant
 		local p_`vartitle' = r(table)[4,1] // this is the p-value from the regression above!
@@ -76,7 +76,7 @@ log close
 
 
 *****************************************************************
-*Table 4b: Find venues with significant White-to-not coefficients 
+*Table 5b: Find venues with significant White-to-not coefficients 
 *****************************************************************
 // done
 *so let's start by tryna find the teams with significant coefficients on our diff-in-diff!
@@ -86,7 +86,7 @@ local iteration = 0 // nothing has run yet, and we wanna run a replace vs. an ap
 levelsof host, local(teams) // this gets every team that has hosts a meet from the dataset!
 
 cap log close
-log using "${route}/output/table4b_log.txt", text replace nomsg // we gotta get the list of 
+log using "${route}/output/table5b_log.txt", text replace nomsg // we gotta get the list of 
 
 quietly {
 	foreach team of local teams {
@@ -116,9 +116,9 @@ quietly {
 		gen white_at = white*at
 		
 		*now we'll run our very excellent model, but we don't need 2000 lines of output:
-		qui xi: reg score white_at			 ///
-			at white i.event ///
-			, vce(cl event) noomit 	// and that's the model!
+		qui reg score white_at			 ///
+			i.gymnast i.teamid i.emnumid ///
+			, vce(cl emnumid) noomit 	// and that's the model!
 			
 		*check if the p-value on the diff-in-diff coefficient is significant
 		local p_`vartitle' = r(table)[4,1] // this is the p-value from the regression above!

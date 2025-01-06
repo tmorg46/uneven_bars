@@ -44,7 +44,8 @@ do "${route}\analysis_code\add_race_predictions.do"
 do "${route}/analysis_code/table1.do"
 do "${route}/analysis_code/table2.do"
 do "${route}/analysis_code/table3.do"
-do "${route}/analysis_code/table4.do" // <--- this one takes a while
+do "${route}/analysis_code/table4.do"
+do "${route}/analysis_code/table5.do" // <--- this one takes a while
 
 do "${route}/analysis_code/figure1.do"
 do "${route}/analysis_code/figure2.do"
