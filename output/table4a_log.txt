@@ -13,7 +13,12 @@ Arizona State estimate is not significant.
 ----
 Arkansas estimate is not significant.
 ----
-Auburn estimate is not significant.
+Auburn ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: .0106489781693419
+ster: .0026560279987217
+pval: .0278375524187861
+observations: 7321
+bonferroni p: 1
 ----
 BYU estimate is not significant.
 ----
@@ -24,17 +29,22 @@ Boise State estimate is not significant.
 Bowling Green estimate is not significant.
 ----
 Bridgeport ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0803050061330474
-ster: .0132019659303683
-pval: .0089215169898903
-observations: 5469
-bonferroni p: .7761719781204561
+beta: .0799292650843902
+ster: .0246708031598324
+pval: .0478570364234941
+observations: 3648
+bonferroni p: 1
 ----
 Brockport estimate is not significant.
 ----
 Brown estimate is not significant.
 ----
-California estimate is not significant.
+California ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: .0290496034634466
+ster: .0069400194052177
+pval: .0248537261549163
+observations: 5925
+bonferroni p: 1
 ----
 Centenary College estimate is not significant.
 ----
@@ -44,7 +54,12 @@ Clemson estimate is not significant.
 ----
 Cornell estimate is not significant.
 ----
-Cortland State estimate is not significant.
+Cortland State ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: .1033315244189806
+ster: .0253546453687057
+pval: .0266685815764728
+observations: 5679
+bonferroni p: 1
 ----
 Denver estimate is not significant.
 ----
@@ -106,7 +121,12 @@ Ohio State estimate is not significant.
 ----
 Oklahoma estimate is not significant.
 ----
-Oregon State estimate is not significant.
+Oregon State ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.0120983708441331
+ster: .0034630801506498
+pval: .0396656737098113
+observations: 6775
+bonferroni p: 1
 ----
 Penn State estimate is not significant.
 ----
@@ -158,12 +178,7 @@ UW-Stout estimate is not significant.
 ----
 UW-Whitewater estimate is not significant.
 ----
-Ursinus College ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.12184830516244
-ster: .0321758860977656
-pval: .0322901882159333
-observations: 8047
-bonferroni p: 1
+Ursinus College estimate is not significant.
 ----
 Utah estimate is not significant.
 ----
@@ -182,11 +197,11 @@ Western Michigan estimate is not significant.
 William & Mary estimate is not significant.
 ----
 Winona State ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0857529272834067
-ster: .0196524778374437
-pval: .0222536841855824
-observations: 9187
-bonferroni p: 1
+beta: .1115408430379757
+ster: .0064956695324784
+pval: .000430292403899
+observations: 6328
+bonferroni p: .037435439139213
 ----
 Yale estimate is not significant.
 ----

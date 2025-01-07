@@ -40,10 +40,10 @@ Clemson estimate is not significant.
 Cornell estimate is not significant.
 ----
 Cortland State ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.0590165362113375
-ster: .0138011672691665
-pval: .0234845072759343
-observations: 8573
+beta: -.0498767604801946
+ster: .0109199997718943
+pval: .0196857779243215
+observations: 6610
 bonferroni p: 1
 ----
 Denver estimate is not significant.
@@ -82,12 +82,7 @@ LSU estimate is not significant.
 ----
 Lindenwood estimate is not significant.
 ----
-Maryland ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.0205851600854856
-ster: .0034201429695334
-pval: .0091914061794199
-observations: 19487
-bonferroni p: .7996523376095312
+Maryland estimate is not significant.
 ----
 Michigan estimate is not significant.
 ----
@@ -111,7 +106,12 @@ Ohio State estimate is not significant.
 ----
 Oklahoma estimate is not significant.
 ----
-Oregon State estimate is not significant.
+Oregon State ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.0136866941645154
+ster: .0032614931088985
+pval: .0246872828469657
+observations: 10134
+bonferroni p: 1
 ----
 Penn State estimate is not significant.
 ----
@@ -135,12 +135,7 @@ Simpson estimate is not significant.
 ----
 Southern Conn. estimate is not significant.
 ----
-Southern Utah ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.0253230112422716
-ster: .0042527891138432
-pval: .0094736637677522
-observations: 13538
-bonferroni p: .8242087477944414
+Southern Utah estimate is not significant.
 ----
 Springfield College estimate is not significant.
 ----
@@ -168,16 +163,16 @@ UW-Stout estimate is not significant.
 ----
 UW-Whitewater estimate is not significant.
 ----
-Ursinus College ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0535913556357747
-ster: .0097849891063046
-pval: .0119689222580527
-observations: 9244
-bonferroni p: 1
+Ursinus College estimate is not significant.
 ----
 Utah estimate is not significant.
 ----
-Utah State estimate is not significant.
+Utah State ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.022866832559589
+ster: .005893965572227
+pval: .0303294865030425
+observations: 8764
+bonferroni p: 1
 ----
 Utica estimate is not significant.
 ----

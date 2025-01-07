@@ -4,8 +4,9 @@
 // done
 use "${route}/data/analysis_set.dta", clear
 
-keep if meetnum < 11 // we only do through meetweek 10...
-keep if host!=""	 // with non-neutral hosts!
+keep if meetnum < 10 				// we only do through meet 9...
+keep if host!=""	 				// with non-neutral hosts...
+keep if meettitle=="no meet title"	// and no meet title (i.e. invitationals, playoffs)
 
 gen at = host=="Alabama"
 bysort team year: egen visited_bama = sum(at)

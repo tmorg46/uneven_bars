@@ -22,7 +22,9 @@ quietly {
 		// let's clean the dataset and prep it for a nice lil analysis:
 		use "${route}/data/analysis_set.dta", clear
 		
-		keep if meetnum < 11 // we're only checking meets before week 11 via Figure 2 logic
+		keep if meetnum < 10 				// we only do through meet 9...
+		keep if host!=""	 				// with non-neutral hosts...
+		keep if meettitle=="no meet title"	// and no meet title (i.e. invitationals, playoffs)
 		
 		keep if inlist(race, "White", "Black") // this is the Black-White comp section
 
@@ -41,9 +43,9 @@ quietly {
 		gen black_at = black*at
 		
 		*now we'll run our very excellent model, but we don't need 2000 lines of output:
-		qui xi: reg score black_at			 ///
-			at black i.event ///
-			, vce(cl event) noomit 	// and that's the model!
+		qui reg score black_at			///
+			at black i.event i.teamid 	///
+			, vce(cl event) noomit 		// and that's the model!
 			
 		*check if the p-value on the diff-in-diff coefficient is significant
 		local p_`vartitle' = r(table)[4,1] // this is the p-value from the regression above!
@@ -99,7 +101,9 @@ quietly {
 		// let's clean the dataset and prep it for a nice lil analysis:
 		use "${route}/data/analysis_set.dta", clear
 		
-		keep if meetnum < 11 // we're only checking meets before week 11 via Figure 2 logic
+		keep if meetnum < 10 				// we only do through meet 9...
+		keep if host!=""	 				// with non-neutral hosts...
+		keep if meettitle=="no meet title"	// and no meet title (i.e. invitationals, playoffs)
 
 		*this piece of the analysis is regular-season focused on a team's vistors, so:
 		drop if team=="`title'"
@@ -116,9 +120,9 @@ quietly {
 		gen white_at = white*at
 		
 		*now we'll run our very excellent model, but we don't need 2000 lines of output:
-		qui xi: reg score white_at			 ///
-			at white i.event ///
-			, vce(cl event) noomit 	// and that's the model!
+		qui reg score white_at			///
+			at white i.event i.teamid 	///
+			, vce(cl event) noomit 		// and that's the model!
 			
 		*check if the p-value on the diff-in-diff coefficient is significant
 		local p_`vartitle' = r(table)[4,1] // this is the p-value from the regression above!

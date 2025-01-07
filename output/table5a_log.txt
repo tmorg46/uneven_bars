@@ -41,7 +41,12 @@ Cornell estimate is not significant.
 ----
 Cortland State estimate is not significant.
 ----
-Denver estimate is not significant.
+Denver ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.0614433928186429
+ster: .0297066746617905
+pval: .0387339819006509
+observations: 10440
+bonferroni p: 1
 ----
 Eastern Michigan estimate is not significant.
 ----
@@ -55,12 +60,7 @@ Greenville estimate is not significant.
 ----
 Gustavus Adolphus estimate is not significant.
 ----
-Hamline ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.1403976817500249
-ster: .0704585272320283
-pval: .0465558200554183
-observations: 8018
-bonferroni p: 1
+Hamline estimate is not significant.
 ----
 Illinois estimate is not significant.
 ----
@@ -165,11 +165,11 @@ Utah estimate is not significant.
 Utah State estimate is not significant.
 ----
 Utica ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .3707967027880371
-ster: .1128906889864939
-pval: .0021630844007689
-observations: 192
-bonferroni p: .1881883428668943
+beta: .3818947000224877
+ster: .127309819535232
+pval: .0049523503854644
+observations: 173
+bonferroni p: .4308544835354028
 ----
 Washington estimate is not significant.
 ----

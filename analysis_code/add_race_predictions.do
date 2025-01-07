@@ -52,6 +52,12 @@ import delimited ///
 merge m:1 gymnast using `racewalk', keep(1 3) nogen // now all the gymnasts with scores have a predicted race and a randomized ID attached! yay!
 
 drop gymnast // and now we don't need the names anymore, so they're gone, and we're ready to rumble!
+
+
+label define event_lbl 1 "Vault" 2 "Uneven Bars" 3 "Balance Beam" 4 "Floor Exercise"
+label values event event_lbl // event is well-labeled as a numeric now...
+
+*and we're good to go!!
 sort team year meetnum event score
 save "${route}/data/analysis_set.dta", replace // yeehaw!
 

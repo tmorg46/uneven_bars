@@ -44,18 +44,18 @@ foreach num of local nums {
 }
 
 twoway ///
-	scatter frac_untitled meetnum [fw=obs]	///
+	scatter frac_untitled meetnum [fw=obs]	/// the big rings showing obs. counts
 		, m(Oh)	mcolor(gs5)					///
 	|| ///
-	scatter frac_untitled meetnum	///		
-		, m(o) mcolor(gs1)			///
+	scatter frac_untitled meetnum			///	the little points showing means
+		, m(o) mcolor(gs1)					///
 	graphregion(color(white)) 										 ///
 	ytitle(Fraction of scores) 										 ///
 	xtitle(Meet number)  xlabel(1(1)`iteration') xtick(0.5) xsize(6) ///
 	legend(															 ///
 		position(6) rows(1) order(2 1) 								 ///
 		label(2 "Fraction of scores from untitled meets")			 ///
-		label(1 "Relative number of scores in meet week")) 			// yuh!!!
+		label(1 "Relative number of scores in meet week")) 			 // yuh!!!
 
 
 graph export "${route}/output/figure1.png", as(png) width(1080) replace // and now we've got the figure!!!

@@ -5,7 +5,9 @@
 // we're gonna swap through summarizing scores by these categories and putting the means and sd's into locals
 use "${route}/data/analysis_set.dta", clear
 
-keep if host!="" // we only want meets hosted by a specific school for this project!!
+keep if meetnum < 10 				// we only do through meet 9...
+keep if host!=""	 				// with non-neutral hosts...
+keep if meettitle=="no meet title"	// and no meet title (i.e. invitationals, playoffs)
 
 // we'll mark the locals as panel_race_event_stat:
 
@@ -14,19 +16,19 @@ sum score
 local all_all_overall_score = r(mean)
 local all_all_overall_stdev = r(sd)
 
-sum score if event=="Vault"
+sum score if event==1
 local all_all_vault_score = r(mean)
 local all_all_vault_stdev = r(sd)
 
-sum score if event=="Uneven Bars"
+sum score if event==2
 local all_all_bars_score = r(mean)
 local all_all_bars_stdev = r(sd)
 
-sum score if event=="Balance Beam"
+sum score if event==3
 local all_all_beam_score = r(mean)
 local all_all_beam_stdev = r(sd)
 
-sum score if event=="Floor Exercise"
+sum score if event==4
 local all_all_floor_score = r(mean)
 local all_all_floor_stdev = r(sd)
 
@@ -35,19 +37,19 @@ sum score if race=="White"
 local all_white_overall_score = r(mean)
 local all_white_overall_stdev = r(sd)
 
-sum score if event=="Vault" & race=="White"
+sum score if event==1 & race=="White"
 local all_white_vault_score = r(mean)
 local all_white_vault_stdev = r(sd)
 
-sum score if event=="Uneven Bars" & race=="White"
+sum score if event==2 & race=="White"
 local all_white_bars_score = r(mean)
 local all_white_bars_stdev = r(sd)
 
-sum score if event=="Balance Beam" & race=="White"
+sum score if event==3 & race=="White"
 local all_white_beam_score = r(mean)
 local all_white_beam_stdev = r(sd)
 
-sum score if event=="Floor Exercise" & race=="White"
+sum score if event==4 & race=="White"
 local all_white_floor_score = r(mean)
 local all_white_floor_stdev = r(sd)
 
@@ -56,19 +58,19 @@ sum score if race=="Black"
 local all_black_overall_score = r(mean)
 local all_black_overall_stdev = r(sd)
 
-sum score if event=="Vault" & race=="Black"
+sum score if event==1 & race=="Black"
 local all_black_vault_score = r(mean)
 local all_black_vault_stdev = r(sd)
 
-sum score if event=="Uneven Bars" & race=="Black"
+sum score if event==2 & race=="Black"
 local all_black_bars_score = r(mean)
 local all_black_bars_stdev = r(sd)
 
-sum score if event=="Balance Beam" & race=="Black"
+sum score if event==3 & race=="Black"
 local all_black_beam_score = r(mean)
 local all_black_beam_stdev = r(sd)
 
-sum score if event=="Floor Exercise" & race=="Black"
+sum score if event==4 & race=="Black"
 local all_black_floor_score = r(mean)
 local all_black_floor_stdev = r(sd)
 
@@ -77,19 +79,19 @@ sum score if division==1
 local d1_all_overall_score = r(mean)
 local d1_all_overall_stdev = r(sd)
 
-sum score if event=="Vault" & division==1
+sum score if event==1 & division==1
 local d1_all_vault_score = r(mean)
 local d1_all_vault_stdev = r(sd)
 
-sum score if event=="Uneven Bars" & division==1
+sum score if event==2 & division==1
 local d1_all_bars_score = r(mean)
 local d1_all_bars_stdev = r(sd)
 
-sum score if event=="Balance Beam" & division==1
+sum score if event==3 & division==1
 local d1_all_beam_score = r(mean)
 local d1_all_beam_stdev = r(sd)
 
-sum score if event=="Floor Exercise" & division==1
+sum score if event==4 & division==1
 local d1_all_floor_score = r(mean)
 local d1_all_floor_stdev = r(sd)
 
@@ -98,19 +100,19 @@ sum score if race=="White" & division==1
 local d1_white_overall_score = r(mean)
 local d1_white_overall_stdev = r(sd)
 
-sum score if event=="Vault" & race=="White" & division==1
+sum score if event==1 & race=="White" & division==1
 local d1_white_vault_score = r(mean)
 local d1_white_vault_stdev = r(sd)
 
-sum score if event=="Uneven Bars" & race=="White" & division==1
+sum score if event==2 & race=="White" & division==1
 local d1_white_bars_score = r(mean)
 local d1_white_bars_stdev = r(sd)
 
-sum score if event=="Balance Beam" & race=="White" & division==1
+sum score if event==3 & race=="White" & division==1
 local d1_white_beam_score = r(mean)
 local d1_white_beam_stdev = r(sd)
 
-sum score if event=="Floor Exercise" & race=="White" & division==1
+sum score if event==4 & race=="White" & division==1
 local d1_white_floor_score = r(mean)
 local d1_white_floor_stdev = r(sd)
 
@@ -119,19 +121,19 @@ sum score if race=="Black" & division==1
 local d1_black_overall_score = r(mean)
 local d1_black_overall_stdev = r(sd)
 
-sum score if event=="Vault" & race=="Black" & division==1
+sum score if event==1 & race=="Black" & division==1
 local d1_black_vault_score = r(mean)
 local d1_black_vault_stdev = r(sd)
 
-sum score if event=="Uneven Bars" & race=="Black" & division==1
+sum score if event==2 & race=="Black" & division==1
 local d1_black_bars_score = r(mean)
 local d1_black_bars_stdev = r(sd)
 
-sum score if event=="Balance Beam" & race=="Black" & division==1
+sum score if event==3 & race=="Black" & division==1
 local d1_black_beam_score = r(mean)
 local d1_black_beam_stdev = r(sd)
 
-sum score if event=="Floor Exercise" & race=="Black" & division==1
+sum score if event==4 & race=="Black" & division==1
 local d1_black_floor_score = r(mean)
 local d1_black_floor_stdev = r(sd)
 
@@ -140,19 +142,19 @@ sum score if division!=1
 local nond1_all_overall_score = r(mean)
 local nond1_all_overall_stdev = r(sd)
 
-sum score if event=="Vault" & division!=1
+sum score if event==1 & division!=1
 local nond1_all_vault_score = r(mean)
 local nond1_all_vault_stdev = r(sd)
 
-sum score if event=="Uneven Bars" & division!=1
+sum score if event==2 & division!=1
 local nond1_all_bars_score = r(mean)
 local nond1_all_bars_stdev = r(sd)
 
-sum score if event=="Balance Beam" & division!=1
+sum score if event==3 & division!=1
 local nond1_all_beam_score = r(mean)
 local nond1_all_beam_stdev = r(sd)
 
-sum score if event=="Floor Exercise" & division!=1
+sum score if event==4 & division!=1
 local nond1_all_floor_score = r(mean)
 local nond1_all_floor_stdev = r(sd)
 
@@ -161,19 +163,19 @@ sum score if race=="White" & division!=1
 local nond1_white_overall_score = r(mean)
 local nond1_white_overall_stdev = r(sd)
 
-sum score if event=="Vault" & race=="White" & division!=1
+sum score if event==1 & race=="White" & division!=1
 local nond1_white_vault_score = r(mean)
 local nond1_white_vault_stdev = r(sd)
 
-sum score if event=="Uneven Bars" & race=="White" & division!=1
+sum score if event==2 & race=="White" & division!=1
 local nond1_white_bars_score = r(mean)
 local nond1_white_bars_stdev = r(sd)
 
-sum score if event=="Balance Beam" & race=="White" & division!=1
+sum score if event==3 & race=="White" & division!=1
 local nond1_white_beam_score = r(mean)
 local nond1_white_beam_stdev = r(sd)
 
-sum score if event=="Floor Exercise" & race=="White" & division!=1
+sum score if event==4 & race=="White" & division!=1
 local nond1_white_floor_score = r(mean)
 local nond1_white_floor_stdev = r(sd)
 
@@ -182,19 +184,19 @@ sum score if race=="Black" & division!=1
 local nond1_black_overall_score = r(mean)
 local nond1_black_overall_stdev = r(sd)
 
-sum score if event=="Vault" & race=="Black" & division!=1
+sum score if event==1 & race=="Black" & division!=1
 local nond1_black_vault_score = r(mean)
 local nond1_black_vault_stdev = r(sd)
 
-sum score if event=="Uneven Bars" & race=="Black" & division!=1
+sum score if event==2 & race=="Black" & division!=1
 local nond1_black_bars_score = r(mean)
 local nond1_black_bars_stdev = r(sd)
 
-sum score if event=="Balance Beam" & race=="Black" & division!=1
+sum score if event==3 & race=="Black" & division!=1
 local nond1_black_beam_score = r(mean)
 local nond1_black_beam_stdev = r(sd)
 
-sum score if event=="Floor Exercise" & race=="Black" & division!=1
+sum score if event==4 & race=="Black" & division!=1
 local nond1_black_floor_score = r(mean)
 local nond1_black_floor_stdev = r(sd)
 

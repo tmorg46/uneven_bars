@@ -177,9 +177,6 @@ drop if score==. // good stuff, now let's move along:
 
 merge m:1 team using `divisions', nogen // now we've got divisions attached to the teams!
 
-label define event_lbl 1 "Vault" 2 "Uneven Bars" 3 "Balance Beam" 4 "Floor Exercise"
-label values event event_lbl // event is well-labeled now:
-
 egen event_meet_id = concat(event date host meettitle), punct(" / ") // and now we have a unique event-within-meet identifier! but we'll want a numeric version for fixed effects later as well:
 
 sort event_meet_id

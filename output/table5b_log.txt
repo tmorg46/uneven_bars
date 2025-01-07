@@ -3,7 +3,12 @@
 . quietly {
 Air Force estimate is not significant.
 ----
-Alabama estimate is not significant.
+Alabama ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.0330667768651712
+ster: .0140312436792631
+pval: .0185688423258742
+observations: 10186
+bonferroni p: 1
 ----
 Alaska estimate is not significant.
 ----
@@ -19,7 +24,12 @@ BYU estimate is not significant.
 ----
 Ball State estimate is not significant.
 ----
-Boise State estimate is not significant.
+Boise State ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.0455609670468883
+ster: .0231112022822119
+pval: .0489527658707038
+observations: 7641
+bonferroni p: 1
 ----
 Bowling Green estimate is not significant.
 ----
@@ -136,10 +146,10 @@ Temple estimate is not significant.
 Texas Woman's estimate is not significant.
 ----
 Towson ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0509454278714819
-ster: .0212541583106918
-pval: .0166127920856794
-observations: 17559
+beta: .0499464674343779
+ster: .0228844789312806
+pval: .0292099701723837
+observations: 12871
 bonferroni p: 1
 ----
 UC Davis estimate is not significant.
