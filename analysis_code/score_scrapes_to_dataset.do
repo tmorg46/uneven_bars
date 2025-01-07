@@ -164,7 +164,7 @@ replace meettitle = "Pink Invite" if date=="Feb-22-2019" & host==""
 *fix the Cancun Classic from 2019:
 replace meettitle = "Cancun Classic" if date=="Jan-04-2019" & host==""
 
-// there are two untitled meets involving Georgia in March 2023, they had to do some emergency repairs to their arena so they went to a semi-neutral site. so they kinda hosted, but not enough to mark them as hosts (for the purposes of this project) or to title the meet. their event_meet_id made below is still unique for both of the meets.
+// there are two untitled meets involving Georgia in March 2023 (their 10th & 11th meets, which were also Arkansas' 9th and Michigan's 10th, respectively). They had to do some emergency repairs to their arena so they went to a semi-neutral site nearby... so they /kinda/ hosted, but not enough to mark them as hosts (for the purposes of this project) or to title the meet. their event_meet_id made below is still unique for both of the meets due to the different dates of the meets and due to those two meets being the only two (untitled & no-host) meets in the sample.
 
 
 ***********************************************
