@@ -6,7 +6,7 @@
 use "${route}/data/analysis_set.dta", clear
 
 keep if host!="" // we only want meets hosted by a specific school for this project!!
-keep if meettitle=="no meet title"
+keep if meettitle=="no meet title" // and we need weird invites and playoffs gone as well
 
 gen black   = race=="Black"
 gen white   = race=="White"
