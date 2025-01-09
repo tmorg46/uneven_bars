@@ -16,7 +16,7 @@ Arkansas estimate is not significant.
 Auburn ESTIMATE IS SIGNIFICANT!!!!!!!!
 beta: .0106489781693419
 ster: .0026560279987217
-pval: .0278375524187861
+pval: .0278375524187865
 observations: 7321
 bonferroni p: 1
 ----
@@ -31,7 +31,7 @@ Bowling Green estimate is not significant.
 Bridgeport ESTIMATE IS SIGNIFICANT!!!!!!!!
 beta: .0799292650843902
 ster: .0246708031598324
-pval: .0478570364234941
+pval: .047857036423494
 observations: 3648
 bonferroni p: 1
 ----
@@ -42,7 +42,7 @@ Brown estimate is not significant.
 California ESTIMATE IS SIGNIFICANT!!!!!!!!
 beta: .0290496034634466
 ster: .0069400194052177
-pval: .0248537261549163
+pval: .0248537261549162
 observations: 5925
 bonferroni p: 1
 ----
@@ -123,8 +123,8 @@ Oklahoma estimate is not significant.
 ----
 Oregon State ESTIMATE IS SIGNIFICANT!!!!!!!!
 beta: -.0120983708441331
-ster: .0034630801506498
-pval: .0396656737098113
+ster: .0034630801506497
+pval: .0396656737098092
 observations: 6775
 bonferroni p: 1
 ----
@@ -198,7 +198,7 @@ William & Mary estimate is not significant.
 ----
 Winona State ESTIMATE IS SIGNIFICANT!!!!!!!!
 beta: .1115408430379757
-ster: .0064956695324784
+ster: .0064956695324783
 pval: .000430292403899
 observations: 6328
 bonferroni p: .037435439139213

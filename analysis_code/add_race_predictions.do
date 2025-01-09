@@ -1,6 +1,6 @@
 /*
 
-this file starts by cleaning the predicted races crosswalk. it then takes the full dataset of scores, connects them to our predicted races, and anonymizes the gymnasts' names out of the final analysis dataset
+this file starts by cleaning the predicted races crosswalk. it then takes the full dataset of scores, connects them to our predicted races, and anonymizes the gymnasts' names out of the final analysis dataset. then, it keeps only the meets we're interested in: untitled meets through meet 9
 
 */
 

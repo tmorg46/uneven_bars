@@ -6,7 +6,7 @@ Air Force estimate is not significant.
 Alabama ESTIMATE IS SIGNIFICANT!!!!!!!!
 beta: -.0330667768651712
 ster: .0140312436792631
-pval: .0185688423258742
+pval: .0185688423258743
 observations: 10186
 bonferroni p: 1
 ----
@@ -146,9 +146,9 @@ Temple estimate is not significant.
 Texas Woman's estimate is not significant.
 ----
 Towson ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0499464674343779
+beta: .049946467434378
 ster: .0228844789312806
-pval: .0292099701723837
+pval: .0292099701723836
 observations: 12871
 bonferroni p: 1
 ----

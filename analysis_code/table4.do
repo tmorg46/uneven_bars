@@ -77,9 +77,10 @@ log close
 */
 
 
-*****************************************************************
-*Table 4b: Find venues with significant White-to-not coefficients 
-*****************************************************************
+
+*******************************************************************
+*Table 4b: Find venues with significant Black-to-White coefficients 
+*******************************************************************
 // done
 *so let's start by tryna find the teams with significant coefficients on our diff-in-diff!
 use "${route}/data/analysis_set.dta", clear
@@ -104,6 +105,8 @@ quietly {
 		keep if meetnum < 10 				// we only do through meet 9...
 		keep if host!=""	 				// with non-neutral hosts...
 		keep if meettitle=="no meet title"	// and no meet title (i.e. invitationals, playoffs)
+		
+		keep if inlist(race, "White", "Black") // this is the Black-White comp section
 
 		*this piece of the analysis is regular-season focused on a team's vistors, so:
 		drop if team=="`title'"
@@ -116,13 +119,13 @@ quietly {
 		drop visited_`vartitle'
 
 		*generate the key indicator variable!!
-		gen white    = race=="White"
-		gen white_at = white*at
+		gen black 	 = race=="Black"
+		gen black_at = black*at
 		
 		*now we'll run our very excellent model, but we don't need 2000 lines of output:
-		qui reg score white_at			///
-			at white i.event i.teamid 	///
-			, vce(cl event) noomit 		// and that's the model!
+		qui reg score black_at			 ///
+			i.gymnast i.teamid i.emnumid ///
+			, vce(cl emnumid) noomit 	 // and that's the model!
 			
 		*check if the p-value on the diff-in-diff coefficient is significant
 		local p_`vartitle' = r(table)[4,1] // this is the p-value from the regression above!
