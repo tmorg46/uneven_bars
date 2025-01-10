@@ -4,9 +4,8 @@
 // done
 use "${route}/data/analysis_set.dta", clear
 
-keep if meetnum < 10 				// we only do through meet 9...
-keep if host!=""	 				// with non-neutral hosts...
-keep if meettitle=="no meet title"	// and no meet title (i.e. invitationals, playoffs)
+keep if division==1	// just the D1 players...
+keep if meettitle=="no meet title" & host!="" // and just the ordinary meets
 
 gen at = host=="Alabama"
 bysort team year: egen visited_bama = sum(at)

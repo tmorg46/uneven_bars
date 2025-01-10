@@ -5,9 +5,7 @@
 // we're gonna swap through summarizing scores by these categories and putting the means and sd's into locals
 use "${route}/data/analysis_set.dta", clear
 
-keep if meetnum < 10 				// we only do through meet 9...
-keep if host!=""	 				// with non-neutral hosts...
-keep if meettitle=="no meet title"	// and no meet title (i.e. invitationals, playoffs)
+keep if meettitle=="no meet title" & host!="" // only the ordinary meets!!
 
 // we'll mark the locals as panel_race_event_stat:
 

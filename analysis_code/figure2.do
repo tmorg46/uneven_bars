@@ -1,12 +1,12 @@
-*************************************
-*Figures 2a & 2b: Parallel trends????
-*************************************
+******************************
+*Figure 2: Parallel trends????
+******************************
 // pending
-*here's the code for the "parallel trends" figures
+*here's the code for the "parallel trends" figure
 use "${route}/data/analysis_set.dta", clear
 
-keep if host!="" // we only want meets hosted by a specific school for this project!!
-keep if meettitle=="no meet title" // and we need weird invites and playoffs gone as well
+keep if division==1	// just the D1 players...
+keep if meettitle=="no meet title" & host!="" // and just the ordinary meets
 
 gen black   = race=="Black"
 gen white   = race=="White"
@@ -90,48 +90,6 @@ gr_edit .legend.plotregion1.label[1].yoffset = -1
 gr_edit .legend.plotregion1.label[2].yoffset = -1
 gr_edit .legend.plotregion1.label[3].yoffset = -1 // these move the text on the legend to justify them better with the two symbol markers
 
-graph export "${route}/output/figure2a.png", as(png) width(1080) replace
+graph export "${route}/output/figure2.png", as(png) width(1080) replace
 
-
-*here's the second subfigure, with only through meet number 9 (i.e. before meet 10)
-twoway ///
-	fpfit score_mean meetnum [fw=obs] 			///
-		if check=="black" & meetnum<10 			/// poly-fit for Black gymnasts
-		, lpattern(shortdash) lcolor(gs10)		///
-		|| ///
-	fpfit score_mean meetnum [fw=obs] 			///
-		if check=="n_white"	& meetnum<10		/// poly-fit for not-White gymnasts
-		, lpattern(dash) lcolor(gs10) 			///
-		|| ///
-	fpfit score_mean meetnum [fw=obs] 			///
-		if check=="white" & meetnum<10			/// poly-fit for White gymnasts
-		, lpattern(shortdash_dot) lcolor(gs10) 	///
-		|| ///
-	scatter score_mean meetnum			 	///
-		if check=="black" & meetnum<10		/// scatter for Black gymnasts
-		, m(S) msize(small) mcolor(gs2) 	///
-		|| ///
-	scatter score_mean meetnum			 	///
-		if check=="n_white" & meetnum<10	/// scatter for non-White gymnasts
-		, m(T) msize(small) mcolor(gs2) 	///
-		|| ///
-	scatter score_mean meetnum			 	///
-		if check=="white" & meetnum<10		/// scatter for White gymnasts
-		, m(O) msize(small) mcolor(gs2) 	///
-	///
-	/// whole graph options incoming:
-	graphregion(color(white)) 												///
-	ytitle(Average score by race) 											///
-	xtitle(Meet number)  xlabel(1(1)9) xtick(0.5) xsize(6) 				///
-	legend(																	///
-		position(6) rows(2)	rowgap(0) order(4 5 6 1 2 3)					///
-		size(medsmall)														///
-		label(4 "Black") label(5 "Not White") label(6 "White") 				///
-		label(1 "") label(2 "") label(3 "")) 								// yuh!!!
-		
-gr_edit .legend.plotregion1.label[1].yoffset = -1
-gr_edit .legend.plotregion1.label[2].yoffset = -1
-gr_edit .legend.plotregion1.label[3].yoffset = -1 // these move the text on the legend to justify them better with the two symbol markers
-	
-graph export "${route}/output/figure2b.png", as(png) width(1080) replace // game!
 */

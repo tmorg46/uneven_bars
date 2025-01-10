@@ -3,8 +3,8 @@
 . foreach year of numlist 2015/2024 {
   2.         
 .         di "tabs for `year':"
-  3.         tab ncaa_race if year==`year' // we want to go year-by-year so it gives us %ages as well as c
-> ounts to make it easier for the table!
+  3.         tab ncaa_race if year==`year' // we want to go year-by-year so i
+> t gives us %ages as well as counts to make it easier for the table!
   4. }
 tabs for 2015:
 

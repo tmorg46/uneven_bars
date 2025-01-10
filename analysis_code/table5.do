@@ -5,8 +5,10 @@
 *so let's start by tryna find the teams with significant coefficients on our diff-in-diff!
 use "${route}/data/analysis_set.dta", clear
 
+keep if division==1 // we only want the D1 teams and gymnasts:
+levelsof team, local(teams) // this gets every team that has hosts a meet from the dataset!
+
 local iteration = 0 // nothing has run yet, and we wanna run a replace vs. an append later...
-levelsof host, local(teams) // this gets every team that has hosts a meet from the dataset!
 
 cap log close
 log using "${route}/output/table5a_log.txt", text replace nomsg // we gotta get the list of 
@@ -22,9 +24,8 @@ quietly {
 		// let's clean the dataset and prep it for a nice lil analysis:
 		use "${route}/data/analysis_set.dta", clear
 		
-		keep if meetnum < 10 				// we only do through meet 9...
-		keep if host!=""	 				// with non-neutral hosts...
-		keep if meettitle=="no meet title"	// and no meet title (i.e. invitationals, playoffs)
+		keep if division==1	// just the D1 players...
+		keep if meettitle=="no meet title" & host!="" // and just the ordinary meets
 
 		*this piece of the analysis is regular-season focused on a team's vistors, so:
 		drop if team=="`title'"
@@ -64,7 +65,7 @@ quietly {
 			noisily di "----"
 		}
 		else {
-			noisily di "`title' estimate is not significant."
+			noisily di "`title' estimate is not significant - Eq1 White-not"
 			noisily di "----"
 		}
 		
@@ -82,8 +83,10 @@ log close
 *so let's start by tryna find the teams with significant coefficients on our diff-in-diff!
 use "${route}/data/analysis_set.dta", clear
 
+keep if division==1 // we only want the D1 teams and gymnasts:
+levelsof team, local(teams) // this gets every team that has hosts a meet from the dataset!
+
 local iteration = 0 // nothing has run yet, and we wanna run a replace vs. an append later...
-levelsof host, local(teams) // this gets every team that has hosts a meet from the dataset!
 
 cap log close
 log using "${route}/output/table5b_log.txt", text replace nomsg // we gotta get the list of 
@@ -99,9 +102,8 @@ quietly {
 		// let's clean the dataset and prep it for a nice lil analysis:
 		use "${route}/data/analysis_set.dta", clear
 		
-		keep if meetnum < 10 				// we only do through meet 9...
-		keep if host!=""	 				// with non-neutral hosts...
-		keep if meettitle=="no meet title"	// and no meet title (i.e. invitationals, playoffs)
+		keep if division==1	// just the D1 players...
+		keep if meettitle=="no meet title" & host!="" // and just the ordinary meets
 
 		*this piece of the analysis is regular-season focused on a team's vistors, so:
 		drop if team=="`title'"
@@ -141,7 +143,7 @@ quietly {
 			noisily di "----"
 		}
 		else {
-			noisily di "`title' estimate is not significant."
+			noisily di "`title' estimate is not significant - Eq2 White-not"
 			noisily di "----"
 		}
 		
