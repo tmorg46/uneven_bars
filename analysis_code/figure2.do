@@ -54,8 +54,6 @@ foreach num of local nums {
 
 drop if obs==0
 
-
-*here's the first subfigure, with all the weeks
 twoway ///
 	fpfit score_mean meetnum [fw=obs] if check=="black"   /// poly-fit for Black gymnasts
 		, lpattern(shortdash) lcolor(gs10)				  ///
@@ -146,8 +144,6 @@ foreach num of local nums {
 
 drop if obs==0
 
-
-*here's the first subfigure, with all the weeks
 twoway ///
 	fpfit score_mean meetnum [fw=obs] if check=="black"   /// poly-fit for Black gymnasts
 		, lpattern(shortdash) lcolor(gs10)				  ///
@@ -169,7 +165,7 @@ twoway ///
 	///
 	/// whole graph options incoming:
 	graphregion(color(white)) 												///
-	ytitle(Average score by race) 											///
+	ytitle(Average score by race) ylabel(9.4(0.1)9.8)						///
 	xtitle(Meet number)  xlabel(1(1)`iteration') xtick(0.5) xsize(6) 		///
 	legend(																	///
 		position(6) rows(2)	rowgap(0) order(4 5 6 1 2 3)					///
