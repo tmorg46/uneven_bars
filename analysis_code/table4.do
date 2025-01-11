@@ -55,7 +55,7 @@ quietly {
 		local beta_`vartitle' = r(table)[1,1]
 		local ster_`vartitle' = r(table)[2,1]
 		local obsN_`vartitle' = `e(N)'
-		local bnfr_`vartitle' = min(`p_`vartitle'' * 87, 1) // the bonferroni p, adjusted for 87 hosts
+		local bnfr_`vartitle' = min(`p_`vartitle'' * 64, 1) // the bonferroni p, adjusted for 87 hosts
 
 		if `p_`vartitle''<0.05 {
 			noisily di "`title' ESTIMATE IS SIGNIFICANT!!!!!!!!"
@@ -76,7 +76,6 @@ quietly {
 
 log close
 */
-
 
 
 ***********************************************************************
@@ -136,7 +135,7 @@ quietly {
 		local beta_`vartitle' = r(table)[1,1]
 		local ster_`vartitle' = r(table)[2,1]
 		local obsN_`vartitle' = `e(N)'
-		local bnfr_`vartitle' = min(`p_`vartitle'' * 87, 1) // the bonferroni p, adjusted for 87 hosts
+		local bnfr_`vartitle' = min(`p_`vartitle'' * 64, 1) // the bonferroni p, adjusted for 87 hosts
 
 		if `p_`vartitle''<0.05 {
 			noisily di "`title' ESTIMATE IS SIGNIFICANT!!!!!!!!"
@@ -214,7 +213,7 @@ quietly {
 		local beta_`vartitle' = r(table)[1,1]
 		local ster_`vartitle' = r(table)[2,1]
 		local obsN_`vartitle' = `e(N)'
-		local bnfr_`vartitle' = min(`p_`vartitle'' * 87, 1) // the bonferroni p, adjusted for 87 hosts
+		local bnfr_`vartitle' = min(`p_`vartitle'' * 64, 1) // the bonferroni p, adjusted for 87 hosts
 
 		if `p_`vartitle''<0.05 {
 			noisily di "`title' ESTIMATE IS SIGNIFICANT!!!!!!!!"
@@ -292,7 +291,7 @@ quietly {
 		local beta_`vartitle' = r(table)[1,1]
 		local ster_`vartitle' = r(table)[2,1]
 		local obsN_`vartitle' = `e(N)'
-		local bnfr_`vartitle' = min(`p_`vartitle'' * 87, 1) // the bonferroni p, adjusted for 87 hosts
+		local bnfr_`vartitle' = min(`p_`vartitle'' * 64, 1) // the bonferroni p, adjusted for 87 hosts
 
 		if `p_`vartitle''<0.05 {
 			noisily di "`title' ESTIMATE IS SIGNIFICANT!!!!!!!!"

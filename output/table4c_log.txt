@@ -114,7 +114,7 @@ San Jose State estimate is not significant - Eq1 White-not
 Southern Utah ESTIMATE IS SIGNIFICANT!!!!!!!!
 beta: -.0305538162034752
 ster: .008629210753393
-pval: .038343342657329
+pval: .0383433426573293
 observations: 13563
 bonferroni p: 1
 ----
