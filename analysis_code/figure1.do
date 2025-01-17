@@ -53,7 +53,7 @@ twoway ///
 	xtitle(Meet number)  xlabel(1(1)`iteration') xtick(0.5) xsize(6) ///
 	legend(															 ///
 		position(6) rows(1) order(2 1) 								 ///
-		label(2 "Fraction of scores from ordinary meets")			 ///
+		label(2 "Fraction of scores from regular meets")			 ///
 		label(1 "Number of scores from all meets"))  // yuh!!!
 
 
