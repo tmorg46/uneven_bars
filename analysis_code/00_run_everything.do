@@ -11,7 +11,6 @@ clear all
 frames reset
 cap log close
 discard
-pause on
 
 ssc install schemepack
 set scheme white_tableau // it looks nice
