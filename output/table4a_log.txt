@@ -14,9 +14,9 @@ Arizona State estimate is not significant - Eq1 Black-White
 Arkansas estimate is not significant - Eq1 Black-White
 ----
 Auburn ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0253299614193681
-ster: .0051973354457204
-pval: .0165086645781284
+beta: .0223240682502409
+ster: .0054964418057397
+pval: .0269090983014826
 observations: 8624
 bonferroni p: 1
 ----
@@ -90,7 +90,12 @@ Ohio State estimate is not significant - Eq1 Black-White
 ----
 Oklahoma estimate is not significant - Eq1 Black-White
 ----
-Oregon State estimate is not significant - Eq1 Black-White
+Oregon State ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: .01375650799914
+ster: .0038853007413316
+pval: .0383457608117657
+observations: 8883
+bonferroni p: 1
 ----
 Penn State estimate is not significant - Eq1 Black-White
 ----

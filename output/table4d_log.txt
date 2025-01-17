@@ -4,9 +4,9 @@
 Air Force estimate is not significant - Eq2 White-not
 ----
 Alabama ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.0324774634022508
-ster: .0140375933513526
-pval: .0207956510198394
+beta: -.0321013612434821
+ster: .0140304625979057
+pval: .0222483720178064
 observations: 12892
 bonferroni p: 1
 ----
@@ -113,9 +113,9 @@ Stanford estimate is not significant - Eq2 White-not
 Temple estimate is not significant - Eq2 White-not
 ----
 Towson ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0415544804898764
-ster: .0206503458828394
-pval: .0443321614157121
+beta: .0416776644468266
+ster: .0206288820935879
+pval: .0434885156942004
 observations: 15089
 bonferroni p: 1
 ----
@@ -130,9 +130,9 @@ Utah estimate is not significant - Eq2 White-not
 Utah State estimate is not significant - Eq2 White-not
 ----
 Washington ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.0364389339671165
-ster: .0167765250128798
-pval: .0299938510612094
+beta: -.0369238813321285
+ster: .0168356710427555
+pval: .0284302632394383
 observations: 11338
 bonferroni p: 1
 ----

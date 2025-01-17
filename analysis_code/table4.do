@@ -44,7 +44,7 @@ quietly {
 		gen black_at = black*at
 		
 		*now we'll run our very excellent model, but we don't need 2000 lines of output:
-		qui reg score black_at			///
+		qui reg score black_at meetnum	///
 			at black i.event i.teamid 	///
 			, vce(cl event) noomit 		// and that's the model!
 			
@@ -124,7 +124,7 @@ quietly {
 		gen black_at = black*at
 		
 		*now we'll run our very excellent model, but we don't need 2000 lines of output:
-		qui reg score black_at			 ///
+		qui reg score black_at meetnum	 ///
 			i.gymnast i.teamid i.emnumid ///
 			, vce(cl emnumid) noomit 	 // and that's the model!
 			
@@ -202,7 +202,7 @@ quietly {
 		gen white_at = white*at
 		
 		*now we'll run our very excellent model, but we don't need 2000 lines of output:
-		qui reg score white_at			///
+		qui reg score white_at meetnum	///
 			at white i.event i.teamid 	///
 			, vce(cl event) noomit 		// and that's the model!
 			
@@ -280,7 +280,7 @@ quietly {
 		gen white_at = white*at
 		
 		*now we'll run our very excellent model, but we don't need 2000 lines of output:
-		qui reg score white_at			 ///
+		qui reg score white_at meetnum	 ///
 			i.gymnast i.teamid i.emnumid ///
 			, vce(cl emnumid) noomit 	 // and that's the model!
 			

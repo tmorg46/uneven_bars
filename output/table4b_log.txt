@@ -92,9 +92,9 @@ Penn State estimate is not significant - Eq2 Black-White
 Pennsylvania estimate is not significant - Eq2 Black-White
 ----
 Pittsburgh ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .0583606896783303
-ster: .0243282089407551
-pval: .0165338223324627
+beta: .057960205921465
+ster: .0243353721145883
+pval: .0173225752941406
 observations: 11643
 bonferroni p: 1
 ----
@@ -115,9 +115,9 @@ Temple estimate is not significant - Eq2 Black-White
 Towson estimate is not significant - Eq2 Black-White
 ----
 UC Davis ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.0733683888666865
-ster: .0342566384814818
-pval: .0323703883106849
+beta: -.0733523047686204
+ster: .0340752654866171
+pval: .0314992113718644
 observations: 8304
 bonferroni p: 1
 ----

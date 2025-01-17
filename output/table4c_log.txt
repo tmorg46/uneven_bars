@@ -6,9 +6,9 @@ Air Force estimate is not significant - Eq1 White-not
 Alabama estimate is not significant - Eq1 White-not
 ----
 Alaska ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.0664015570966347
-ster: .0136828704221086
-pval: .0167019116359618
+beta: -.0662177538314397
+ster: .0165677195681048
+pval: .0280673001230373
 observations: 2822
 bonferroni p: 1
 ----
@@ -67,9 +67,9 @@ LSU estimate is not significant - Eq1 White-not
 Lindenwood estimate is not significant - Eq1 White-not
 ----
 Maryland ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.0135488966403333
-ster: .0028228055434175
-pval: .0172100802610455
+beta: -.0116182686014851
+ster: .0028844245275545
+pval: .0275025010304411
 observations: 16741
 bonferroni p: 1
 ----
@@ -111,12 +111,7 @@ Sacramento State estimate is not significant - Eq1 White-not
 ----
 San Jose State estimate is not significant - Eq1 White-not
 ----
-Southern Utah ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.0305538162034752
-ster: .008629210753393
-pval: .0383433426573293
-observations: 13563
-bonferroni p: 1
+Southern Utah estimate is not significant - Eq1 White-not
 ----
 Stanford estimate is not significant - Eq1 White-not
 ----
