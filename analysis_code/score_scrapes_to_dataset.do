@@ -189,6 +189,7 @@ sort team
 gen teamid = 1
 gen swaps  = team!=team[_n-1]
 replace teamid = teamid[_n-1] + swaps in 2/L // and now we've got one for teams as well, again for fixed effects later. We'll also make one for gymnasts in do-file 2 once we get race predictions on there
+drop swaps
 
 *and now we're done!
 compress
