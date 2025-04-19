@@ -1,143 +1,148 @@
 
 . 
 . quietly {
-Air Force estimate is not significant - Eq2 Black-White
+Air Force estimate is not significant - Eq2 White-not
 ----
-Alabama estimate is not significant - Eq2 Black-White
-----
-Alaska estimate is not significant - Eq2 Black-White
-----
-Arizona estimate is not significant - Eq2 Black-White
-----
-Arizona State estimate is not significant - Eq2 Black-White
-----
-Arkansas estimate is not significant - Eq2 Black-White
-----
-Auburn estimate is not significant - Eq2 Black-White
-----
-BYU estimate is not significant - Eq2 Black-White
-----
-Ball State estimate is not significant - Eq2 Black-White
-----
-Boise State estimate is not significant - Eq2 Black-White
-----
-Bowling Green estimate is not significant - Eq2 Black-White
-----
-Brown estimate is not significant - Eq2 Black-White
-----
-California estimate is not significant - Eq2 Black-White
-----
-Central Michigan estimate is not significant - Eq2 Black-White
-----
-Clemson estimate is not significant - Eq2 Black-White
-----
-Cornell estimate is not significant - Eq2 Black-White
-----
-Denver estimate is not significant - Eq2 Black-White
-----
-Eastern Michigan estimate is not significant - Eq2 Black-White
-----
-Florida estimate is not significant - Eq2 Black-White
-----
-George Washington estimate is not significant - Eq2 Black-White
-----
-Georgia estimate is not significant - Eq2 Black-White
-----
-Illinois estimate is not significant - Eq2 Black-White
-----
-Illinois State estimate is not significant - Eq2 Black-White
-----
-Iowa estimate is not significant - Eq2 Black-White
-----
-Iowa State estimate is not significant - Eq2 Black-White
-----
-Kent State estimate is not significant - Eq2 Black-White
-----
-Kentucky estimate is not significant - Eq2 Black-White
-----
-LIU estimate is not significant - Eq2 Black-White
-----
-LSU estimate is not significant - Eq2 Black-White
-----
-Lindenwood estimate is not significant - Eq2 Black-White
-----
-Maryland estimate is not significant - Eq2 Black-White
-----
-Michigan estimate is not significant - Eq2 Black-White
-----
-Michigan State estimate is not significant - Eq2 Black-White
-----
-Minnesota estimate is not significant - Eq2 Black-White
-----
-Missouri estimate is not significant - Eq2 Black-White
-----
-Nebraska estimate is not significant - Eq2 Black-White
-----
-New Hampshire estimate is not significant - Eq2 Black-White
-----
-North Carolina estimate is not significant - Eq2 Black-White
-----
-North Carolina State estimate is not significant - Eq2 Black-White
-----
-Northern Illinois estimate is not significant - Eq2 Black-White
-----
-Ohio State estimate is not significant - Eq2 Black-White
-----
-Oklahoma estimate is not significant - Eq2 Black-White
-----
-Oregon State estimate is not significant - Eq2 Black-White
-----
-Penn State estimate is not significant - Eq2 Black-White
-----
-Pennsylvania estimate is not significant - Eq2 Black-White
-----
-Pittsburgh ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: .057960205921465
-ster: .0243353721145883
-pval: .0173225752941406
-observations: 11643
+Alabama ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.0321468666412905
+ster: .0140233985257678
+pval: .021993016584745
+observations: 12892
 bonferroni p: 1
 ----
-Rutgers estimate is not significant - Eq2 Black-White
+Alaska estimate is not significant - Eq2 White-not
 ----
-S.E. Missouri estimate is not significant - Eq2 Black-White
+Arizona estimate is not significant - Eq2 White-not
 ----
-Sacramento State estimate is not significant - Eq2 Black-White
+Arizona State estimate is not significant - Eq2 White-not
 ----
-San Jose State estimate is not significant - Eq2 Black-White
+Arkansas estimate is not significant - Eq2 White-not
 ----
-Southern Utah estimate is not significant - Eq2 Black-White
+Auburn estimate is not significant - Eq2 White-not
 ----
-Stanford estimate is not significant - Eq2 Black-White
+BYU estimate is not significant - Eq2 White-not
 ----
-Temple estimate is not significant - Eq2 Black-White
+Ball State estimate is not significant - Eq2 White-not
 ----
-Towson estimate is not significant - Eq2 Black-White
+Boise State estimate is not significant - Eq2 White-not
 ----
-UC Davis ESTIMATE IS SIGNIFICANT!!!!!!!!
-beta: -.0733523047686204
-ster: .0340752654866171
-pval: .0314992113718644
-observations: 8304
+Bowling Green estimate is not significant - Eq2 White-not
+----
+Brown estimate is not significant - Eq2 White-not
+----
+California estimate is not significant - Eq2 White-not
+----
+Central Michigan estimate is not significant - Eq2 White-not
+----
+Clemson estimate is not significant - Eq2 White-not
+----
+Cornell estimate is not significant - Eq2 White-not
+----
+Denver estimate is not significant - Eq2 White-not
+----
+Eastern Michigan estimate is not significant - Eq2 White-not
+----
+Florida estimate is not significant - Eq2 White-not
+----
+George Washington estimate is not significant - Eq2 White-not
+----
+Georgia estimate is not significant - Eq2 White-not
+----
+Illinois estimate is not significant - Eq2 White-not
+----
+Illinois State estimate is not significant - Eq2 White-not
+----
+Iowa estimate is not significant - Eq2 White-not
+----
+Iowa State estimate is not significant - Eq2 White-not
+----
+Kent State estimate is not significant - Eq2 White-not
+----
+Kentucky estimate is not significant - Eq2 White-not
+----
+LIU estimate is not significant - Eq2 White-not
+----
+LSU estimate is not significant - Eq2 White-not
+----
+Lindenwood estimate is not significant - Eq2 White-not
+----
+Maryland estimate is not significant - Eq2 White-not
+----
+Michigan estimate is not significant - Eq2 White-not
+----
+Michigan State estimate is not significant - Eq2 White-not
+----
+Minnesota estimate is not significant - Eq2 White-not
+----
+Missouri estimate is not significant - Eq2 White-not
+----
+Nebraska estimate is not significant - Eq2 White-not
+----
+New Hampshire estimate is not significant - Eq2 White-not
+----
+North Carolina estimate is not significant - Eq2 White-not
+----
+North Carolina State estimate is not significant - Eq2 White-not
+----
+Northern Illinois estimate is not significant - Eq2 White-not
+----
+Ohio State estimate is not significant - Eq2 White-not
+----
+Oklahoma estimate is not significant - Eq2 White-not
+----
+Oregon State estimate is not significant - Eq2 White-not
+----
+Penn State estimate is not significant - Eq2 White-not
+----
+Pennsylvania estimate is not significant - Eq2 White-not
+----
+Pittsburgh estimate is not significant - Eq2 White-not
+----
+Rutgers estimate is not significant - Eq2 White-not
+----
+S.E. Missouri estimate is not significant - Eq2 White-not
+----
+Sacramento State estimate is not significant - Eq2 White-not
+----
+San Jose State estimate is not significant - Eq2 White-not
+----
+Southern Utah estimate is not significant - Eq2 White-not
+----
+Stanford estimate is not significant - Eq2 White-not
+----
+Temple estimate is not significant - Eq2 White-not
+----
+Towson ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: .0423523882879035
+ster: .0206006811037599
+pval: .0399329179587478
+observations: 15089
 bonferroni p: 1
 ----
-UCLA estimate is not significant - Eq2 Black-White
+UC Davis estimate is not significant - Eq2 White-not
 ----
-UIC estimate is not significant - Eq2 Black-White
+UCLA estimate is not significant - Eq2 White-not
 ----
-Utah estimate is not significant - Eq2 Black-White
+UIC estimate is not significant - Eq2 White-not
 ----
-Utah State estimate is not significant - Eq2 Black-White
+Utah estimate is not significant - Eq2 White-not
 ----
-Washington estimate is not significant - Eq2 Black-White
+Utah State estimate is not significant - Eq2 White-not
 ----
-West Virginia estimate is not significant - Eq2 Black-White
+Washington ESTIMATE IS SIGNIFICANT!!!!!!!!
+beta: -.0371593887713319
+ster: .016845201700886
+pval: .0275237774698643
+observations: 11338
+bonferroni p: 1
 ----
-Western Michigan estimate is not significant - Eq2 Black-White
+West Virginia estimate is not significant - Eq2 White-not
 ----
-William & Mary estimate is not significant - Eq2 Black-White
+Western Michigan estimate is not significant - Eq2 White-not
 ----
-Yale estimate is not significant - Eq2 Black-White
+William & Mary estimate is not significant - Eq2 White-not
+----
+Yale estimate is not significant - Eq2 White-not
 ----
 
 . 

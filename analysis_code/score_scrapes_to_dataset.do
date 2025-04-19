@@ -191,6 +191,18 @@ gen swaps  = team!=team[_n-1]
 replace teamid = teamid[_n-1] + swaps in 2/L // and now we've got one for teams as well, again for fixed effects later. We'll also make one for gymnasts in do-file 2 once we get race predictions on there
 drop swaps
 
+
+*now we want to make a measure of the number of meets a gymnast has competed over her career
+gen datenum = date(date,"MDY") // this will let us sort meets correctly in order
+sort gymnast datenum
+
+gen career_meetnum=1 									 //  this will be the career meet count...
+gen swapmeet = date!=date[_n-1]							 //  so mark when a meet changes...
+replace career_meetnum = career_meetnum[_n-1] + swapmeet /// and count up across meets...
+	if gymnast==gymnast[_n-1] 							 //  and within gymnasts!
+drop swapmeet
+
+
 *and now we're done!
 compress
 sort team year meetnum event score
