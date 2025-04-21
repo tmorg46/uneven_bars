@@ -12,8 +12,9 @@ import re
 #############
 # modify the three lines below and let 'er rip
 
-rtn_team_numbers = [*range(1, 57), *range(58, 67), *range(68, 83), 128, 154, 155, 156, 163, 164, 165] # these are all the team ids for 2024
-years = [2024] # make this a list!
+rtn_team_numbers = [*range(36, 57), *range(58, 67), *range(68, 83), 163, 156, 154, 128, 155, 164, 174] # these are all the team ids for 2025
+# rtn_team_numbers = [*range(1, 35), *range(36, 57), *range(58, 67), *range(68, 83), 163, 156, 154, 128, 155, 164, 174] # these are all the team ids for 2025
+years = [2025] # make this a list!
 
 #############
 
@@ -156,7 +157,7 @@ def main():
             print(df)
             df = df.drop(columns=["nothinghere", "allaround"])
 
-            scrape = f"C:/Users/tmorg/OneDrive/Desktop/gymnast_scrapes/{team}_{year}.csv"
+            scrape = f"C:/Users/toom/Desktop/uneven_bars/data/scrapes/{team}_{year}.csv"
             df.to_csv(scrape, index=False, encoding="utf-8")
     print("mission accomplished!!")
 

@@ -40,6 +40,9 @@ foreach f of local files {
 	save `appender', replace
 }
 
+*drop the 2025 scores that were VERY recently scraped
+drop if year==2025
+
 
 **************************************
 *fix name inconsistencies and errors!!

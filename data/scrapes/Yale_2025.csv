@@ -1,0 +1,131 @@
+team,year,meetnum,meettitle,date,host,gymnast,vault,bars,beam,floor
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Lily Aucoin,9.7250,9.4500,,
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Megan Brueck,9.7250,,9.6750,9.8750
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Chloe DeJoy,,9.0500,,9.8000
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Allie Forbes,,,9.7000,
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Lauren Holt,,9.6750,,
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Ellie Kearns,,9.6250,,9.8500
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Hailey Kriz,9.6000,,9.7250,
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Lauren Luu,,8.0000,,
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Gigi Sabatini,9.8000,9.5000,9.7500,9.6500
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Hana Strause,9.5000,,9.7750,9.7750
+Yale,2025,1,no meet title,Jan-12-2025,Cornell,Ella Tashjian,9.7500,,9.6750,9.8750
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Lily Aucoin,9.3000,9.6250,,
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Megan Brueck,9.5250,,9.6000,9.6000
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Chloe DeJoy,,8.6500,,9.6500
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Allie Forbes,,,9.5750,
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Lauren Holt,,9.7250,,
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Ellie Kearns,,8.8500,,8.5250
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Hailey Kriz,9.5250,,9.7500,
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Lauren Luu,,9.9250,,
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Gigi Sabatini,9.7250,9.7250,9.4500,9.5500
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Hana Strause,9.6000,,9.7250,8.8500
+Yale,2025,2,no meet title,Jan-17-2025,Pennsylvania,Ella Tashjian,9.6250,,9.5500,9.8000
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Lily Aucoin,,9.1000,,
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Megan Brueck,9.6250,,9.6750,8.7000
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Lauren Burt,9.7750,,,
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Chloe DeJoy,,,,9.7750
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Allie Forbes,,,9.1000,
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Lauren Holt,,9.6750,,
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Ellie Kearns,,9.7000,,9.8500
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Hailey Kriz,9.6500,9.4750,9.5750,
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Lauren Luu,,9.7250,,
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Gigi Sabatini,9.7000,9.4250,9.5750,9.7500
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Hana Strause,9.7000,,9.8250,9.7000
+Yale,2025,3,no meet title,Jan-26-2025,George Washington,Ella Tashjian,9.7500,,9.6750,9.8750
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Lily Aucoin,,9.2000,,
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Megan Brueck,9.6000,,9.3250,9.8000
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Lauren Burt,9.7500,,,
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Evangeline Chu,,,9.0250,
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Chloe DeJoy,,9.6750,,9.8500
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Lauren Holt,,9.7250,,
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Ellie Kearns,,9.7500,,9.8250
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Hailey Kriz,9.6250,9.7250,9.7500,
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Lauren Luu,,9.8000,,
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Gigi Sabatini,9.7250,,9.6250,9.6000
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Hana Strause,9.5500,,9.7250,9.7500
+Yale,2025,4,no meet title,Feb-02-2025,Yale,Ella Tashjian,9.6750,,9.8750,9.8750
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Lily Aucoin,,8.0000,,
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Megan Brueck,8.9750,,9.6500,9.8500
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Lauren Burt,9.6750,,,
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Chloe DeJoy,,9.7000,,9.8250
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Lauren Holt,,9.7000,,9.7500
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Ellie Kearns,,9.7000,9.6250,9.9000
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Hailey Kriz,9.7750,9.7000,9.7000,
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Lauren Luu,,9.7750,,
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Gigi Sabatini,9.7000,,9.6250,9.8000
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Hana Strause,9.5500,,9.6250,
+Yale,2025,5,no meet title,Feb-09-2025,New Hampshire,Ella Tashjian,9.6750,,9.6500,9.7250
+Yale,2025,6,no meet title,Feb-16-2025,Yale,Megan Brueck,9.1250,,9.3250,9.7500
+Yale,2025,6,no meet title,Feb-16-2025,Yale,Lauren Burt,9.7000,,,
+Yale,2025,6,no meet title,Feb-16-2025,Yale,Chloe DeJoy,,9.8500,,9.7500
+Yale,2025,6,no meet title,Feb-16-2025,Yale,Lauren Holt,,8.8750,,
+Yale,2025,6,no meet title,Feb-16-2025,Yale,Ellie Kearns,,9.7000,9.0000,9.8500
+Yale,2025,6,no meet title,Feb-16-2025,Yale,Hailey Kriz,9.7500,9.7500,9.5500,
+Yale,2025,6,no meet title,Feb-16-2025,Yale,Lauren Luu,,9.6750,,
+Yale,2025,6,no meet title,Feb-16-2025,Yale,Gigi Sabatini,9.6500,9.6500,9.6250,9.7500
+Yale,2025,6,no meet title,Feb-16-2025,Yale,Hana Strause,9.5500,,9.7500,9.8250
+Yale,2025,6,no meet title,Feb-16-2025,Yale,Ella Tashjian,9.7250,,9.3500,9.9000
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Lily Aucoin,9.3250,9.7750,,
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Megan Brueck,9.6750,,,9.7000
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Lauren Burt,9.7250,,,
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Evangeline Chu,,,9.7250,
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Chloe DeJoy,,9.7500,,9.8500
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Lauren Holt,,9.7000,,
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Ellie Kearns,,9.6750,9.7500,9.7500
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Hailey Kriz,,9.6000,9.8750,
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Lauren Luu,,9.8000,,
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Gigi Sabatini,9.6250,,9.7500,9.8500
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Hana Strause,9.5000,,9.7250,9.7750
+Yale,2025,7,no meet title,Feb-23-2025,Cornell,Ella Tashjian,9.6000,,9.8500,9.7750
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Megan Brueck,9.1750,,,9.6500
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Lauren Burt,9.7250,,,
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Evangeline Chu,,,9.6250,
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Chloe DeJoy,,8.3500,,9.5750
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Lauren Holt,,9.7000,,
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Ellie Kearns,,9.7750,9.0250,9.7000
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Hailey Kriz,9.7500,9.7750,9.8750,
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Lauren Luu,,9.7250,,
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Gigi Sabatini,9.6250,9.1000,9.0500,9.7500
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Hana Strause,9.5000,,9.8000,9.7250
+Yale,2025,8,no meet title,Feb-28-2025,North Carolina,Ella Tashjian,9.6500,,9.7500,9.8000
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Oren Aviad,9.5750,,,
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Megan Brueck,,,,9.8250
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Lauren Burt,9.7250,,,
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Evangeline Chu,,,9.7250,
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Chloe DeJoy,,9.8000,,9.8000
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Meridith Donovan,9.6000,,,
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Lauren Holt,,9.7000,,
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Ellie Kearns,,9.8500,9.6500,9.8250
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Hailey Kriz,9.7250,9.8250,9.1500,
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Lauren Luu,,9.1250,,
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Gigi Sabatini,9.7000,9.7750,9.6000,9.8750
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Hana Strause,,,9.8000,9.7750
+Yale,2025,9,no meet title,Mar-09-2025,Yale,Ella Tashjian,9.7250,,9.7000,9.9000
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Lily Aucoin,9.7000,9.6000,,
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Oren Aviad,9.6000,,,
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Megan Brueck,,,,9.7250
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Lauren Burt,9.7500,,,
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Evangeline Chu,,,9.0750,
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Chloe DeJoy,,9.5500,,9.6750
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Meridith Donovan,9.5750,,,
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Lauren Holt,,9.7250,,
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Ellie Kearns,,9.6750,9.7000,9.7750
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Hailey Kriz,,9.7250,9.7500,
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Lauren Luu,,9.7250,,
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Gigi Sabatini,9.4750,,9.7500,9.7250
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Hana Strause,,,9.7250,9.7500
+Yale,2025,10,no meet title,Mar-16-2025,Maryland,Ella Tashjian,9.7750,,9.1500,9.7000
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Lily Aucoin,9.7500,8.8750,,
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Megan Brueck,,,,9.7750
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Lauren Burt,9.7500,,,
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Evangeline Chu,,,9.5000,
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Chloe DeJoy,,9.6250,,9.8000
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Allie Forbes,,,9.6750,
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Lauren Holt,,9.7000,,9.6750
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Ellie Kearns,9.6500,9.6500,9.6250,9.8000
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Hailey Kriz,9.7750,9.6250,9.5000,
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Lauren Luu,,9.8000,,
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Gigi Sabatini,9.6500,,,
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Hana Strause,,,9.7750,9.0000
+Yale,2025,11,GEC Conference,Mar-22-2025,Pennsylvania,Ella Tashjian,9.6500,,9.7250,9.8000
