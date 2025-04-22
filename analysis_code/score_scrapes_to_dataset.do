@@ -40,8 +40,8 @@ foreach f of local files {
 	save `appender', replace
 }
 
-*drop the 2025 scores that were VERY recently scraped
-drop if year==2025
+*drop the scores that eventually will be added that are after 2024:
+drop if year>2024
 
 
 **************************************
