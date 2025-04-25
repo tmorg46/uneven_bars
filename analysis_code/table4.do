@@ -67,7 +67,7 @@ quietly {
 			noisily di "----"
 		}
 		else {
-			noisily di "`title' estimate is not significant - Eq2 Black-White"
+			noisily di "`title' estimate is not significant - Eq5 Black-White"
 			noisily di "----"
 		}
 		
@@ -79,7 +79,7 @@ log close
 
 
 *********************************************************************
-*Table 4b: Find venues with significant Eq2 White-to-not coefficients 
+*Table 4b: Find venues with significant Eq5 White-to-not coefficients 
 *********************************************************************
 // done
 *so let's start by tryna find the teams with significant coefficients on our diff-in-diff!
@@ -145,7 +145,7 @@ quietly {
 			noisily di "----"
 		}
 		else {
-			noisily di "`title' estimate is not significant - Eq2 White-not"
+			noisily di "`title' estimate is not significant - Eq5 White-not"
 			noisily di "----"
 		}
 		
