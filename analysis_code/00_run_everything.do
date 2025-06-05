@@ -20,7 +20,7 @@ set seed 46 // I just like this seed; we're generating a random variable when we
 set maxvar 20000 // we need more than the default 5,000 for some of our fixed effects, so we can use a reasonable number that's larger than the total number of gymnasts (4,720) plus the total number of event-by-meets (14,319), i.e. 20,000
 
 *edit this to be the path to the main directory download!
-global route "C:/Users/toom/Desktop/uneven_bars"
+global route "/Users/tmorg46/Desktop/uneven_bars"
 
 cap mkdir "${route}/output"
 
@@ -28,13 +28,13 @@ cap mkdir "${route}/output"
 ***********************************************************
 *turn all the scraped scores into a coherent single dataset
 ***********************************************************
-do "${route}\analysis_code\score_scrapes_to_dataset.do"
+do "${route}/analysis_code/get_score_data.do"
 
 
 ************************************************
 *add our FairFace race predictions to the scores
 ************************************************
-do "${route}\analysis_code\add_race_predictions.do"
+do "${route}/analysis_code/add_race_predictions.do"
 
 
 *******************************************************
