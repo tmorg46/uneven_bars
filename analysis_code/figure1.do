@@ -57,5 +57,5 @@ twoway ///
 		label(1 "Number of scores from all meets"))  // yuh!!!
 
 
-graph export "${route}/output/figure1.png", as(png) width(1080) replace // and now we've got the figure!!!
+graph export "${route}/output/figure1.pdf", as(pdf) replace // and now we've got the figure!!!
 */

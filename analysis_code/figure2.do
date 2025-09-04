@@ -87,7 +87,7 @@ gr_edit .legend.plotregion1.label[1].yoffset = -1
 gr_edit .legend.plotregion1.label[2].yoffset = -1
 gr_edit .legend.plotregion1.label[3].yoffset = -1 // these move the text on the legend to justify them better with the two symbol markers
 
-graph export "${route}/output/figure2a.png", as(png) width(1080) replace
+graph export "${route}/output/figure2a.pdf", as(pdf) replace
 
 
 *****************************************
@@ -177,6 +177,6 @@ gr_edit .legend.plotregion1.label[1].yoffset = -1
 gr_edit .legend.plotregion1.label[2].yoffset = -1
 gr_edit .legend.plotregion1.label[3].yoffset = -1 // these move the text on the legend to justify them better with the two symbol markers
 
-graph export "${route}/output/figure2b.png", as(png) width(1080) replace
+graph export "${route}/output/figure2b.pdf", as(pdf) replace
 
 */
